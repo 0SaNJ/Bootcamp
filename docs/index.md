@@ -82,9 +82,372 @@ Week 3
 
 4.  Now we download the code and follow the tutorial here ( <https://randomnerdtutorials.com/esp32-web-server-websocket-sliders/> )
 
-5.  We repeat the process from last week and upload the spiff then the code then we should have a working web page with sliders and leds. If done right you should get something like this ![](https://lh4.googleusercontent.com/G7iK4k4Fq41_TmoRGnJ-7aYcavM9TlH4PNJZ6TJ7LdPWQa578zTAkxLSNGBfH17m2Zgb9c7tRJZnT3IKyNqYr2A9B-_Cf3PanhjB1gJikSvBqQl9ZzO6lsrl4fGscwdazlq6AFsMWunUwRzwRkkmt5s)
+5.  The C++ code 
 
-6.  We can customize our webpage using css we do that by going into our index.html and configuring there ![](https://lh6.googleusercontent.com/cL1ADYolH7XKrCG_bUwujp67DInYTgFmkERj_uuQuPuyjv0wHtda6vl5qBqA-RKsDguULsgROWvuuLb-NFtARx4BL-adK81fpkhp6cdHPdmorOpd25ziUH36VKA5rP5DYX-NG0PPwtNF7tnJdAJGd5Q)
+|
+
+/*\
+  Rui Santos\
+  Complete project details at https://RandomNerdTutorials.com/esp32-web-server-websocket-sliders/
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy\
+  of this software and associated documentation files.
+
+  The above copyright notice and this permission notice shall be included in all\
+  copies or substantial portions of the Software.\
+*/
+
+#include <Arduino.h>\
+#include <WiFi.h>\
+#include <AsyncTCP.h>\
+#include <ESPAsyncWebServer.h>\
+#include "SPIFFS.h"\
+#include <Arduino_JSON.h>
+
+// Replace with your network credentials\
+const  char* ssid = "HUAWEI-2.4G-yzad";\
+const  char* password = "SkNH972g";
+
+// Create AsyncWebServer object on port 80\
+AsyncWebServer server(80);\
+// Create a WebSocket object
+
+AsyncWebSocket ws("/ws");\
+// Set LED GPIO\
+const  int ledPin1 = 32;\
+const  int ledPin2 = 26;\
+const  int ledPin3 = 14;\
+const  int ledPin4 = 12;\
+const  int ledPin5 = 13;
+
+String message = "";\
+String sliderValue1 = "0";\
+String sliderValue2 = "0";\
+String sliderValue3 = "0";\
+String sliderValue4 = "0";\
+String sliderValue5 = "0";
+
+int dutyCycle1;\
+int dutyCycle2;\
+int dutyCycle3;\
+int dutyCycle4;\
+int dutyCycle5;
+
+// setting PWM properties\
+const  int freq = 5000;\
+const  int ledChannel1 = 0;\
+const  int ledChannel2 = 1;\
+const  int ledChannel3 = 2;\
+const  int ledChannel4 = 3;\
+const  int ledChannel5 = 4;
+
+const  int resolution = 8;
+
+//Json Variable to Hold Slider Values\
+JSONVar sliderValues;
+
+//Get Slider Values\
+String getSliderValues(){\
+  sliderValues["sliderValue1"] = String(sliderValue1);\
+  sliderValues["sliderValue2"] = String(sliderValue2);\
+  sliderValues["sliderValue3"] = String(sliderValue3);\
+  sliderValues["sliderValue4"] = String(sliderValue4);\
+  sliderValues["sliderValue5"] = String(sliderValue5);
+
+  String jsonString = JSON.stringify(sliderValues);\
+ return jsonString;\
+}
+
+// Initialize SPIFFS\
+void  initFS() {\
+ if (!SPIFFS.begin()) {\
+    Serial.println("An error has occurred while mounting SPIFFS");\
+  }\
+ else{\
+  Serial.println("SPIFFS mounted successfully");\
+  }\
+}
+
+// Initialize WiFi\
+void  initWiFi() {\
+  WiFi.mode(WIFI_STA);\
+  WiFi.begin(ssid, password);\
+  Serial.print("Connecting to WiFi ..");\
+ while (WiFi.status() != WL_CONNECTED) {\
+    Serial.print('.');\
+    delay(1000);\
+  }\
+  Serial.println(WiFi.localIP());\
+}
+
+void  notifyClients(String sliderValues) {\
+  ws.textAll(sliderValues);\
+}
+
+void  handleWebSocketMessage(void *arg, uint8_t *data, size_t len) {\
+  AwsFrameInfo *info = (AwsFrameInfo*)arg;\
+ if (info->final && info->index == 0 && info->len == len && info->opcode == WS_TEXT) {\
+data[len] = 0;\
+    message = (char*)data;\
+ if (message.indexOf("1s") >= 0) {\
+      sliderValue1 = message.substring(2);\
+dutyCycle1 = map(sliderValue1.toInt(), 0, 100, 0, 255);\
+      Serial.println(dutyCycle1);\
+      Serial.print(getSliderValues());\
+      notifyClients(getSliderValues());\
+    }\
+ if (message.indexOf("2s") >= 0) {\
+      sliderValue2 = message.substring(2);\
+dutyCycle2 = map(sliderValue2.toInt(), 0, 100, 0, 255);\
+      Serial.println(dutyCycle2);\
+      Serial.print(getSliderValues());\
+      notifyClients(getSliderValues());\
+    }\
+ if (message.indexOf("3s") >= 0) {\
+      sliderValue3 = message.substring(2);\
+dutyCycle3 = map(sliderValue3.toInt(), 0, 100, 0, 255);\
+      Serial.println(dutyCycle3);\
+      Serial.print(getSliderValues());\
+      notifyClients(getSliderValues());\
+    }\
+ if (message.indexOf("4s") >= 0) {\
+      sliderValue4 = message.substring(2);\
+dutyCycle4 = map(sliderValue4.toInt(), 0, 100, 0, 255);\
+      Serial.println(dutyCycle4);\
+      Serial.print(getSliderValues());\
+      notifyClients(getSliderValues());\
+    }\
+ if (message.indexOf("5s") >= 0) {\
+      sliderValue5 = message.substring(2);\
+dutyCycle5 = map(sliderValue5.toInt(), 0, 100, 0, 255);\
+      Serial.println(dutyCycle5);\
+      Serial.print(getSliderValues());\
+      notifyClients(getSliderValues());\
+    }\
+ if (strcmp((char*)data, "getValues") == 0) {\
+      notifyClients(getSliderValues());\
+    }\
+  }\
+}\
+void  onEvent(AsyncWebSocket *server, AsyncWebSocketClient *client, AwsEventType type, void *arg, uint8_t *data, size_t len) {\
+ switch (type) {\
+ case WS_EVT_CONNECT:\
+      Serial.printf("WebSocket client #%u connected from %s\n", client->id(), client->remoteIP().toString().c_str());\
+ break;\
+ case WS_EVT_DISCONNECT:\
+      Serial.printf("WebSocket client #%u disconnected\n", client->id());\
+ break;\
+ case WS_EVT_DATA:\
+      handleWebSocketMessage(arg, data, len);\
+ break;\
+ case WS_EVT_PONG:\
+ case WS_EVT_ERROR:\
+ break;\
+  }\
+}
+
+void  initWebSocket() {\
+  ws.onEvent(onEvent);\
+  server.addHandler(&ws);\
+}
+
+void  setup() {\
+  Serial.begin(115200);\
+  pinMode(ledPin1, OUTPUT);\
+  pinMode(ledPin2, OUTPUT);\
+  pinMode(ledPin3, OUTPUT);\
+  pinMode(ledPin4, OUTPUT);\
+  pinMode(ledPin5, OUTPUT);\
+  initFS();\
+  initWiFi();
+
+ // configure LED PWM functionalitites\
+  ledcSetup(ledChannel1, freq, resolution);\
+  ledcSetup(ledChannel2, freq, resolution);\
+  ledcSetup(ledChannel3, freq, resolution);\
+  ledcSetup(ledChannel4, freq, resolution);\
+  ledcSetup(ledChannel5, freq, resolution);
+
+ // attach the channel to the GPIO to be controlled\
+  ledcAttachPin(ledPin1, ledChannel1);\
+  ledcAttachPin(ledPin2, ledChannel2);\
+  ledcAttachPin(ledPin3, ledChannel3);\
+  ledcAttachPin(ledPin4, ledChannel4);\
+  ledcAttachPin(ledPin5, ledChannel5);
+
+  initWebSocket();
+
+ // Web Server Root URL\
+  server.on("/", HTTP_GET, [](AsyncWebServerRequest *request){\
+request->send(SPIFFS, "/index.html", "text/html");\
+  });
+
+  server.serveStatic("/", SPIFFS, "/");
+
+ // Start server\
+  server.begin();
+
+}
+
+void  loop() {\
+  ledcWrite(ledChannel1, dutyCycle1);\
+  ledcWrite(ledChannel2, dutyCycle2);\
+  ledcWrite(ledChannel3, dutyCycle3);\
+  ledcWrite(ledChannel4, dutyCycle4);\
+  ledcWrite(ledChannel5, dutyCycle5);
+
+  ws.cleanupClients();\
+}
+
+ |
+
+1.  We repeat the process from last week and upload the spiff then the code then we should have a working web page with sliders and leds. If done right you should get something like this.
+
+|
+
+<!-- Complete project details: https://randomnerdtutorials.com/esp32-web-server-websocket-sliders/ -->
+
+<!DOCTYPE html>\
+<html>\
+<head>\
+<title>ESP IOT DASHBOARD</title>\
+<meta name="viewport"  content="width=device-width, initial-scale=1">\
+<link rel="icon"  type="image/png"  href="favicon.png">\
+<link rel="stylesheet"  type="text/css"  href="style.css">\
+</head>\
+<body>\
+<div class="topnav">\
+<h1>Multiple Sliders</h1>\
+</div>\
+<div class="content">\
+<div class="card-grid">\
+<div class="card">\
+<p class="card-title">Fader 1</p>\
+<p class="switch">\
+<input type="range"  onchange="updateSliderPWM(this)"  id="slider1"  min="0"  max="100"  step="1"  value ="0"  class="slider">\
+</p>\
+<p class="state">Brightness: <span id="sliderValue1"></span> &percnt;</p>\
+</div>\
+<div class="card">\
+<p class="card-title"> Fader 2</p>\
+<p class="switch">\
+<input type="range"  onchange="updateSliderPWM(this)"  id="slider2"  min="0"  max="100"  step="1"  value ="0"  class="slider">\
+</p>\
+<p class="state">Brightness: <span id="sliderValue2"></span> &percnt;</p>\
+</div>\
+<div class="card">\
+<p class="card-title"> Fader 3</p>\
+<p class="switch">\
+<input type="range"  onchange="updateSliderPWM(this)"  id="slider3"  min="0"  max="100"  step="1"  value ="0"  class="slider">\
+</p>\
+<p class="state">Brightness: <span id="sliderValue3"></span> &percnt;</p>\
+</div>\
+<div class="card">\
+<p class="card-title"> Fader 4</p>\
+<p class="switch">\
+<input type="range"  onchange="updateSliderPWM(this)"  id="slider4"  min="0"  max="100"  step="1"  value ="0"  class="slider">\
+</p>\
+<p class="state">Brightness: <span id="sliderValue4"></span> &percnt;</p>\
+</div>\
+<div class="card">\
+<p class="card-title"> Fader 5</p>\
+<p class="switch">\
+<input type="range"  onchange="updateSliderPWM(this)"  id="slider5"  min="0"  max="100"  step="1"  value ="0"  class="slider">\
+</p>\
+<p class="state">Brightness: <span id="sliderValue5"></span> &percnt;</p>\
+</div>\
+</div>\
+</div>\
+<script src="script.js"></script>\
+</body>\
+</html>
+
+ |
+
+![](https://lh4.googleusercontent.com/G7iK4k4Fq41_TmoRGnJ-7aYcavM9TlH4PNJZ6TJ7LdPWQa578zTAkxLSNGBfH17m2Zgb9c7tRJZnT3IKyNqYr2A9B-_Cf3PanhjB1gJikSvBqQl9ZzO6lsrl4fGscwdazlq6AFsMWunUwRzwRkkmt5s)
+
+1.  We can customize our webpage using css we do that by going into our index.html and configuring there ![](https://lh6.googleusercontent.com/cL1ADYolH7XKrCG_bUwujp67DInYTgFmkERj_uuQuPuyjv0wHtda6vl5qBqA-RKsDguULsgROWvuuLb-NFtARx4BL-adK81fpkhp6cdHPdmorOpd25ziUH36VKA5rP5DYX-NG0PPwtNF7tnJdAJGd5Q)
+
+2.  The CSS Code
+
+|
+
+/* Complete project details: https://randomnerdtutorials.com/esp32-web-server-websocket-sliders/ */
+
+html {\
+font-family: Arial, Helvetica, sans-serif;\
+display: inline-block;\
+text-align: center;\
+background: rgb(212, 184, 184);\
+}\
+h1 {\
+font-size: 1.8rem;\
+color: black;\
+}\
+p {\
+font-size: 1.4rem;\
+}\
+.topnav {\
+overflow: hidden;\
+background-color: #374fa0;\
+}\
+body {\
+margin: 0;\
+}\
+.content {\
+padding: 30px;\
+}\
+.card-grid {\
+max-width: 700px;\
+margin: 0 auto;\
+display: grid;\
+grid-gap: 2rem;\
+grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));\
+}\
+.card {\
+background-color: rgb(216, 79, 79);\
+box-shadow: 2px 2px 12px 1px rgba(140,140,140,.5);\
+}\
+.card-title {\
+font-size: 1.2rem;\
+font-weight: bold;\
+color: #034078\
+}\
+.state {\
+font-size: 1.2rem;\
+color:#1282A2;\
+}\
+.slider {\
+-webkit-appearance: none;\
+margin: 0 auto;\
+width: 100%;\
+height: 15px;\
+border-radius: 10px;\
+background: #FFD65C;\
+outline: none;\
+}\
+.slider::-webkit-slider-thumb {\
+-webkit-appearance: none;\
+appearance: none;\
+width: 30px;\
+height: 30px;\
+border-radius: 50%;\
+background: #034078;\
+cursor: pointer;\
+}\
+.slider::-moz-range-thumb {\
+width: 30px;\
+height: 30px;\
+border-radius: 50% ;\
+background: #034078;\
+cursor: pointer;\
+}\
+.switch {\
+padding-left: 5%;\
+padding-right: 5%;\
+}
+
+ |
 
 Week 4 
 -------
