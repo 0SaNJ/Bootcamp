@@ -1,311 +1,1613 @@
 My Journey Through Bootcamp
 
+  
 
-# Who am I?
+
+  
+
+
+\# Who am I?
+
+  
+
 
 Hi everyone my name is Jay, Jay Princeton Sanmohadi. I am from Suriname, born and raised. I am currently 17 years of age. I am currently in my 2nd year of High School. VOS Welgedacht C class V504.
 
+  
+
+
 My hobbies are soccer and coding and a lil bit of games. I was always interested in the I.C.T. world and wanted to become something in that world. And last year in the month of September I stumbled upon a program called the inno-starter sponsored by Tullow-Oil and run ( managed ) by the lovely Miss Julie Sundar.
+
+  
+
 
 So I conveniently decided to sign up for I found it very helpful in my career into becoming a coder. And within a few months I managed to graduate. While I was in the inno-starter I also participated in the Hacko-topia where I did not win but I managed to impress some of the judges. And a few days later Miss Julie asked me if I would like to join another program of hers called Codettes Bootcamp where I would study various I.T. related things.
 
+  
+
+
 And now won't you join me as I embark on this journey of the Codettes Bootcamp on a day to day basis.
 
+  
 
-# Week 1 
+
+\[\*\*Who am I? \*\*\*\*1\*\*](https&#x3A;//docs.google.com/document/d/1YZYDE-LanzTTOapvP7wVPxhXV20waDSooY1OuZLtJkk/edit#heading=h.hl3qgfipcdor)
+
+  
 
 
-## Day 1 ( online )
+\[\*\*Week 1 \*\*\*\*3\*\*](https&#x3A;//docs.google.com/document/d/1YZYDE-LanzTTOapvP7wVPxhXV20waDSooY1OuZLtJkk/edit#heading=h.ospk77jkfseb)
+
+  
+
+
+\[Day 1 ( online ) 3](https&#x3A;//docs.google.com/document/d/1YZYDE-LanzTTOapvP7wVPxhXV20waDSooY1OuZLtJkk/edit#heading=h.706i2fu2m8r6)
+
+  
+
+
+\[Setup documenting environment: 3](https&#x3A;//docs.google.com/document/d/1YZYDE-LanzTTOapvP7wVPxhXV20waDSooY1OuZLtJkk/edit#heading=h.mrbdzgaa8y5q)
+
+  
+
+
+\[\*\*Week 2 \*\*\*\*6\*\*](https&#x3A;//docs.google.com/document/d/1YZYDE-LanzTTOapvP7wVPxhXV20waDSooY1OuZLtJkk/edit#heading=h.4bxn98t7equo)
+
+  
+
+
+\[Day 2 ( online ) 6](https&#x3A;//docs.google.com/document/d/1YZYDE-LanzTTOapvP7wVPxhXV20waDSooY1OuZLtJkk/edit#heading=h.qfxgsc7fh77v)
+
+  
+
+
+\[Setup esp32 environment: 6](https&#x3A;//docs.google.com/document/d/1YZYDE-LanzTTOapvP7wVPxhXV20waDSooY1OuZLtJkk/edit#heading=h.46bbl39nkntb)
+
+  
+
+
+\[First Code: 9](https&#x3A;//docs.google.com/document/d/1YZYDE-LanzTTOapvP7wVPxhXV20waDSooY1OuZLtJkk/edit#heading=h.414mskr0msd2)
+
+  
+
+
+\[\*\*Week 3 \*\*\*\*16\*\*](https&#x3A;//docs.google.com/document/d/1YZYDE-LanzTTOapvP7wVPxhXV20waDSooY1OuZLtJkk/edit#heading=h.ibxuzas8eh4k)
+
+  
+
+
+\[Day 3 ( online ) 16](https&#x3A;//docs.google.com/document/d/1YZYDE-LanzTTOapvP7wVPxhXV20waDSooY1OuZLtJkk/edit#heading=h.whhux6bjoaa8)
+
+  
+
+
+\[Multiple sliders code: 16](https&#x3A;//docs.google.com/document/d/1YZYDE-LanzTTOapvP7wVPxhXV20waDSooY1OuZLtJkk/edit#heading=h.x2wx7inbo1kr)
+
+  
+
+
+\[\*\*Week 4 \*\*\*\*29\*\*](https&#x3A;//docs.google.com/document/d/1YZYDE-LanzTTOapvP7wVPxhXV20waDSooY1OuZLtJkk/edit#heading=h.3sy6eybpzw7d)
+
+  
+
+
+\[Day 4 ( online ) 29](https&#x3A;//docs.google.com/document/d/1YZYDE-LanzTTOapvP7wVPxhXV20waDSooY1OuZLtJkk/edit#heading=h.kt7kbt4pmwnd)
+
+  
+
+
+\[DHT sensor setup: 29](https&#x3A;//docs.google.com/document/d/1YZYDE-LanzTTOapvP7wVPxhXV20waDSooY1OuZLtJkk/edit#heading=h.j3t3k4317h1y)
+
+  
+
+
+\[DHT sensor with web server: 34](https&#x3A;//docs.google.com/document/d/1YZYDE-LanzTTOapvP7wVPxhXV20waDSooY1OuZLtJkk/edit#heading=h.fe6jkrcq4xpi)
+
+  
+
+
+\[\*\*Week 5 \*\*\*\*40\*\*](https&#x3A;//docs.google.com/document/d/1YZYDE-LanzTTOapvP7wVPxhXV20waDSooY1OuZLtJkk/edit#heading=h.hru88elzdcmz)
+
+  
+
+
+\[Day 5 ( online ) 40](https&#x3A;//docs.google.com/document/d/1YZYDE-LanzTTOapvP7wVPxhXV20waDSooY1OuZLtJkk/edit#heading=h.gf85hwvhk47u)
+
+  
+
+
+\[MQTT setup: 40](https&#x3A;//docs.google.com/document/d/1YZYDE-LanzTTOapvP7wVPxhXV20waDSooY1OuZLtJkk/edit#heading=h.355dc82fwxqv)
+
+  
+
+
+\[\*\*Week 6 \*\*\*\*43\*\*](https&#x3A;//docs.google.com/document/d/1YZYDE-LanzTTOapvP7wVPxhXV20waDSooY1OuZLtJkk/edit#heading=h.3zkixkls3rkv)
+
+  
+
+
+\[Day 6 ( online ) 43](https&#x3A;//docs.google.com/document/d/1YZYDE-LanzTTOapvP7wVPxhXV20waDSooY1OuZLtJkk/edit#heading=h.311h26ahht41)
+
+  
+
+
+\[DHT and MQTT link: 43](https&#x3A;//docs.google.com/document/d/1YZYDE-LanzTTOapvP7wVPxhXV20waDSooY1OuZLtJkk/edit#heading=h.u8u15ovkos2y)
+
+  
+
+
+\[\*\*Week 7 \*\*\*\*50\*\*](https&#x3A;//docs.google.com/document/d/1YZYDE-LanzTTOapvP7wVPxhXV20waDSooY1OuZLtJkk/edit#heading=h.pt26u7ndckeq)
+
+  
+
+
+\[Day 7 ( online ) 50](https&#x3A;//docs.google.com/document/d/1YZYDE-LanzTTOapvP7wVPxhXV20waDSooY1OuZLtJkk/edit#heading=h.ek1iuud4t64r)
+
+  
+
+
+\[Node.js setup: 50](https&#x3A;//docs.google.com/document/d/1YZYDE-LanzTTOapvP7wVPxhXV20waDSooY1OuZLtJkk/edit#heading=h.fpv7dpm9w2p9)
+
+  
+
+
+\[\*\*Week 8 \*\*\*\*70\*\*](https&#x3A;//docs.google.com/document/d/1YZYDE-LanzTTOapvP7wVPxhXV20waDSooY1OuZLtJkk/edit#heading=h.8ev0ol7hepz)
+
+  
+
+
+\[Day 8 ( online ) 70](https&#x3A;//docs.google.com/document/d/1YZYDE-LanzTTOapvP7wVPxhXV20waDSooY1OuZLtJkk/edit#heading=h.fmm4j7nuhmjs)
+
+  
+
+
+\[MongoDB connection: 70](https&#x3A;//docs.google.com/document/d/1YZYDE-LanzTTOapvP7wVPxhXV20waDSooY1OuZLtJkk/edit#heading=h.vtnbk0toxzcc)
+
+  
+
+
+\[\*\*Week 9 \*\*\*\*70\*\*](https&#x3A;//docs.google.com/document/d/1YZYDE-LanzTTOapvP7wVPxhXV20waDSooY1OuZLtJkk/edit#heading=h.9m7y9htnncw)
+
+  
+
+
+\[Day 9 ( online ) 70](https&#x3A;//docs.google.com/document/d/1YZYDE-LanzTTOapvP7wVPxhXV20waDSooY1OuZLtJkk/edit#heading=h.7xfkguw8mh0n)
+
+  
+
+
+\[Live Highcharts: 70](https&#x3A;//docs.google.com/document/d/1YZYDE-LanzTTOapvP7wVPxhXV20waDSooY1OuZLtJkk/edit#heading=h.qveg1cx5x317)
+
+  
+
+
+\[\*\*Week 10 \*\*\*\*72\*\*](https&#x3A;//docs.google.com/document/d/1YZYDE-LanzTTOapvP7wVPxhXV20waDSooY1OuZLtJkk/edit#heading=h.torxfl2b4769)
+
+  
+
+
+\[Day 10 ( online ) 72](https&#x3A;//docs.google.com/document/d/1YZYDE-LanzTTOapvP7wVPxhXV20waDSooY1OuZLtJkk/edit#heading=h.82n7f06i4xlq)
+
+  
+
+
+\[Customizing our highcharts: 72](https&#x3A;//docs.google.com/document/d/1YZYDE-LanzTTOapvP7wVPxhXV20waDSooY1OuZLtJkk/edit#heading=h.trovrpvu59c)
+
+  
+
+
+\[\*\*Week 11 \*\*\*\*75\*\*](https&#x3A;//docs.google.com/document/d/1YZYDE-LanzTTOapvP7wVPxhXV20waDSooY1OuZLtJkk/edit#heading=h.jpokg5rz04ub)
+
+  
+
+
+\[Day 11 ( online ) 75](https&#x3A;//docs.google.com/document/d/1YZYDE-LanzTTOapvP7wVPxhXV20waDSooY1OuZLtJkk/edit#heading=h.qa6yj1tqw6m)
+
+  
+
+
+\[Introduction to API 75](https&#x3A;//docs.google.com/document/d/1YZYDE-LanzTTOapvP7wVPxhXV20waDSooY1OuZLtJkk/edit#heading=h.om7m5umpg0he)
+
+  
+
+
+\[\*\*Week 12 \*\*\*\*78\*\*](https&#x3A;//docs.google.com/document/d/1YZYDE-LanzTTOapvP7wVPxhXV20waDSooY1OuZLtJkk/edit#heading=h.g8gmnbrmkyl6)
+
+  
+
+
+\[Day 12 ( online ) 78](https&#x3A;//docs.google.com/document/d/1YZYDE-LanzTTOapvP7wVPxhXV20waDSooY1OuZLtJkk/edit#heading=h.8gb3fhsh9ec)
+
+  
+
+
+\[Introduction into freecad 78](https&#x3A;//docs.google.com/document/d/1YZYDE-LanzTTOapvP7wVPxhXV20waDSooY1OuZLtJkk/edit#heading=h.xjwpv0iwzhqw)
+
+  
+
+
+\[Day 13 ( lab ) 94](https&#x3A;//docs.google.com/document/d/1YZYDE-LanzTTOapvP7wVPxhXV20waDSooY1OuZLtJkk/edit#heading=h.bdpy63lllz9m)
+
+  
+
+
+\[Lesson plans 94](https&#x3A;//docs.google.com/document/d/1YZYDE-LanzTTOapvP7wVPxhXV20waDSooY1OuZLtJkk/edit#heading=h.3m4ms6t8hr6w)
+
+  
+
+
+\[Hole cutting 96](https&#x3A;//docs.google.com/document/d/1YZYDE-LanzTTOapvP7wVPxhXV20waDSooY1OuZLtJkk/edit#heading=h.h0321ofek5yg)
+
+  
+
+
+  
+
+
+\# Week 1
+
+  
+
+
+  
+
+
+\## Day 1 ( online )
+
+  
+
 
 We start the codettes bootcamp journey by learning markdown and making our documents.
 
+  
 
-### Setup documenting environment:
 
-1. First we download a markdown viewer to make changes to our documentation (<https://www.fosslinux.com/69203/install-notepad-on-ubuntu.htm> notepad++ for ubuntu )
-2. First off you want to make a git account ( <https://github.com/> )
-3. ![](https://lh3.googleusercontent.com/MSqPxl5pENASKIv3-1ci7rzgOqZAjGe8iRKyV3OcmqLrtKbHmwqxDlrWn7sUU3URMwELsyfVDwLZCXqrsB3nAMYjhltjFCxgdpqYQzB7oozsDzq3IlZ6W4LVv91rI2AoMY75dLnOyf26dRe-cW7iEVM)
-4. Download GitHub desktop on ubuntu (<https://gist.github.com/berkorbay/6feda478a00b0432d13f1fc0a50467f1>)
-5. Clone your repository in your GitHub Desktop![](https://lh3.googleusercontent.com/BYgiO5AeoNX_-MoYKBA1yGizYdSep4ZxqTJBVyr1gY57hyUEur5PJ-tLFNwrEY3QT-V2AJYb-cqKKYTucL8kTF8yAq8-AsF6MdGh3AUJa15g2UMaJ_f1GRAXgF8gRjl3bEGN4IZi0XLICTmMSFf_HoY) →![](https://lh5.googleusercontent.com/MjBqyUO5N25M2lhNZf69d-eQKibLaXJRgpIVI9P5cjZ6BJoKitfU_ECKKbLtgvUjKOLDPhvKmQ2G9MPL1BhodMab2TaEZtCPw7jKz_SAMjMkXya2E8J0AspiW4srCZ3G9mXMLMkmzWWTtAP-rr-xWD4) →![](https://lh3.googleusercontent.com/5jKD8MDTlLI4nmT_mwB2MjdOmGKAatAHKzxzirBfkweUVC2N3VVvPyz3ijnjUFP-yTZWMAWLva19UWLt12x6Shywr7TYIWRbOmh2KgVnXAcGtEtOR7833krSr55w3513nkqMVuUgVergE21dWuRG8AA)
-6. Choose the repository you want to clone ![](https://lh3.googleusercontent.com/FbVh1ftJ8uNPxnt3s1iiheAK_0eiXSfiyFY521sEOksQKCwQpvsCsGgRO8OikdohbqdQJ2IFGzAUJ6uxhfR3-eZo9f7T0uh9qCaBTXyt57S00ki2AkVPzuwAKsdfktmfV2ueMD1SU_wPQHFE9oLmHE0)
-7. Then you will get a file named “GitHub” in your documents 
-8. Then download the clone repository and put the files in your GitHub document. (<https://drive.google.com/drive/folders/1rEbBA5UYhnrQrHGsEiU3D2dWEZyIuBi2?usp=sharing> )
-9. Then you can push your files via GitHub Desktop 
-10. Now you will need to get a link to see your documentation![](https://lh6.googleusercontent.com/Jo08js-lawUSTUfdQgUmUsksGFpwqfjz5Ev56NQbjeuR8QCrkBnPIDyz-psFPNC3N-O3s1Qe4EoLKSYugnIHgikF6TMG59Z2ZMV_MgmLA4hessmDhTGbD8TB_p-u5OtJlp-mt6EsWBb55yYE3zIPvmI)
-11.  We can make changes online and offline for offline changes we will need markdown (<https://www.markdownguide.org/cheat-sheet/> a cheat sheet ). It is also possible to just do it on google docs and convert it to markdown (<https://euangoddard.github.io/clipboard2markdown/> docs to markdown converter ) we can also download an extension for notepad++ to view our markdown before we upload it ( does not work on ubuntu ) 
-12.  If we do it online we need to work in the index file and use markdown language. And if we are done we need to pull it offline via github desktop. 
+  
 
 
-# Week 2 
+\### Setup documenting environment:
 
+  
 
-## Day 2 ( online )
 
+1\. First we download a markdown viewer to make changes to our documentation (&lt;https&#x3A;//www.fosslinux.com/69203/install-notepad-on-ubuntu.htm> notepad++ for ubuntu )
 
-### Setup esp32 environment:
+2\. First off you want to make a git account ( &lt;https&#x3A;//github.com/> )
 
-1. Download Arduino IDE version 1.8.x (<https://www.arduino.cc/en/software/OldSoftwareReleases> )
-2. Setup your esp32 in the Arduino IDE ![](https://lh4.googleusercontent.com/qysa-8D2r9CtWp5gSGEDLqL4tYNoEq2eGliZm673tZWoATJqcVnbBRbqAez2JcGHo6D5gi8I3S8RuE7USK-sAbKrQuu8pIhB8RFxWcpfxiKzhSPkMJ9ElPafgvEf8CDhzkrKTFyq7rgY-bOm4-GFZaw)Paste <https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_dev_index.json> in your additional board manager in the preferences of your IDE.
-3. Download the esp32 boards in your boards manager![](https://lh3.googleusercontent.com/10L92nqvm9s-hrYhiWjNE8ILZD3Okk8BGxs4pXSjVsnlG_Swd8GTakpXyqiwlY0Rmh8LlzzfhhhOLqyRG-ztDFUppMRnNa-IUoc0VS5MXIZ2lmO-xLtczuffVJDiZjho0vNyBT5qG1Hxl5M45xp6QPk)
-4. Select your board ![](https://lh6.googleusercontent.com/vQPAkwcasUIWYEJN8ZEn2sWOOKpfkzk5rT-EmsFzOS2mw98pi6IpdboY26tKv2gZvYLvk9conr4NHqRWItveVwRbd-XbeeZAvzvzm3NjFEPFfWPHsmUvP7eUFZNKX0Nbx1R04TKha_GzYe1s9u11k1g)
+3\. !\[](https&#x3A;//lh6.googleusercontent.com/K-UZAKTt9jE68t20y95gXRYHyc56v5OVCjMsCq8DAXGP6Lrdh_ap_rVHh2BSrI6tLyXDXo5eCcitW8p7uNuY9ParYrjLvu97FaH0K7N1ZjcWQVGzz10zPghkXd948ZEp6YKJl20a6Hx9C5SQaczeWyk)
 
+4\. Download GitHub desktop on ubuntu (&lt;https&#x3A;//gist.github.com/berkorbay/6feda478a00b0432d13f1fc0a50467f1>)
 
-### First Code:
+5\. Clone your repository in your GitHub Desktop!\[](https&#x3A;//lh4.googleusercontent.com/TMrguvSQNFJka62nnFajv6HpIpa_lqETiUkCwJGrBjACn9Soj8cW8N5ckeSue8yEQyYGuGHOSy-IRA0pqSFKjtmNBC3j273g9j9zpGbuMZPqr2v8GpG8UQOqBOVdOD0lbDExMD-Y4o1mXvwJ-yGZJjY) →!\[](https&#x3A;//lh3.googleusercontent.com/vWwqDk5Y2XcLhGOHqzt9QqyaePNgrPQEhElOiN5NNA1JWZ2QUt3zMt_Gcb4pnBYtKuTaEDNjWeOQsDTztC3kVMHwvwN73j41G0ZaMLvimJaCkUgj4p5dE0dNOsd_MXXUIOjY1B-MFqVnjGtsup2yCW8) →!\[](https&#x3A;//lh6.googleusercontent.com/TLTjkjFNNM1ISqlJDrThaAqLMLWXGq4dJBRgvPl-\_SM3AOgckUEF32ox6CQR43XT_ZskIqgnbCysDROxx3K3hElwUPdfHUYkm5LxXIiOfxSeOwKBl0ODAW592J0hwWhawrjzAWUdLl3FO3trM3FY5gQ)
 
-1. Download the code and follow the instructions <https://randomnerdtutorials.com/install-esp32-filesystem-uploader-arduino-ide/> ![](https://lh4.googleusercontent.com/cz1tvGcO9pnvvuMaAlvOL4XrNq1IOOfTSR-zZjUfaxrAVqzCvBFE4kNYBF7YKvp7kKZuj4uEHcN8wAQ3C5EjacPve9wxV0MDwm8A-g7LMJnZe7T7ys0I7xmjsDvF75l0gcMgQGb8u6AdeZpoojE_Tsc)
-2. Make a folder called code like this ![](https://lh5.googleusercontent.com/w6Mubh-ZRX3wsUa_nrGmk00MKy0DW4iEScSKfmz2vpEvIuiSrl4BR3GuKpbdc3kAx4cpwhqF5QBFpIKDq2DvNbSYC18jCXzkamDwlorS_MG8m9GrJ5hx99ggfDi9Po_N7TbfapIT-pAuQOG44uPblpE)
-3. Install spiffs ( Make folder called tools and install spiffs there ) like here ![](https://lh5.googleusercontent.com/bMRUblQ8VTyNvsbPz86SXEtvQrqo09lMiclJdRpK0kabfdKmV4g6JYHNd6bouz4DHgwqtlHeUGp7hty7ZZSNmt-LL7NhoJIBjMCyamiNT16-DBS47d5gwRfrWUApJeqdQgJN7qMcspUBSsI0jukHBiI)If everything is done correctly you should see this ESP32 Sketch Data Upload![](https://lh3.googleusercontent.com/v6mCkhLS-bAf-1eSYEIUQx42_JL_i2N7qFUBAFXWxem1U42Lc_kg93ywRNNbVdpcMfrXDvbyy2RYLiG8wyMI9pIVTDOYUx0JhuULgdKRZdMYbeYVW4DExSTOcAf7mhgYCopF9k-ulpifY8gXt5W3Jhc)
-4. Open the .ino file and change your wifi credentials ![](https://lh3.googleusercontent.com/03c_DzUcHgfOe6u7E0ped8BY1RJe1mUe5WEYVg2eWUBrPfHepLU3WPkF2_CqHJxRSclD1msyAsxyA1j4iho89AgqY8_vWBR0PupafNjLODC6jkTDUG9ChVCNsIJIouVXRxbla8Gta4fcnRxtjXte5F4)
-5. C++ Code 
+6\. Choose the repository you want to clone !\[](https&#x3A;//lh3.googleusercontent.com/4Y90mHhMYPQRnliGkFhhHrzNy0cNjln6ULX9ZeiXC2BCkM20BmGnU3W4scGROBda8PFnP72nUH81pUlDssWAhniNkTmJZGoTLLoOw2gG2iHCivZcOq1lTO7VGXLma1GnAz35AtT-hEY-cXPiCrCl1GY)
 
-|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-| :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-| /\*\*\*\*\*\*\*\*\*   Rui Santos   Complete project details at https&#x3A;//randomnerdtutorials.com  \*\*\*\*\*\*\*\*\*/ // Import required libraries #include "WiFi.h" #include "ESPAsyncWebServer.h" #include "SPIFFS.h" // Replace with your network credentials const char\* ssid = "HUAWEI-2.4G-yzad"; const char\* password = "SkNH972g"; // Set LED GPIO const int ledPin = 2; // Stores LED state String ledState; // Create AsyncWebServer object on port 80 AsyncWebServer server(80); // Replaces placeholder with LED state value String processor(const String& var){   Serial.println(var);   if(var == "STATE"){     if(digitalRead(ledPin)){       ledState = "ON";     }     else{       ledState = "OFF";     }     Serial.print(ledState);     return ledState;   }   return String(); }   void setup(){   // Serial port for debugging purposes   Serial.begin(115200);   pinMode(ledPin, OUTPUT);   // Initialize SPIFFS   if(!SPIFFS.begin(true)){     Serial.println("An Error has occurred while mounting SPIFFS");     return;   }   // Connect to Wi-Fi   WiFi.begin(ssid, password);   while (WiFi.status() != WL_CONNECTED) {     delay(1000);     Serial.println("Connecting to WiFi..");   }   // Print ESP32 Local IP Address   Serial.println(WiFi.localIP());   // Route for root / web page   server.on("/", HTTP_GET, \[](AsyncWebServerRequest \*request){     request->send(SPIFFS, "/index.html", String(), false, processor);   });     // Route to load style.css file   server.on("/style.css", HTTP_GET, \[](AsyncWebServerRequest \*request){     request->send(SPIFFS, "/style.css", "text/css");   });   // Route to set GPIO to HIGH   server.on("/on", HTTP_GET, \[](AsyncWebServerRequest \*request){     digitalWrite(ledPin, HIGH);        request->send(SPIFFS, "/index.html", String(), false, processor);   });     // Route to set GPIO to LOW   server.on("/off", HTTP_GET, \[](AsyncWebServerRequest \*request){     digitalWrite(ledPin, LOW);        request->send(SPIFFS, "/index.html", String(), false, processor);   });   // Start server   server.begin(); }   void loop(){   } |
+7\. Then you will get a file named “GitHub” in your documents
 
-( [link to github code ](https://github.com/0SaNJ/codettesbootcamp_2023_code/blob/main/ESP_32_async_webserver_c%2B%2B) )
+8\. Then download the clone repository and put the files in your GitHub document. (&lt;https&#x3A;//drive.google.com/drive/folders/1rEbBA5UYhnrQrHGsEiU3D2dWEZyIuBi2?usp=sharing> )
 
-6. Upload ESP32 Sketch Data Upload if you did everything right you should see this → ![](https://lh4.googleusercontent.com/TjxNQx_6zumnOBazB6xi6B9YkQH-rptCMzQCmhGBePo_PJ3gxIhIi2cKUyfXPsTnBpDKOU2G2E0bIxAoXemTNqi3Q6oHU_uBB37pqKYnVsk6sqOmOWnVncxLmA3DKyxPnhfKUpAaw1HChNqRqZ7Egjc)
-7. The html code
+9\. Then you can push your files via GitHub Desktop
 
-|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-| :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-| &lt;!DOCTYPE html> &lt;html> &lt;head> &lt;title>ESP32 Web Server&lt;/title> &lt;meta name="viewport" content="width=device-width, initial-scale=1"> &lt;link rel="icon" href="data:,"> &lt;link rel="stylesheet" type="text/css" href="style.css"> &lt;style> html{ font-family: Helvetica; display: inline-block; margin: 0px auto; text-align: center; } h1{ color: #0F3376; padding: 2vh; } p{ font-size: 1.5rem; } .button{ display: inline-block; background-color: #008CBA; border: none; border-radius: 4px; color: white; padding: 16px 40px; text-decoration: none; font-size: 30px; margin: 2px cursor pointer; } .button2{ background-color: #f44336; } &lt;/style> &lt;/head> &lt;body> &lt;h1>ESP32 Web Server&lt;/h1> &lt;p>GPIO state: &lt;strong> %STATE%&lt;/strong>&lt;/p> &lt;p>&lt;a href="/on">&lt;button class="button">ON&lt;/button>&lt;/a>&lt;/p> &lt;p>&lt;a href="/off">&lt;button class="button button2">OFF&lt;/button>&lt;/a>&lt;/p> &lt;/body> &lt;/html> |
+10\. Now you will need to get a link to see your documentation!\[](https&#x3A;//lh5.googleusercontent.com/RDeN1_xeL2kQtu9l4gYVJR8WT0-lpXuLhHGk523GB98WDrHb5XieR8tKI-iGkfAKUa3iorOnnDAdR7s9FNivzhFHRc3jaajO3_ES4xRxj8pzRHLCbqlN_GccbYlOODeFwoWMo0DoyyNa-E5G-kkvdUQ)
 
-( [link to github code](https://github.com/0SaNJ/codettesbootcamp_2023_code/blob/main/ESP_32_async_webserver_html) )
+11\. We can make changes online and offline for offline changes we will need markdown (&lt;https&#x3A;//www.markdownguide.org/cheat-sheet/> a cheat sheet ). It is also possible to just do it on google docs and convert it to markdown (&lt;https&#x3A;//euangoddard.github.io/clipboard2markdown/> docs to markdown converter ) we can also download an extension for notepad++ to view our markdown before we upload it ( does not work on ubuntu )
 
-8. Now Upload the code and see if it works if everything is done right you should see this ![](https://lh3.googleusercontent.com/kHGSQ0JPDOHJDYC-cq3Ewp0-2WDsjw2bHfdVjHHEZ7qtvkoWZzDwOHYLZDcaef267eQaBzFXYrftHWG0FSGU1FTCJKsqAONojTIuR4C_VgFhTjxchxp4IiyxB6IItW2k80WpMI0hCPv0Fq-y1mtmcZI)and should have a led that can turn on and off via websockets like here![](https://lh3.googleusercontent.com/RY7qqSrpGZklTar6gdDe9hA3rxDuS4EF-e8eGx12nuHzojPKuRUt1h4NWOaIQMk5SGZh0GGITjRSpZtdj7CxAryQpQZ1uhD2GlWQG56aZ4YHdezOwHLO2T30nrkTHkJIIcZiE-sWTzfIJ1KLY0Jy7EM)
-9. The CSS code
+12\. If we do it online we need to work in the index file and use markdown language. And if we are done we need to pull it offline via github desktop.
 
-|                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-| :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-| html {   font-family: Helvetica;   display: inline-block;   margin: 0px auto;   text-align: center; } h1{   color: #0F3376;   padding: 2vh; } p{   font-size: 1.5rem; } .button {   display: inline-block;   background-color: #008CBA;   border: none;   border-radius: 4px;   color: white;   padding: 16px 40px;   text-decoration: none;   font-size: 30px;   margin: 2px;   cursor: pointer; } .button2 {   background-color: #f44336; } |
+  
 
 
-# Week 3
+  
 
 
-## Day 3 ( online )
+\# Week 2
 
+  
 
-### Multiple sliders code:
 
-1. First we need to download our libraries  ( <https://github.com/arduino-libraries/Arduino_JSON> ) 
-2. We make a libraries folder then put or library in there like here![](https://lh6.googleusercontent.com/ebOneerI-iERkSBpnBhMBnBLWFP2SP87xPO8lGvGA7IIekMuoeEl_N4PJiHRdJmrmv2gEkHwKP4AWJWEro6ea2TpQs7xAv4FxNLLdbHGeqQgqAAbIjtFAAswqpjaG4lgW0ZU2kmu6WtPV3GTc5XMLNo)
-3. Then we put it in our arduino libraries folder ![](https://lh5.googleusercontent.com/Az4-5waqq2FCyKGnGPd_-egQzhjTamo82DBr7Q_Xry4B1vUkSBc7FUA67UQuZ8JgEv3PDamMAkgysc6JiPN9oj69qxJlAx8asXe1vmt40QfhY2k1PPxlqs8NqzYGopFjYYThfcmdJLAsEkkN_5g0PLg)
-4. Now we download the code and follow the tutorial here ( <https://randomnerdtutorials.com/esp32-web-server-websocket-sliders/> )
-5. The C++ code 
+  
 
-|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-| :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-| /\*   Rui Santos   Complete project details at https&#x3A;//RandomNerdTutorials.com/esp32-web-server-websocket-sliders/     Permission is hereby granted, free of charge, to any person obtaining a copy   of this software and associated documentation files.     The above copyright notice and this permission notice shall be included in all   copies or substantial portions of the Software. \*/ #include &lt;Arduino.h> #include &lt;WiFi.h> #include &lt;AsyncTCP.h> #include &lt;ESPAsyncWebServer.h> #include "SPIFFS.h" #include &lt;Arduino_JSON.h> // Replace with your network credentials const char\* ssid = "HUAWEI-2.4G-yzad"; const char\* password = "SkNH972g"; // Create AsyncWebServer object on port 80 AsyncWebServer server(80); // Create a WebSocket object AsyncWebSocket ws("/ws"); // Set LED GPIO const int ledPin1 = 32; const int ledPin2 = 26; const int ledPin3 = 14; const int ledPin4 = 12; const int ledPin5 = 13; String message = ""; String sliderValue1 = "0"; String sliderValue2 = "0"; String sliderValue3 = "0"; String sliderValue4 = "0"; String sliderValue5 = "0"; int dutyCycle1; int dutyCycle2; int dutyCycle3; int dutyCycle4; int dutyCycle5; // setting PWM properties const int freq = 5000; const int ledChannel1 = 0; const int ledChannel2 = 1; const int ledChannel3 = 2; const int ledChannel4 = 3; const int ledChannel5 = 4; const int resolution = 8; //Json Variable to Hold Slider Values JSONVar sliderValues; //Get Slider Values String getSliderValues(){   sliderValues\["sliderValue1"] = String(sliderValue1);   sliderValues\["sliderValue2"] = String(sliderValue2);   sliderValues\["sliderValue3"] = String(sliderValue3);   sliderValues\["sliderValue4"] = String(sliderValue4);   sliderValues\["sliderValue5"] = String(sliderValue5);   String jsonString = JSON.stringify(sliderValues);   return jsonString; } // Initialize SPIFFS void initFS() {   if (!SPIFFS.begin()) {     Serial.println("An error has occurred while mounting SPIFFS");   }   else{    Serial.println("SPIFFS mounted successfully");   } } // Initialize WiFi void initWiFi() {   WiFi.mode(WIFI_STA);   WiFi.begin(ssid, password);   Serial.print("Connecting to WiFi ..");   while (WiFi.status() != WL_CONNECTED) {     Serial.print('.');     delay(1000);   }   Serial.println(WiFi.localIP()); } void notifyClients(String sliderValues) {   ws.textAll(sliderValues); } void handleWebSocketMessage(void \*arg, uint8_t \*data, size_t len) {   AwsFrameInfo \*info = (AwsFrameInfo\*)arg;   if (info->final && info->index == 0 && info->len == len && info->opcode == WS_TEXT) {     data\[len] = 0;     message = (char\*)data;     if (message.indexOf("1s") >= 0) {       sliderValue1 = message.substring(2);       dutyCycle1 = map(sliderValue1.toInt(), 0, 100, 0, 255);       Serial.println(dutyCycle1);       Serial.print(getSliderValues());       notifyClients(getSliderValues());     }     if (message.indexOf("2s") >= 0) {       sliderValue2 = message.substring(2);       dutyCycle2 = map(sliderValue2.toInt(), 0, 100, 0, 255);       Serial.println(dutyCycle2);       Serial.print(getSliderValues());       notifyClients(getSliderValues());     }        if (message.indexOf("3s") >= 0) {       sliderValue3 = message.substring(2);       dutyCycle3 = map(sliderValue3.toInt(), 0, 100, 0, 255);       Serial.println(dutyCycle3);       Serial.print(getSliderValues());       notifyClients(getSliderValues());     }     if (message.indexOf("4s") >= 0) {       sliderValue4 = message.substring(2);       dutyCycle4 = map(sliderValue4.toInt(), 0, 100, 0, 255);       Serial.println(dutyCycle4);       Serial.print(getSliderValues());       notifyClients(getSliderValues());     }     if (message.indexOf("5s") >= 0) {       sliderValue5 = message.substring(2);       dutyCycle5 = map(sliderValue5.toInt(), 0, 100, 0, 255);       Serial.println(dutyCycle5);       Serial.print(getSliderValues());       notifyClients(getSliderValues());     }     if (strcmp((char\*)data, "getValues") == 0) {       notifyClients(getSliderValues());     }   } } void onEvent(AsyncWebSocket \*server, AsyncWebSocketClient \*client, AwsEventType type, void \*arg, uint8_t \*data, size_t len) {   switch (type) {     case WS_EVT_CONNECT:       Serial.printf("WebSocket client #%u connected from %s\\n", client->id(), client->remoteIP().toString().c_str());       break;     case WS_EVT_DISCONNECT:       Serial.printf("WebSocket client #%u disconnected\\n", client->id());       break;     case WS_EVT_DATA:       handleWebSocketMessage(arg, data, len);       break;     case WS_EVT_PONG:     case WS_EVT_ERROR:       break;   } } void initWebSocket() {   ws.onEvent(onEvent);   server.addHandler(&ws); } void setup() {   Serial.begin(115200);   pinMode(ledPin1, OUTPUT);   pinMode(ledPin2, OUTPUT);   pinMode(ledPin3, OUTPUT);   pinMode(ledPin4, OUTPUT);   pinMode(ledPin5, OUTPUT);   initFS();   initWiFi();   // configure LED PWM functionalities   ledcSetup(ledChannel1, freq, resolution);   ledcSetup(ledChannel2, freq, resolution);   ledcSetup(ledChannel3, freq, resolution);   ledcSetup(ledChannel4, freq, resolution);   ledcSetup(ledChannel5, freq, resolution);   // attach the channel to the GPIO to be controlled   ledcAttachPin(ledPin1, ledChannel1);   ledcAttachPin(ledPin2, ledChannel2);   ledcAttachPin(ledPin3, ledChannel3);   ledcAttachPin(ledPin4, ledChannel4);   ledcAttachPin(ledPin5, ledChannel5);   initWebSocket();     // Web Server Root URL   server.on("/", HTTP_GET, \[](AsyncWebServerRequest \*request){     request->send(SPIFFS, "/index.html", "text/html");   });     server.serveStatic("/", SPIFFS, "/");   // Start server   server.begin(); } void loop() {   ledcWrite(ledChannel1, dutyCycle1);   ledcWrite(ledChannel2, dutyCycle2);   ledcWrite(ledChannel3, dutyCycle3);   ledcWrite(ledChannel4, dutyCycle4);   ledcWrite(ledChannel5, dutyCycle5);     ws.cleanupClients(); } |
 
- ( [link to github code](https://github.com/0SaNJ/codettesbootcamp_2023_code/blob/main/ESP_32_multiple_sliders_webserver_code) )
+\## Day 2 ( online )
 
-6. We repeat the process from last week and upload the spiff then the code then we should have a working web page with sliders and leds. If done right you should get something like this.
+  
 
-|   |
-| - |
-|   |
 
-|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-| :-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-| _&lt;!-- Complete project details: https&#x3A;//randtutorials.com/esp32-web-server-websocket-sliders/ -->_ &lt;!DOCTYPE html> &lt;html> &lt;head> &lt;title>ESP IOT DASHBOARD&lt;/title> &lt;meta name="viewport" content="width=device-width, initial-scale=1"> &lt;link rel="icon" type="image/png" href="favicon.png"> &lt;link rel="stylesheet" type="text/css" href="style.css"> &lt;/head> &lt;body> &lt;div class="topnav"> &lt;h1>Multiple Sliders&lt;/h1> &lt;/div> &lt;div class="content"> &lt;div class="card-grid"> &lt;div class="card"> &lt;p class="card-title">Fader 1&lt;/p> &lt;p class="switch"> &lt;input type="range" onchange="updateSliderPWM(this)" id="slider1" min="0" max="100" step="1" value ="0" class="slider"> &lt;/p> &lt;p class="state">Brightness: &lt;span id="sliderValue1">&lt;/span> &amp;percnt;&lt;/p> &lt;/div> &lt;div class="card"> &lt;p class="card-title"> Fader 2&lt;/p> &lt;p class="switch"> &lt;input type="range" onchange="updateSliderPWM(this)" id="slider2" min="0" max="100" step="1" value ="0" class="slider"> &lt;/p> &lt;p class="state">Brightness: &lt;span id="sliderValue2">&lt;/span> &amp;percnt;&lt;/p> &lt;/div> &lt;div class="card"> &lt;p class="card-title"> Fader 3&lt;/p> &lt;p class="switch"> &lt;input type="range" onchange="updateSliderPWM(this)" id="slider3" min="0" max="100" step="1" value ="0" class="slider"> &lt;/p> &lt;p class="state">Brightness: &lt;span id="sliderValue3">&lt;/span> &amp;percnt;&lt;/p> &lt;/div> &lt;div class="card"> &lt;p class="card-title"> Fader 4&lt;/p> &lt;p class="switch"> &lt;input type="range" onchange="updateSliderPWM(this)" id="slider4" min="0" max="100" step="1" value ="0" class="slider"> &lt;/p> &lt;p class="state">Brightness: &lt;span id="sliderValue4">&lt;/span> &amp;percnt;&lt;/p> &lt;/div> &lt;div class="card"> &lt;p class="card-title"> Fader 5&lt;/p> &lt;p class="switch"> &lt;input type="range" onchange="updateSliderPWM(this)" id="slider5" min="0" max="100" step="1" value ="0" class="slider"> &lt;/p> &lt;p class="state">Brightness: &lt;span id="sliderValue5">&lt;/span> &amp;percnt;&lt;/p> &lt;/div> &lt;/div> &lt;/div> &lt;script src="script.js">&lt;/script> &lt;/body> &lt;/html> |
+  
 
-( [link to github code](https://github.com/0SaNJ/codettesbootcamp_2023_code/blob/main/ESP_32_multiple_sliders_webserver_code_html) )  
-![](https://lh5.googleusercontent.com/gWQAb5mIt_7xBcOOw9MsLQGKYPQV84FOWp_2LlnvYPUkbqJ2xwX1XtWYjRsWfxC2kJnFLc9q-7iYphF8IP_yARjmN8aJSVFSKjg8N-w7T86TyISZfl_lUcssRIEMnuK1cy0_LKQKNW7XZFhfYbyEDtA)
 
-7. We can customize our webpage using css we do that by going into our index.html and configuring there ![](https://lh3.googleusercontent.com/t_9AS9A0cPzEx6vNfu1-guhBoAWMOPpfmMR3H0u9qVIgzCuph56GGdBSRK6r-2AtKunxP7a6DeUIl4ZUOEzW0n0n8IgRZbBRHcWh-HqdZLM2bCbPVeXwvt4JH2yIFFEK8vRf6GqtBPCza22E6WyGuOM)
-8. The CSS Code
+\### Setup esp32 environment:
 
-|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-| _/\* Complete project details: https&#x3A;//randomnerdtutorials.com/esp32-web-server-websocket-sliders/ \*/_ html { font-family: Arial, Helvetica, sans-serif; display: inline-block; text-align: center; background: rgb(212, 184, 184); } h1 { font-size: 1.8rem; color: black; } p { font-size: 1.4rem; } .topnav { overflow: hidden; background-color: #374fa0; } body { margin: 0; } .content { padding: 30px; } .card-grid { max-width: 700px; margin: 0 auto; display: grid; grid-gap: 2rem; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); } .card { background-color: rgb(216, 79, 79); box-shadow: 2px 2px 12px 1px rgba(140,140,140,.5); } .card-title { font-size: 1.2rem; font-weight: bold; color: #034078 } .state { font-size: 1.2rem; color:#1282A2; } .slider { -webkit-appearance: none; margin: 0 auto; width: 100%; height: 15px; border-radius: 10px; background: #FFD65C; outline: none; } .slider::-webkit-slider-thumb { -webkit-appearance: none; appearance: none; width: 30px; height: 30px; border-radius: 50%; background: #034078; cursor: pointer; } .slider::-moz-range-thumb { width: 30px; height: 30px; border-radius: 50% ; background: #034078; cursor: pointer; } .switch { padding-left: 5%; padding-right: 5%; } |
+  
 
-( [link to github code](https://github.com/0SaNJ/codettesbootcamp_2023_code/blob/main/ESP_32_multiple_sliders_webserver_code_css) )
 
+1\. Download Arduino IDE version 1.8.x (&lt;https&#x3A;//www.arduino.cc/en/software/OldSoftwareReleases> )
 
-# Week 4 
+2\. Setup your esp32 in the Arduino IDE !\[](https&#x3A;//lh4.googleusercontent.com/-x3vWyTRvF-rjlSWXCkzVv1o4WRUpH2NKAji5Y92tNO0OeI0UXLySc8QF0f8GCY1YYovpdAgVe3Pfed5bLNwK65r-xLv7GQBlelWSXNYB_6t-L9nbgk6weLRMNlpVyjEE778iQ2pFPrx4RZM0hv-2NM)Paste &lt;https&#x3A;//raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_dev_index.json> in your additional board manager in the preferences of your IDE.
 
+3\. Download the esp32 boards in your boards manager!\[](https&#x3A;//lh6.googleusercontent.com/ayVHIgAmC9lF7pILXpnH2XO0CxJLG0LcX-9nUUvqAl3ecwbiwOHdCw162gg0sTNL7D0OlmLEBLQDLSObrk05s21LvPLVIRr6YF7-toUHI2o3dkjG7VPgOnzBzGL_MhjKYU2a2ZTPiLG0-UofV6q96qo)
 
-## Day 4 ( online )
+4\. Select your board !\[](https&#x3A;//lh3.googleusercontent.com/o6rbr7ZYPEtPF4LCBy1fhCw2Mvqyie0pvkZCQRRj-O_AF9yJT1SezZbUHamSoiK5LolTnMxoG1Aw1tA93BkkQ0toFMD-cN-T0ltGnpOCArwDg4BQCsa1JNFfgX_5lgsohVo4nq48_aWVVWRiRWhsjW8)
 
+  
 
-### DHT sensor setup:
 
-1. First off we have to understand which DHT sensor we have and how we should wire them.
-2. The DHT were using is DHT 11 ![](https://lh4.googleusercontent.com/VkGcT2pqiGn311nBW3Iwjaydy7Px6GgT2Racn6hYMxe8gsLdoysUqoMp4UGLvt0TnltkqoRlVMvh8paNdDF9miJDxL3JFtLo_wPAiQSBZ-3nNmzkinSXl04asz3XWKNVFg6yWDcSb_-P9_3HG49z5BY)
-3. How to wire the DHT 11![](https://lh3.googleusercontent.com/tYG03KhK0wMhrRQK08GoMw_A8eRxp7AKOrjZkhX4EIgCljmKZmFY_FAdN5lJ6PRnqhUGw4PrdB_LP9m4xgQYx5ZowKgZ0aAV-4bWCgOU-oUyJAQSRKOm3xW2fjZhoAJaHZcPN5VMcI_RJKFjueyo34U)
-4. Then we download the required libraries to get the readings from the DHT ![](https://lh6.googleusercontent.com/2rlp4ams1oDWEwmPM15OhDfPtJDA_JICpmIOJBwTDGF6tT-F9X6knQ0L8DIiAXzilFxf0RJ7d51_-4Szut3L68b4seXj9jAMa-kI8ndM_BzsFOLFRNvWG97A9mnk0MN0nkNFgBHgY7SVawOpiJjGAmw)
-5. Now we download the Adafruit Unified Sensor library ![](https://lh6.googleusercontent.com/cUQmRtF0xQWGFNjRWWM7rIw_O_siC7HdEjdpKwCHVxUkhgJqTNnu2NAr2uGBZeThDo1NF6VEj_QTHUXwXZsz6ZRVAclvwIE619v9abkYEoz7XpQJhfGwPvHUSVoWN5alkxVEkf2DXNo8qdqXzGmHmSU)( <https://randomnerdtutorials.com/esp32-dht11-dht22-temperature-humidity-sensor-arduino-ide/> )
-6. Then we implement the code 
+  
 
-|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-| // Example testing sketch for various DHT humidity/temperature sensors written by ladyada // REQUIRES the following Arduino libraries: // - DHT Sensor Library: https&#x3A;//github.com/adafruit/DHT-sensor-library // - Adafruit Unified Sensor Lib: https&#x3A;//github.com/adafruit/Adafruit_Sensor #include "DHT.h" #define DHTPIN 4     // Digital pin connected to the DHT sensor // Feather HUZZAH ESP8266 note: use pins 3, 4, 5, 12, 13 or 14 -- // Pin 15 can work but DHT must be disconnected during program upload. // Uncomment whatever type you're using! //#define DHTTYPE DHT11   // DHT 11 #define DHTTYPE DHT22   // DHT 22  (AM2302), AM2321 //#define DHTTYPE DHT21   // DHT 21 (AM2301) // Connect pin 1 (on the left) of the sensor to +5V // NOTE: If using a board with 3.3V logic like an Arduino Due connect pin 1 // to 3.3V instead of 5V! // Connect pin 2 of the sensor to whatever your DHTPIN is // Connect pin 4 (on the right) of the sensor to GROUND // Connect a 10K resistor from pin 2 (data) to pin 1 (power) of the sensor // Initialize DHT sensor. // Note that older versions of this library took an optional third parameter to // tweak the timings for faster processors.  This parameter is no longer needed // as the current DHT reading algorithm adjusts itself to work on faster procs. DHT dht(DHTPIN, DHTTYPE); void setup() {   Serial.begin(9600);   Serial.println(F("DHTxx test!"));   dht.begin(); } void loop() {   // Wait a few seconds between measurements.   delay(2000);   // Reading temperature or humidity takes about 250 milliseconds!   // Sensor readings may also be up to 2 seconds 'old' (its a very slow sensor)   float h = dht.readHumidity();   // Read temperature as Celsius (the default)   float t = dht.readTemperature();   // Read temperature as Fahrenheit (isFahrenheit = true)   float f = dht.readTemperature(true);   // Check if any reads failed and exit early (to try again).   if (isnan(h) \|\| isnan(t) \|\| isnan(f)) {     Serial.println(F("Failed to read from DHT sensor!"));     return;   }   // Compute heat index in Fahrenheit (the default)   float hif = dht.computeHeatIndex(f, h);   // Compute heat index in Celsius (isFahreheit = false)   float hic = dht.computeHeatIndex(t, h, false);   Serial.print(F("Humidity: "));   Serial.print(h);   Serial.print(F("%  Temperature: "));   Serial.print(t);   Serial.print(F("°C "));   Serial.print(f);   Serial.print(F("°F  Heat index: "));   Serial.print(hic);   Serial.print(F("°C "));   Serial.print(hif);   Serial.println(F("°F")); } |
 
-( [link to github code](https://github.com/0SaNJ/codettesbootcamp_2023_code/blob/main/ESP_32_DHT_C%2B%2B) )
+\### First Code:
 
-7. If everything is done right you should get something like this in your serial monitor  
-   ![](https://lh4.googleusercontent.com/PROQHgCJf2kYX5i5PcW7BypT8sQN8ux8G-gHlr7tBjcjW1fyRC7c8QrE3kdC4CSqNaUpZZVDblyWjatW0nWpwczcFvbOJierQ3KV8F2kGtxLiv60lZ9xrCQhJTqQUYp1vU1LP3sbUW7geMj1ASXNBuM)
+  
 
 
-### DHT sensor with web server:
+1\. Download the code and follow the instructions &lt;https&#x3A;//randomnerdtutorials.com/install-esp32-filesystem-uploader-arduino-ide/> !\[](https&#x3A;//lh5.googleusercontent.com/0Aqp-obn3xJmx2aC49EyAhvq5ad3l8OU2b\_-A6LPMO-8zFkIqN2zuGAqlP7m59Aah3C-9MAd0AZN4kP3KtafMCjPYDZoqm84XikPx1umOz_qSr1wQVmzjBT5BBVqR8xDnE1kCWcASwxpl9e1nmBpwnQ)
 
-1. First off we make a new ino file and import this C++ code ( you can follow this link <https://randomnerdtutorials.com/esp32-dht11-dht22-temperature-humidity-web-server-arduino-ide/> ) 
-2. The C++ code 
+2\. Make a folder called code like this !\[](https&#x3A;//lh3.googleusercontent.com/-8IIl23qk3m-82vJ3B0XTo-lSjq2DKgZsP7lWtm3WoiZqqgfXQHhUrX69ydELuDWc7SE_d2Fp3_hOa5c7LbRhd8KGFqADv7oP7b7lVo07CCvzvAIMKRPDinVR_bJFYmXqzbsJcYJfuLk8rk1qnY78tM)
 
-|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| :-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-| /\*\*\*\*\*\*\*\*\*   Rui Santos   Complete project details at https&#x3A;//randomnerdtutorials.com  \*\*\*\*\*\*\*\*\*/ // Import required libraries #include "WiFi.h" #include "ESPAsyncWebServer.h" #include &lt;Adafruit_Sensor.h> #include &lt;DHT.h> // Replace with your network credentials const char\* ssid = "REPLACE_WITH_YOUR_SSID"; const char\* password = "REPLACE_WITH_YOUR_PASSWORD"; #define DHTPIN 27     // Digital pin connected to the DHT sensor // Uncomment the type of sensor in use: //#define DHTTYPE    DHT11     // DHT 11 #define DHTTYPE    DHT22     // DHT 22 (AM2302) //#define DHTTYPE    DHT21     // DHT 21 (AM2301) DHT dht(DHTPIN, DHTTYPE); // Create AsyncWebServer object on port 80 AsyncWebServer server(80); String readDHTTemperature() {   // Sensor readings may also be up to 2 seconds 'old' (its a very slow sensor)   // Read temperature as Celsius (the default)   float t = dht.readTemperature();   // Read temperature as Fahrenheit (isFahrenheit = true)   //float t = dht.readTemperature(true);   // Check if any reads failed and exit early (to try again).   if (isnan(t)) {         Serial.println("Failed to read from DHT sensor!");     return "--";   }   else {     Serial.println(t);     return String(t);   } } String readDHTHumidity() {   // Sensor readings may also be up to 2 seconds 'old' (its a very slow sensor)   float h = dht.readHumidity();   if (isnan(h)) {     Serial.println("Failed to read from DHT sensor!");     return "--";   }   else {     Serial.println(h);     return String(h);   } } const char index_html\[] PROGMEM = R"rawliteral( &lt;!DOCTYPE HTML>&lt;html> &lt;head>   &lt;meta name="viewport" content="width=device-width, initial-scale=1">   &lt;link rel="stylesheet" href="https&#x3A;//use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">   &lt;style>     html {      font-family: Arial;      display: inline-block;      margin: 0px auto;      text-align: center;     }     h2 { font-size: 3.0rem; }     p { font-size: 3.0rem; }     .units { font-size: 1.2rem; }     .dht-labels{       font-size: 1.5rem;       vertical-align:middle;       padding-bottom: 15px;     }   &lt;/style> &lt;/head> &lt;body>   &lt;h2>ESP32 DHT Server&lt;/h2>   &lt;p>     &lt;i class="fas fa-thermometer-half" style="color:#059e8a;">&lt;/i>     &lt;span class="dht-labels">Temperature&lt;/span>     &lt;span id="temperature">%TEMPERATURE%&lt;/span>     &lt;sup class="units">&amp;deg;C&lt;/sup>   &lt;/p>   &lt;p>     &lt;i class="fas fa-tint" style="color:#00add6;">&lt;/i>     &lt;span class="dht-labels">Humidity&lt;/span>     &lt;span id="humidity">%HUMIDITY%&lt;/span>     &lt;sup class="units">&amp;percnt;&lt;/sup>   &lt;/p> &lt;/body> &lt;script> setInterval(function ( ) {   var xhttp = new XMLHttpRequest();   xhttp.onreadystatechange = function() {     if (this.readyState == 4 && this.status == 200) {       document.getElementById("temperature").innerHTML = this.responseText;     }   };   xhttp.open("GET", "/temperature", true);   xhttp.send(); }, 10000 ) ; setInterval(function ( ) {   var xhttp = new XMLHttpRequest();   xhttp.onreadystatechange = function() {     if (this.readyState == 4 && this.status == 200) {       document.getElementById("humidity").innerHTML = this.responseText;     }   };   xhttp.open("GET", "/humidity", true);   xhttp.send(); }, 10000 ) ; &lt;/script> &lt;/html>)rawliteral"; // Replaces placeholder with DHT values String processor(const String& var){   //Serial.println(var);   if(var == "TEMPERATURE"){     return readDHTTemperature();   }   else if(var == "HUMIDITY"){     return readDHTHumidity();   }   return String(); } void setup(){   // Serial port for debugging purposes   Serial.begin(115200);   dht.begin();     // Connect to Wi-Fi   WiFi.begin(ssid, password);   while (WiFi.status() != WL_CONNECTED) {     delay(1000);     Serial.println("Connecting to WiFi..");   }   // Print ESP32 Local IP Address   Serial.println(WiFi.localIP());   // Route for root / web page   server.on("/", HTTP_GET, \[](AsyncWebServerRequest \*request){     request->send_P(200, "text/html", index_html, processor);   });   server.on("/temperature", HTTP_GET, \[](AsyncWebServerRequest \*request){     request->send_P(200, "text/plain", readDHTTemperature().c_str());   });   server.on("/humidity", HTTP_GET, \[](AsyncWebServerRequest \*request){     request->send_P(200, "text/plain", readDHTHumidity().c_str());   });   // Start server   server.begin(); }   void loop(){   } |
+3\. Install spiffs ( Make folder called tools and install spiffs there ) like here !\[](https&#x3A;//lh4.googleusercontent.com/jUJPeUjY-aDIPlWLdjbCVsV8cb4mA5DiQch0M5pd1VqD0wlgsTM6jifXVq_eFKoqgANh9_rZMNYSAqa1oCE-VMUEfIagK7I8KxdhjBAVJT-mD588R0qQoj59pw5BJplYBwiNnx_erxxz5k5O_Hi3Ozo)If everything is done correctly you should see this ESP32 Sketch Data Upload!\[](https&#x3A;//lh5.googleusercontent.com/WTb-O3COREfNgxU430O9to3q8XiKuvhzC01_a6K3v6pKUXvGSGHNIZqLQfuPCdwwu2lwwUCIiVr3sIGxshO-1O-0KCFkfY0I-dVWPD_nby1WEsP6g1ArNTcgIeoGwDq2F60JpFy1TB9rhGelpqPx2GI)
 
-( [link to github code](https://github.com/0SaNJ/codettesbootcamp_2023_code/blob/main/ESP_32_DHT_webserver_C%2B%2B) )
+4\. Open the .ino file and change your wifi credentials !\[](https&#x3A;//lh4.googleusercontent.com/\_UX1QQfO0hRZaczuMsYKzN_bQwl5OX7ZUAwE1NzEqkenBHBlIzumizpcKSdiz73jeJTuVxGTbmyvOYLQpZ88wR2G9R6sD8jxEleNcmWzNtRIBo54ZSFJxwDSg3AX_UnIoWbmlues1xpkGedhDzIFHkM)
 
-3. Then we upload spiffs 
-4. Then we should get this on your page if everything is done correctly ![](https://lh5.googleusercontent.com/ErFjtQXjPMPxRIOc23KLbepuVG2J8hcCQP2NECvzwcF-yiKw5adFuTlB0AsSlVUELEaTBEO8OrSa6iCZuZCOO9zVVNKF-ilaV5pGdyRTDFLU87Oc-Yi35xBZ4WyuNAxXn8j2V9aiAz-8hdZUe77pXl0)
+5\. C++ Code
 
+  
 
-# Week 5
 
+\| \|
 
-## Day 5 ( online )
+\| :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: \|
 
+| /\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\* Rui Santos Complete project details at https&amp;#x3A;//randomnerdtutorials.com \\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*/ // Import required libraries #include "WiFi.h" #include "ESPAsyncWebServer.h" #include "SPIFFS.h" // Replace with your network credentials const char\\\* ssid = "HUAWEI-2.4G-yzad"; const char\\\* password = "SkNH972g"; // Set LED GPIO const int ledPin = 2; // Stores LED state String ledState; // Create AsyncWebServer object on port 80 AsyncWebServer server(80); // Replaces placeholder with LED state value String processor(const String& var){ Serial.println(var); if(var == "STATE"){ if(digitalRead(ledPin)){ ledState = "ON"; } else{ ledState = "OFF"; } Serial.print(ledState); return ledState; } return String(); } void setup(){ // Serial port for debugging purposes Serial.begin(115200); pinMode(ledPin, OUTPUT); // Initialize SPIFFS if(!SPIFFS.begin(true)){ Serial.println("An Error has occurred while mounting SPIFFS"); return; } // Connect to Wi-Fi WiFi.begin(ssid, password); while (WiFi.status() != WL_CONNECTED) { delay(1000); Serial.println("Connecting to WiFi.."); } // Print ESP32 Local IP Address Serial.println(WiFi.localIP()); // Route for root / web page server.on("/", HTTP_GET, \\\[](AsyncWebServerRequest \\\*request){ request->send(SPIFFS, "/index.html", String(), false, processor); }); // Route to load style.css file server.on("/style.css", HTTP_GET, \\\[](AsyncWebServerRequest \\\*request){ request->send(SPIFFS, "/style.css", "text/css"); }); // Route to set GPIO to HIGH server.on("/on", HTTP_GET, \\\[](AsyncWebServerRequest \\\*request){ digitalWrite(ledPin, HIGH); request->send(SPIFFS, "/index.html", String(), false, processor); }); // Route to set GPIO to LOW server.on("/off", HTTP_GET, \\\[](AsyncWebServerRequest \\\*request){ digitalWrite(ledPin, LOW); request->send(SPIFFS, "/index.html", String(), false, processor); }); // Start server server.begin(); } void loop(){ } |
 
-### MQTT setup:
+  
 
-1. First off we download MQTT lens ( <https://chrome.google.com/webstore/detail/mqttlens/hemojaaeigabkbcookmlgmdigohjobjm> )
-2. We need to understand the connection that takes place when sending and parsing data via MQTT, here: ![](https://lh5.googleusercontent.com/-biheUU5W1uQqgIgNflFNqNzlwzXtTtB6AL2MuUWbazXJv3fPgrTZzXywdaqB5LUZlMilz70j4Ces_-AK9c5nO_2g4266O3sSyKjNlajNHjEvhaJmhiBxNrUO1IqA9SKXFyuzf-97te8mH5gU46gtDI)
-3. For explanation we can follow this link ( <https://techtutorialsx.com/2017/04/24/esp32-publishing-messages-to-mqtt-topic/> )
-4. The C++ code 
 
-|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| :-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-| \#include &lt;WiFi.h> #include &lt;PubSubClient.h>   const char\* ssid = "HUAWEI-2.4G-yzad"; const char\* password =  "SkNH972g"; const char\* mqttServer = "broker.hivemq.com"; const int mqttPort = 1883; const char\* mqttUser = ""; const char\* mqttPassword = "";   WiFiClient espClient; PubSubClient client(espClient);   void setup() {     Serial.begin(115200);   WiFi.begin(ssid, password);     while (WiFi.status() != WL_CONNECTED) {     delay(500);     Serial.println("Connecting to WiFi..");   }     Serial.println("Connected to the WiFi network");     client.setServer(mqttServer, mqttPort);     while (!client.connected()) {     Serial.println("Connecting to MQTT...");       if (client.connect("ESP32Client", mqttUser, mqttPassword )) {         Serial.println("connected");       } else {         Serial.print("failed with state ");       Serial.print(client.state());       delay(2000);       }   }     client.publish("jay/sanmohadi", "Hello from ESP32");   }   void loop() {   client.loop(); } |
+( \[link to github code ](https&#x3A;//github.com/0SaNJ/codettesbootcamp_2023_code/blob/main/ESP_32_async_webserver_c%2B%2B) )
 
-( [link to github code](https://github.com/0SaNJ/codettesbootcamp_2023_code/blob/main/ESP_32_DHT_MQTT_link_c%2B%2B) )
+  
 
-5. Then we proceed to make some changes to the code such as ![](https://lh3.googleusercontent.com/9lTwLqJO_z4nMGj0j4KkMVWvyfYz_4DpZa4jRw6bTEAr28iQyIRAhmD-dc2Gku0S8f4lZ0mlr3xTFvQGg0h4MtuN_bfEjyxcx0b0VGd2gTtXVQqlsYxkzk2xz8e4JpIDHeY0Pemjf8LGd4JQxibDd9M)
-6. Then we go to MQTT lens we change our host name and our port like shown![](https://lh4.googleusercontent.com/sX2jiPqYknl0Ln_xXS6UhdW8-6MT_reuAAA2ipOipqzrkUGhjKRZ8YHwLac3HGZtP9R6Om4lYTjGe9dzuVujiRZIpKBaia0ZI1JD1RA_QfZt4jpvD1Uhdoz8Mpz0x5WC0V9i0jUf6iGZ82-oAroPsTQ)
-7. Then you should get a message here ![](https://lh6.googleusercontent.com/rjOOK6lwRbHHITTD-iudvxqrVP04XoLLJoKhBJ0u8H7nAPDGtD6KrtsahAri_7haBu6f9W5ixfafTwRBfLCFmkbFMPM5KwQKWtQMFAxsOotiMGXGWpf22YMrl-t1w79n84R0ACkHyg_HYZmGriorHF8)
 
+6\. Upload ESP32 Sketch Data Upload if you did everything right you should see this → !\[](https&#x3A;//lh6.googleusercontent.com/bC5gSrHyDf9M5LCMiXpdUa6IL_PUq8cgFFZl_8qjWRP5xHdojUn1Xr9VrwJZbaRlhfupPcMk1Vyvc3FkrJf4fyf2qwEczFH0CNn7Jj6fQGRP18ic_nYPrz0gXWjov5azUPYhfMiL4qolwRD3gH8qO5Q)
 
-# Week 6 
+7\. The html code
 
+  
 
-## Day 6 ( online )
 
+\| \|
 
-### DHT and MQTT link:
+\| :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: \|
 
-1. Today we are going to send our DHT data over via MQTT. First off we're are going to download the code from here and change our credentials ( Wifi SSID etc ) ( <https://docs.google.com/document/d/1gPfp3f9jbAcFxe7KjdTmtqzEG3QMySqYnl7Sw4jvW3E/edit> ) 
-2. The C++ code 
+| &amp;lt;!DOCTYPE html> &amp;lt;html> &amp;lt;head> &amp;lt;title>ESP32 Web Server&amp;lt;/title> &amp;lt;meta name="viewport" content="width=device-width, initial-scale=1"> &amp;lt;link rel="icon" href="data:,"> &amp;lt;link rel="stylesheet" type="text/css" href="style.css"> &amp;lt;style> html{ font-family: Helvetica; display: inline-block; margin: 0px auto; text-align: center; } h1{ color: #0F3376; padding: 2vh; } p{ font-size: 1.5rem; } .button{ display: inline-block; background-color: #008CBA; border: none; border-radius: 4px; color: white; padding: 16px 40px; text-decoration: none; font-size: 30px; margin: 2px cursor pointer; } .button2{ background-color: #f44336; } &amp;lt;/style> &amp;lt;/head> &amp;lt;body> &amp;lt;h1>ESP32 Web Server&amp;lt;/h1> &amp;lt;p>GPIO state: &amp;lt;strong> %STATE%&amp;lt;/strong>&amp;lt;/p> &amp;lt;p>&amp;lt;a href="/on">&amp;lt;button class="button">ON&amp;lt;/button>&amp;lt;/a>&amp;lt;/p> &amp;lt;p>&amp;lt;a href="/off">&amp;lt;button class="button button2">OFF&amp;lt;/button>&amp;lt;/a>&amp;lt;/p> &amp;lt;/body> &amp;lt;/html> |
 
-|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-| /\*\*\*\*\*\*\*\*\*   Rui Santos   Complete project details at https&#x3A;//randomnerdtutorials.com  \*\*\*\*\*\*\*\*\*/ #include &lt;WiFi.h> #include &lt;ESPAsyncWebServer.h> #include &lt;SPIFFS.h> #include &lt;Wire.h> #include &lt;Adafruit_Sensor.h> #include &lt;PubSubClient.h> #include "DHT.h" // Replace the next variables with your SSID/Password combination const char\* ssid = "HUAWEI-2.4G-yzad"; const char\* password = "SkNH972g"; // Add your MQTT Broker IP address, example: //const char\* mqtt_server = "192.168.1.144"; const char\* mqtt_server = "broker.hivemq.com"; WiFiClient espClient; PubSubClient client(espClient); long lastMsg = 0; char msg\[50]; int value = 0; #define DHTPIN 4 #define DHTTYPE DHT11 DHT dht(DHTPIN, DHTTYPE); const int ledPin = 2; float temperature = 0; float humidity = 0; AsyncWebServer server(80); String readDHTTemperature() {   // Read temperature as Celsius (the default)   float t = dht.readTemperature();   // Convert temperature to Fahrenheit   //t = 1.8 \* t + 32;   if (isnan(t)) {         Serial.println("Failed to read from DHT sensor!");     return "";   }   else {     Serial.println(t);     return String(t);   } } String readDHTHumidity() {   float h = dht.readHumidity();   if (isnan(h)) {     Serial.println("Failed to read from DHT sensor!");     return "";   }   else {     Serial.println(h);     return String(h);   } } void setup() {   Serial.begin(115200);   // default settings   // (you can also pass in a Wire library object like &Wire2)   //status = bme.begin();   setup_wifi();   client.setServer(mqtt_server, 1883);   client.setCallback(callback);   Serial.println(F("DHTxx test!"));   pinMode(ledPin,OUTPUT);   dht.begin();   // Initialize SPIFFS   if(!SPIFFS.begin()){     Serial.println("An Error has occurred while mounting SPIFFS");     return;   } } void setup_wifi() {  // Connect to Wi-Fi   WiFi.begin(ssid, password);   WiFi.setSleep(false);   while (WiFi.status() != WL_CONNECTED) {     delay(1000);     Serial.println("Connecting to WiFi..");   } // Print ESP32 Local IP Address   Serial.println(WiFi.localIP()); // Route for root / web page   server.on("/", HTTP_GET, \[](AsyncWebServerRequest \*request){     request->send(SPIFFS, "/index.html");   });   server.on("/temperature", HTTP_GET, \[](AsyncWebServerRequest   \*request){     request->send_P(200, "text/plain", readDHTTemperature().c_str());   });   server.on("/humidity", HTTP_GET, \[](AsyncWebServerRequest \*request){     request->send_P(200, "text/plain", readDHTHumidity().c_str());   }); // Start server   server.begin(); } void callback(char\* topic, byte\* message, unsigned int length) {   Serial.print("Message arrived on topic: ");   Serial.print(topic);   Serial.print(". Message: ");   String messageTemp;     for (int i = 0; i &lt; length; i++) {     Serial.print((char)message\[i]);     messageTemp += (char)message\[i];   }   Serial.println();   // Feel free to add more if statements to control more GPIOs with MQTT   // If a message is received on the topic esp32/output, you check if the message is either "on" or "off".   // Changes the output state according to the message   if (String(topic) == "jay/sanmohadi/output") {     Serial.print("Changing output to ");     if(messageTemp == "on"){       Serial.println("on");       digitalWrite(ledPin, HIGH);     }     else if(messageTemp == "off"){       Serial.println("off");       digitalWrite(ledPin, LOW);     }   } } void reconnect() {   // Loop until we're reconnected   while (!client.connected()) {     Serial.print("Attempting MQTT connection...");     // Attempt to connect     if (client.connect("ESP32Client")) {       Serial.println("connected");       // Subscribe       client.subscribe("jay/sanmohadi/output");     } else {       Serial.print("failed, rc=");       Serial.print(client.state());       Serial.println(" try again in 5 seconds");       // Wait 5 seconds before retrying       delay(5000);     }   } } void loop() {   if (!client.connected()) {     reconnect();   }   client.loop();   long now = millis();   if (now - lastMsg > 5000) {     lastMsg = now;         // Temperature in Celsius     temperature = dht.readTemperature();       // Uncomment the next line to set temperature in Fahrenheit     // (and comment the previous temperature line)     //temperature = 1.8 \* bme.readTemperature() + 32; // Temperature in Fahrenheit         // Convert the value to a char array     char tempString\[8];     dtostrf(temperature, 1, 2, tempString);     Serial.print("Temperature: ");     Serial.println(tempString);     client.publish("jay/sanmohadi/reading/temperature", tempString);     humidity = dht.readHumidity();         // Convert the value to a char array     char humString\[8];     dtostrf(humidity, 1, 2, humString);     Serial.print("Humidity: ");     Serial.println(humString);     client.publish("jay/sanmohadi/reading/humidity", humString);     delay(2000);   } } |
+  
 
-3. Then we upload the spiffs then the code and we should get a reading like shown ![](https://lh6.googleusercontent.com/2KtO51xRSV8GGnfU0mDbjj49frYyQJncql4Ue3g-yAvffmBh_8e1QDeGnOFEs3DQMTn7cJuvpOqicqrYjVqZoVbbulv5RUFD70TC7RX8pguVWQPycmXWs2jbFZxn_KZf6u29iYUx-DESVPoeIg_mOH0)
-4. For the webpage you should get something like this ![](https://lh5.googleusercontent.com/JiR9Vh580EAggfvW2xUMJmPfFlWKleD2ipeiHnF6WqJqNaqN1vAM1eY55tBkCfAkP334y775qTuxV3bur-EoHK4n-39V9zWUjB1l62jU5Q6vawDF2oAVT1sIGYVwxGwp0grFyuBs5oIsJWoFoWbC4lU)As time goes on the web page will make a graph
 
+( \[link to github code](https&#x3A;//github.com/0SaNJ/codettesbootcamp_2023_code/blob/main/ESP_32_async_webserver_html) )
 
-# Week 7
+  
 
 
-## Day 7 ( online )
+8\. Now Upload the code and see if it works if everything is done right you should see this !\[](https&#x3A;//lh6.googleusercontent.com/r_vkL8hQH9WtSpspO_qCfP6atGWx4gXv3jMyKv1Jjg00UQe3IJ647EQI-0SB6hONjLkXaybHOJRhIfzjwJHvY6ZzHGQemuriUa3OPfL-U6r-7pNIjL2razi0c64hkABcSz9a4DCC8hxZ049lAYpc_Ik)and should have a led that can turn on and off via websockets like here!\[](https&#x3A;//lh5.googleusercontent.com/bfzzpFGkuBS0jhiNzyvLwZvrb8tS0OOKoiysL7siLcAWlLeIsTDS3yzntoiLBQYDPFT5fRXz58Lvx7Df0gqsYEU-S3uCDaPOqPzDeHicRBQaPoWqyM9xA80AFuUFUkA287ddVoEnYiPR8l1--RoUn0E)
 
+9\. The CSS code
 
-### Node.js setup:
+  
 
-1. Today we’re going to set up our node.js environment. First off we have to download node.js you can follow this tutorial on how install node.js on ubuntu ( <https://www.knowledgehut.com/blog/web-development/install-nodejs-on-ubuntu> ) 
-2. Then we use nvm to install node.js version 16.0.0 like here ![](https://lh6.googleusercontent.com/ov5MQ_pbFxRS7rNaPjAIwP5o8GPjIhhBWvXcHs0U4jUEiFAK7w9Jm2O4Sa9wauI9k22DmchVzkkuuCrq1ToDcYghKLqDUZ1FmO73ecSDikoOI-vqtBUSZd1hGLe0pPMyK0ukJ6EFivsfIQiLBbyPj14)
-3. Then we download the code and customize it. The code can be found here ( <https://drive.google.com/drive/folders/1rq81PdjlsMFowDBo4Yq6Y9wfd-yVzd25?usp=sharing> )
-4.  Now we are going to download Mosquitto. The download link can be found here ( <https://mosquitto.org/download/> ) 
-5. Were also going to download MongoDB Compas ( <https://www.mongodb.com/try/download/compass> )
-6. We’re going to make a folder called nodejs  
-   ![](https://lh6.googleusercontent.com/lRC4EZ5HedokxSBzWhsGlYUeFuDRAipwz5JSD3w2I3IxKKJ8k4skIl5jDeqYP1OwGnZE5Dl0ev-xL8mhSABPoEJZXhsNU0y2AEDNWy9xNXO2JvwP55-9SQlsCcdPtRgktXDSR8EYarNxaXhTRZTDSpQ)then we go to projects → ![](https://lh5.googleusercontent.com/4mi3DgfTo1wITlFawMwkfxEvgMmHvSwiVq-467ZNxqGDrV1gf53-5PNCwd4DkUkX2NYAGmX6DkxV57VPXOXtbuvnlLxSkaCa50Zp6ZAYkFlj8NAYrVE577jINQSBgwk1NT_Wj35yPY-Lcfm_oDcbpR8)then we make a folder called mongostack →![](https://lh4.googleusercontent.com/NEdvepP_15iB_zae74oxRvjlr5UIavE-UnKtEpNB7miZLoamXNChGcRf6AxbhgUerobVqLpFFesyBi8gEzA-b9W6-7RuXBmKJrJ9AQGLYMJ7tqX9RZLlJ6KTjUELadsZliWL4PYuV0MIA1F2HrSBHgM) and in that folder we put our app.js and public folder→ ![](https://lh3.googleusercontent.com/CXDOGy5Ii0n1JeckLy3LfOJR2z3Ywf0b_UB5an1-FiMQboZKtn1dIMNl30lTAGM83wUVoCzbYP1seffvZ8VKzM35EocDl89uuak5UCZMZGOuqvaB5oyq5yg-V-uFTQosmrURHTjznec9Z5XF6DIJcbU)then in that public folder we will have these files →![](https://lh5.googleusercontent.com/zQ5r2pycPm1mlfHjeieKkWMeGPs8zsHzj6h3JeGXwIkB79t1Gi9XpK9T8tNsj-5TXAP6_VofH4B8V_PlcoVfNIGjg6t0QCZg10BfhQzcPpw_KGWOGrAdk45w55Ybxn68RCU5sPJAhk-j7aaphn7voEQ)
-7. Now we open up the app.js file and make some changes to it  
-   ![](https://lh6.googleusercontent.com/SBi4OM1kjmcGP9nQEnLVpqCn2cV7rsWNV6u4CfJnhWm3IcgkfWEsi0diVSpwuAU9m3qYDhJEQ5g6cmvTWrgewmVYusgOgpLm-sUUK_9tJ2MdlYQMlrc2dmtymx65BCS0lR9r3Yv1MQTFD4GGjYsFuEs)
-8. The .js code
 
-|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-| var MongoClient = require('mongodb').MongoClient; var url = "mongodb://localhost:27017/";  // "mongodb://localhost:27017/iotstack"; var express = require('express'); var app = express(); //Server Variables var host = process.env.IP \|\| 'localhost'; var port = process.env.PORT \|\| 9000; var staticSite = \_\_dirname + '/public'; var mqtt = require('mqtt') var client  = mqtt.connect(\[{host:'localhost',port:'1883'}]) //var client  = mqtt.connect(\[{host:'broker.hivemq.com',port:'1883'}]) //  console.log("Nodejs Server Started!");   // on mqtt conect subscribe on tobic test client.on('connect', function () {   client.subscribe('jaysanmo/codettes/01', function (err) {  console.log("sub scribing to test topic");       if(err)       console.log(err)   }) })  //when recive message  client.on('message', function (topic, message) {   json_check(message) }) //check if data json or not function json_check(data) {     try {        // JSON.parse(data);  msg = JSON.parse(data.toString()); // t is JSON so handle it how u want     } catch (e) { console.log("message could not valid json " + data.toString);         return false;     }  console.log(msg);  var msgobj = { "msg": msg }; // message object     Mongo_insert(msgobj) console.log(msgobj); } //insert data in mongodb function Mongo_insert(msg){ MongoClient.connect(url, function(err, db ) {     if (err) throw err;     var dbo = db.db("cb");     dbo.collection("class").insertOne(msg, function(err, res) {       if (err) throw err;    console.log("data stored");       //db.close();     });   }); } // ENABLE CORS for Express (so swagger.io and external sites can use it remotely .. SECURE IT LATER!!) app.use(function(req, res, next) {   res.header("Access-Control-Allow-Origin", "\*");   res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");   next(); }); // ROUTES FOR OUR API // ============================================================================= var router = express.Router();              // get an instance of the express Router app.use('/', express.static(staticSite)); // Use router for all /api requests if (! process.env.C9_PID) {     console.log('Running at http&#x3A;//'+ host +':' + port); } app.listen(port, function() { console.log('Listening')}); |
+\| \|
 
-( [link to github code](https://github.com/0SaNJ/codettesbootcamp_2023_code/blob/main/ESP_32_DHT_MQTT_MongDb_Node.js_Mosquitto_link_app.js_code) )
+\| :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: \|
 
-9. Then we go to our command console and go to the mongostack folder and download all the necessary files 
-10. First is express ![](https://lh3.googleusercontent.com/gUM5t9_Bwu3rKwlncNRPo5FBN1vRCdkB5W2Op5WkA7SmMwPeu6c0m2z9_Pw3wjSj5K4j320egkrb26Qo4cgVxIaQF9Hv2lx8rk6rWcRJ6Vegxhw9lOPvODnkKM6v1HhBGTIVUYuAjC76btJf0KFcEac)
-11. Then MQTT ![](https://lh5.googleusercontent.com/Vw9fmE_xQeuhxRyHwnBU3oEtSN6TjwPZ1TSVgYNPc4KZPyZDeOS4QVAudKUXj95tdfOXltJ0Yady-yWVJrq-sMOlvz6xOBeDkageBVUfDBYoLpVK8drxH-YTSYzTAEEZFkguzKhtPRM4E-t1pClmItU)
-12. Then we open a different console where we search for our ip and we check our ip on ubuntu by using this command ![](https://lh5.googleusercontent.com/Rb1tx2TOhnxs88XWle8fXCkak1p6hoLFtKp-XAAZFXFGy-y5zNeN-ycu9izEdCDOYoTz7T2C1JIafQ_jS85GNlV7oB3qjXgshNM6ldGJdz-XoMj3vweyIYlIEoIKksf9MAh7MEPMtBMvvSAq5Wzp0Pk)
-13. Then we find our ip here ![](https://lh3.googleusercontent.com/us2rsQVB3qqDlz7n5MSdxj_etyehG_hY91lQw2uljvK6CgTvpfo9Zl81gGjTBpGeVTkdJG0y-suJSF81HIl3U0uyZC-rC6BSNAvnP00x5bVdEx1tS9m0I77YMDJdpUitvRQmYVMugIIZNRDcBnmoLg0)
-14.  Now we go to our mosquitto folder and put a test.conf file in there ![](https://lh3.googleusercontent.com/iiWtIonqRoc_KM26n8L0jrNgZjR_H_y08qJG0v5FY2mUK-Gh4aRDYEaFOLE7njRC3KU5u6peRzzUR2hII7AcePxq0RC7i417IprzSIC-VddGel9v0DRP2L7nIVoKzQmWLH_m19K3MBzUUZjbWrq3rlg)
-15.  In the test.conf we put this ![](https://lh6.googleusercontent.com/5tqIazt4jAFJl8jLI1saZ-ALYooj6s3x6AMh1dNRcL4npz-oVicuS_gggomUgWKmKXcmVgYLswMHee8YJGy1b5p38L_ZwFEZZ7aOXGt_lr6AYLCSzvnY4wv8JSBPH_YMYGX0g46165tvByT2_940yOo)
-16.  Now we open up a new terminal and path to mosquitto. Then we do  
-    “mosquitto -v -c test.conf” like here ![](https://lh5.googleusercontent.com/nFXK_bhYwIklG3UmRmXlITzANEfFo1nEesRUO07gOAMSEy5Ehsd9SI6lVHieIjmpVBOTf4aPcTfJ6J-lPHSDJy3JnL8d8CZxWUMPNEeWUjJCXYM8b-9wWj_i2p4Lup-3LQ_bIoesyDYPhchIL7kp_aM)but here there's a problem but there is a fix for that first we look on which ip the mosquitto is on by using this command ![](https://lh3.googleusercontent.com/8p33c4JEN3u4Y-peEjVxuaPW-jZIozAQEEXn0eny7TToYmbHEqp1ldqHtAwiKpFIriYFA5h4UP3Bg94J3Wy1ux9pQQy4wjG_fdRFrRirI5tf7QFwa26F2qCLFmThsa4VGOvyvOaJbesWVYntAJNwj_g)
-17.  We kill the current running program like here ![](https://lh6.googleusercontent.com/nIfwnlyJj8RJFiT5dFDUTXRorcJceBC9oWFIA_JCaKZktAcuTnhKj5mKTYlvhXyoo4vszVyNIJXzasFe18R50tlE7pQbLgEo26qW7CtqusC9v6gszgInX8Zz3l0bDA1PhN1bFmG-3gHo3QkPbs4nEmw)
-18.  Now the problem should be fixed as seen here ![](https://lh6.googleusercontent.com/xAS1hN_nhuZwUsj95U2JHe0OArpKqX8wnSRJ0T9Wba-jO4p4m0_6AdEEqzb_8Key6gs6KweJ9LphLnkHe6eiwW6FkM05v01eg667K3l5Y80p7-ZvqNbkVEAEYEVKgDGjBqx3PuAVpohiUe9xABVdk2A)
-19.  Now we go to the mongostack folder and start our app.js file as shown here ![](https://lh5.googleusercontent.com/VqzE67qKDd_rGh_QIVg1Dl6WFq16DTmLb6chOzuK925UmLYClt1oqj6I23dq2z6m1CiWmg-prcWgfso0vXuaWiGlDueyJkJVp340etYGP5d3NXSBArTEE634kAiSkcN9xCBr-ifJDWvTV4RpeC1pE9Q)
-20.  With all that done we upload the code and see our temps and humid in our serial monitor ![](https://lh5.googleusercontent.com/BjB1uGCZmwUJb5oWoi6QNtrjfrfbTWpjC-8mrpCqg3Ubb2fiKSOdemYKmmFktlWSg5sqHSuu7vniM7pJ5QGRsuqLa91xpoy8yWH65dysRRkLaP9__9ncjxoRs0xvo2dPVp3tjo3rdalvhStuNFiCMjI)
-21.  We should also see it in our mosquitto terminal like here ![](https://lh4.googleusercontent.com/fNFv7-a1Fbhvpb8JOBuRW1vUPqlB0TdBPBqrhWyp7P3zKqc-KZBYWZJP1x1nsjkTobKExXcZfQ0udgM_2km8lfmzIadQY186DFsotw1uJ21x3ljJvypz8SjGlVahWu4CVmn8A72OJleFMbjQF5DdIlM)
-22. And also in our nodejs terminal ![](https://lh6.googleusercontent.com/6DEUw-Ckvzmqpr-MS_XY7gliaTLSkWlRdCs6X9RnKwXToSHbD7yt__NcEp5Fj_uAPHpVo95HKNClf5iqLIEFUuX03gBCtrs46wczf_gVyUsOHuhUIWRfZ6S87bIws5CQOZkyYgmi7kVj2F-eGwVCvHk)
-23. If we want to see the info on our MQTT lens we have to change the broker to our ip here ![](https://lh6.googleusercontent.com/EgSo5fpIDBWwVEpqh6WonRX2eNS04fqxtQN_52JIvvzlB_JaaDFBShvlxkC-Djg6KUzzfN8wyYKCvZBf7_4h6F05H7U5HghMxmBoaAJAgV5h4zXXwbGtOEAGiHV6UCtLdQIX4hspDJmrXawUAwBGB60)
-24.  And also in our MQTT lens ![](https://lh6.googleusercontent.com/74Lj_aiW6wzEWBcSOmcGw8ETe6_4H9zafvQvgiwWvhJM7ozN22OIEKRrhg_gbtsm0bsP2QJmYhA7TEHTR-3rxWPqH0_leuf2tbO1NzFxndJn56JVXnCecqp-OzzCjPJ6ZwFu37wXMZ9gooSpATOh2D4)
-25. The index.html code 
+| html { font-family: Helvetica; display: inline-block; margin: 0px auto; text-align: center; } h1{ color: #0F3376; padding: 2vh; } p{ font-size: 1.5rem; } .button { display: inline-block; background-color: #008CBA; border: none; border-radius: 4px; color: white; padding: 16px 40px; text-decoration: none; font-size: 30px; margin: 2px; cursor: pointer; } .button2 { background-color: #f44336; } |
 
-|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-| :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-| &lt;?xml version="1.0" encoding="UTF-8" standalone="no"?> &lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http&#x3A;//www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> &lt;html xmlns="http&#x3A;//www.w3.org/1999/xhtml">   &lt;head>     &lt;title>Mosquitto Websockets&lt;/title>     &lt;meta name="viewport" content="width=device-width, initial-scale=1.0">     &lt;script src="mqttws31.js" type="text/javascript">&lt;/script>     &lt;script src="jquery.min.js" type="text/javascript">&lt;/script>     &lt;script src="config.js" type="text/javascript">&lt;/script>     &lt;script src="https&#x3A;//code.highcharts.com/highcharts.js">&lt;/script>   &lt;/head>   &lt;body>     &lt;h1>Mosquitto Websockets&lt;/h1>     &lt;div class="widget-container" >       &lt;div class="widget">         &lt;i class="fa fa-thermometer-empty">&lt;/i>         &lt;span class="label">Temp&lt;/span>         &lt;span class="widget-value temp-data">15&lt;/span>       &lt;/div>             &lt;div class="widget">         &lt;i class="fa fa-tint">&lt;/i>         &lt;span class="label">Humid&lt;/span>         &lt;span class="widget-value humid-data">50%&lt;/span>       &lt;/div>       &lt;/div>     &lt;div id="chart-container">&lt;/div>     &lt;div>         &lt;div>Subscribed to &lt;input type='text' id='topic' disabled />         Status: &lt;input type='text' id='status' size="80" disabled />&lt;/div>         &lt;ul id='ws' style="font-family: 'Courier New', Courier, monospace;">&lt;/ul>     &lt;/div>         &lt;script type="text/javascript">     var mqtt;     var reconnectTimeout = 2000;     function MQTTconnect() { if (typeof path == "undefined") { path = '/mqtt'; } mqtt = new Paho.MQTT.Client( host, port, path, "web\_" + parseInt(Math.random() \* 100, 10) );         var options = {             timeout: 3,             useSSL: useTLS,             cleanSession: cleansession,             onSuccess: onConnect,             onFailure: function (message) {                 $('#status').val("Connection failed: " + message.errorMessage + "Retrying");                 setTimeout(MQTTconnect, reconnectTimeout);             }         };         mqtt.onConnectionLost = onConnectionLost;         mqtt.onMessageArrived = onMessageArrived;         if (username != null) {             options.userName = username;             options.password = password;         }         console.log("Host="+ host + ", port=" + port + ", path=" + path + " TLS = " + useTLS + " username=" + username + " password=" + password);         mqtt.connect(options);     }     function onConnect() {         $('#status').val('Connected to ' + host + ':' + port + path);         _// Connection succeeded; subscribe to our topic_         mqtt.subscribe(topic, {qos: 0});         $('#topic').val(topic);                 _// Set up chart_         chart = Highcharts.chart('chart-container', {         chart: {           type: 'line',         },         title: {           text: 'Sensor Data',         },         xAxis: {           type: 'datetime',           title: {             text: 'Timestamp'           }         },         yAxis: \[{           title: {             text: 'Temp'           }         }, {           title: {             text: 'Humid'           },           opposite: false _// display on opposite side of chart_         }],         series: \[{           name: 'Temp',           data: \[],           yAxis: 0 _// use the first yAxis (index 0) for this series_         }, {           name: 'Humid',           data: \[],           yAxis: 1 _// use the second yAxis (index 1) for this series_         }]       });     }     function onConnectionLost(response) {         setTimeout(MQTTconnect, reconnectTimeout);         $('#status').val("connection lost: " + responseObject.errorMessage + ". Reconnecting");     };     function onMessageArrived(message) {         var topic = message.destinationName;         var payload = message.payloadString;         $('#ws').prepend('&lt;li>' + topic + ' = ' + payload + '&lt;/li>');     _// Parse message data_         var data = JSON.parse(payload);         var timestamp = new Date().getTime();         var temp = parseFloat(data.temp);         var humid = parseFloat(data.humid);                 chart.series\[0].addPoint(\[Date.now(), data.temp]);         chart.series\[1].addPoint(\[Date.now(), data.humid]);         _// Redraw the chart_         chart.redraw();         _//WIDGET_         const widgetContainers = document.querySelectorAll('.widget-container');                 _// Loop through each widget container and update the widget data_         widgetContainers.forEach(widgetElement => {           widgetElement.querySelector('.temp-data').textContent = data.temp;           widgetElement.querySelector('.humid-data').textContent = data.humid;         });     };     $(document).ready(function() {         MQTTconnect();     });     &lt;/script>   &lt;/body> &lt;/html> &lt;style>   .widget-container {       display: flex;       flex-wrap: wrap;       justify-content: space-between;       width: 100%;       max-width: 1200px;       margin: 0 auto;     }    .widget {       flex-basis: calc((100% - 30px) / 4); _/\* 4 widgets in the first row \*/_       margin-bottom: 20px;       background-color: #ffffff;       padding: 10px;       border: 1px solid #e3e3e3;       text-align: center;     } &lt;/style> |
+  
 
-( [link to github code](https://github.com/0SaNJ/codettesbootcamp_2023_code/blob/main/ESP_32_DHT_MQTT_MongoDB_Node.js_Mosquitto_html_code) )
 
-26. The C++ code 
+  
 
-|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-| // Import required libraries #include &lt;WiFi.h> #include &lt;ESPAsyncWebServer.h> #include &lt;SPIFFS.h> #include &lt;Wire.h> #include &lt;Adafruit_Sensor.h> #include &lt;DHT.h> //MQTT #include&lt;PubSubClient.h> #include &lt;ArduinoJson.h> WiFiClient espClient; PubSubClient client(espClient); //MQTT const char \* mqtt_broker = "192.168.1.69"; //const char \* mqtt_broker = "broker.hivemq.com"; const char \* mqtt_topic = "jaysanmo/codettes/01"; // CHANGE SensorID here! const char \* mqtt_User = ""; const char \* mqtt_Password = ""; // Replace with your network credentials const char\* ssid = "Team09"; const char\* password = "H@ckTe@m)("; #define DHTPIN 4 #define DHTTYPE    DHT11 DHT dht(DHTPIN, DHTTYPE); // Create AsyncWebServer object on port 80 AsyncWebServer server(80); float t = 0; float h = 0; String readDHTTemperature() {   // Read temperature as Celsius (the default)   float t = dht.readTemperature();   // Convert temperature to Fahrenheit   //t = 1.8 \* t + 32;   if (isnan(t)) {     Serial.println("Failed to read from DHT sensor!");     return "";   }   else {     Serial.println(t);     return String(t);   } } String readDHTHumidity() {   float h = dht.readHumidity();   if (isnan(h)) {     Serial.println("Failed to read from DHT sensor!");     return "";   }   else {     Serial.println(h);     return String(h);   } } void setup() {   // Serial port for debugging purposes   Serial.begin(115200);   dht.begin();   // Initialize SPIFFS   if (!SPIFFS.begin()) {     Serial.println("An Error has occurred while mounting SPIFFS");     return;   }   // Connect to Wi-Fi   WiFi.begin(ssid, password);   WiFi.setSleep(false);   while (WiFi.status() != WL_CONNECTED) {     delay(1000);     Serial.println("Connecting to WiFi..");   }   // Print ESP32 Local IP Address   Serial.println(WiFi.localIP());   //MQTT   client.setServer(mqtt_broker, 1883);   if (initMqtt()) {     client.publish("jaysanmo/codettes/01", "Hello from ESP32");   }   // Route for root / web page   server.on("/", HTTP_GET, \[](AsyncWebServerRequest \* request) {     request->send(SPIFFS, "/index.html");   });   server.on("/temperature", HTTP_GET, \[](AsyncWebServerRequest   \* request) {     request->send_P(200, "text/plain", readDHTTemperature().c_str());   });   server.on("/humidity", HTTP_GET, \[](AsyncWebServerRequest \* request) {     request->send_P(200, "text/plain", readDHTHumidity().c_str());   });   // Start server   server.begin(); } unsigned long lastMqttTime = millis(); const unsigned long Mqtt_INTERVAL_MS = 2000; void loop() {   client.loop();   // Send regular mqtt data   if ((millis() - lastMqttTime) > Mqtt_INTERVAL_MS) {     if (client.connected())     {       //GetWeatherData();       handle_MqttData();       lastMqttTime = millis();     } else     {       initMqtt();     }   } } void GetWeatherData() {   } bool initMqtt() {   if (!client.connected()) {     Serial.println("Connecting to MQTT...");     if (client.connect("ESP32Client", mqtt_User, mqtt_Password )) {       Serial.println("connected");       return true;     } else {       Serial.print("failed with state ");       Serial.print(client.state());       delay(2000);       return false;     }   } } void handle_MqttData() {   float h = dht.readHumidity();   float t = dht.readTemperature();   StaticJsonDocument&lt;2048> doc;   //JsonObject createNestedObject() const;   doc\["temp"] = t;   doc\["humid"] = h;   char out\[2048];   int b = serializeJson(doc, out);   serializeJson(doc, Serial);   Serial.print("bytes ->  ");   Serial.print(b, DEC);   // add if delivered or not   client.publish((char\*)mqtt_topic, out) ? Serial.println(" -> delivered") : Serial.println(" -> failed"); } |
 
-( [link to github code](https://github.com/0SaNJ/codettesbootcamp_2023_code/blob/main/ESP_32_DHT_MQTT_Node.js_MongoDB_Mosquitto_link_c%2B%2B_code) )
+\# Week 3
 
+  
 
-# Week 8
 
+  
 
-## Day 8 ( online )
 
+\## Day 3 ( online )
 
-### MongoDB connection: 
+  
 
-1. All the steps from last week 
-2. Connect to mongoDB Compass as seen here and you should see this  
-   ![](https://lh5.googleusercontent.com/XZr5prEMqRTmKeaovDoc-WQsJEqk4gIdBIE5Zza8SrR1qJendD-K0GiMkuaASPylNBx2chTc27A-c7M5QfDWyJzyCs9fCov0AMbQT15ZmqJuo4RUzatqokTM0B_g2YiJPzbEmft_Z0zBwOXUPkqxUF4)
 
+  
 
-# Week 9
 
+\### Multiple sliders code:
 
-## Day 9 ( online )
+  
 
 
-### Live Highcharts:
+1\. First we need to download our libraries ( &lt;https&#x3A;//github.com/arduino-libraries/Arduino_JSON> )
 
-1. Same steps as the last 2 weeks
-2. Now we go into our index.html ( download index.html here <https://drive.google.com/file/d/1kJpv-vVDiMtk_jqT-kp-OBGmptDSfbx5/view?usp=drive_link> ) file in our mongostack folder then we put the highcharts in ( <https://www.highcharts.com/> ) ![](https://lh3.googleusercontent.com/y2_RUtxuq7fTNnvUqGEbTvJjmRflLYKC15MSSyJAF9stAweHVbvWVDozAKTeIxKA5xCy5k8dS-wF8CBtoaE0aPF_jus5Ychgxo1CB_o6CBK3DyHhprZhDYKMgT3yOjuwnVmLDSQ34aHZqNyl-QcQAjM) →![](https://lh3.googleusercontent.com/4iquGMKcCMVBhNPNyX57MkgNcjNWeEnH2IGuX9MLOQY1-rW5V_ghSJhUJhPlaiv-mmE1lZ6ZVhGBQNUZ11rDzJ4QwSXXBKfL8TFrsmflay6_potTs-Mg_JYKe2Ttr2gT3nCl-6JNHGTb4qg4IU52H0U)  → ![](https://lh3.googleusercontent.com/xvQeF4V5sqfCY49yaGaiWfSMjpgPTzgbcUxzYew6oKxJthCwhgBh-41NkO8zWLVkObWqJflGWh2mcHRIOJasHYiwqxFhgMiR-EAo0W1Fao8L3ohpWW4fxdW5P3Y4a2FQwiUsZEizJ42h8UiFA5w4DEc)
-3. Your chart should look something like this ![](https://lh3.googleusercontent.com/a50moMlq5fAiuCcipRrEObn1sdvtJtGfm7jHvBkb59--4CfcCr6P5tWW7XAGgtdwPL9v7rJLHWjxw84VglYEiPRyAZZzX-taW-nBlvj-FX1Ddvi2HnYMs42f_6xWY_NPfAikLpDtCmaBPpB92x4eBVE) 
+2\. We make a libraries folder then put or library in there like here!\[](https&#x3A;//lh3.googleusercontent.com/wdiS7fJ4QctMt-UYWrGgxvQFcoxdAH5_VPEwbt1A22itXfVq2laznH27Bg0_d2Qc5lyuLX4LjM8HYLWqtCOwzUBcVE81i7iDvt0qXB1JnQ8qf9ye7f91wsBxgGJlZtUdZucCMddH-zRKPJjEGB75cxE)
 
+3\. Then we put it in our arduino libraries folder !\[](https&#x3A;//lh5.googleusercontent.com/bRdZVvgBQfj9Jr1fWYHIZHEuSmkj09jLi6nRzPZeUKCqvOrS7i97SLGiNupdwjhGdgd14YqWsyI6DZlThULbpZO6xc7hfrvUbW8fekS9cZEgLfuc6qSJaxpd9vMhFR3oPvyv3zlPdgcqqYg3VcVpq5U)
 
-# Week 10 
+4\. Now we download the code and follow the tutorial here ( &lt;https&#x3A;//randomnerdtutorials.com/esp32-web-server-websocket-sliders/> )
 
+5\. The C++ code
 
-## Day 10 ( online )
+  
 
 
-### Customizing our highcharts:
+\| \|
 
-1. First we do the same things as last week and open our index.html 
-2. Then we customize it 
-3. First we add our icons as shown here  
-   ![](https://lh4.googleusercontent.com/EWmTffoZ-DitonpvHli9zFmkXAK_YFzDKAemuHd7H4RQM5jacbjwM7QS3XtW4z3e6KNou9D8dPzhbUTIEqZZWJ2CmFoP40rgacUtsGJLF_c25eYmrjGSgKDiqKJRZr4TTI8Lo7PolFvg9Bso6kCaJww)
-4. Then to update the info the charts we do this  
-   ![](https://lh4.googleusercontent.com/hKbYRoI8f-v80j_BOnZZPjr3xCqXfIoMkzKvBUOVm8Z_JaritzkcxTKe8Zenh7aZWvivrl1K3OYHilMfCxpoOlgFeBeHUdr4xh9aUtQhf_EO3Ktrg8q6-rXLeySyCADobj8HhC3-MLnyDvr_FVlnCP0)
-5. Then we style it to our liking here  
-   ![](https://lh4.googleusercontent.com/YfRfigczYUFo92N7_V0FnpH8AW3jlW-DyfBBbrHhEYFj7S9PN1s_8tPf3vMsumTtmoLFLWIVWrdJCB_zfRJX54OAIWfF3YYFd2SBRKCneyf55gqfz3riE3QfomFt6JlWQ601V8iPeSViYAy3KCQflsQ)
-6. It should look something like this ![](https://lh3.googleusercontent.com/1O-V1kl0TCCTfNKp94ggzxDBEpHCEUDTKHUfvZ25yL_T9OlWHnNi44wKx__Rd9Uzz438lUhd5W67Z8uV87dHr5j8r8IBI7gVWqYeiHQo1oEjR82i1ouTlbBRIHjJVvbzUJcdvYbvQf53s-KHE2fODwM)
+\| :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: \|
+
+| /\\\* Rui Santos Complete project details at https&amp;#x3A;//RandomNerdTutorials.com/esp32-web-server-websocket-sliders/ Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files. The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. \\\*/ #include &amp;lt;Arduino.h> #include &amp;lt;WiFi.h> #include &amp;lt;AsyncTCP.h> #include &amp;lt;ESPAsyncWebServer.h> #include "SPIFFS.h" #include &amp;lt;Arduino_JSON.h> // Replace with your network credentials const char\\\* ssid = "HUAWEI-2.4G-yzad"; const char\\\* password = "SkNH972g"; // Create AsyncWebServer object on port 80 AsyncWebServer server(80); // Create a WebSocket object AsyncWebSocket ws("/ws"); // Set LED GPIO const int ledPin1 = 32; const int ledPin2 = 26; const int ledPin3 = 14; const int ledPin4 = 12; const int ledPin5 = 13; String message = ""; String sliderValue1 = "0"; String sliderValue2 = "0"; String sliderValue3 = "0"; String sliderValue4 = "0"; String sliderValue5 = "0"; int dutyCycle1; int dutyCycle2; int dutyCycle3; int dutyCycle4; int dutyCycle5; // setting PWM properties const int freq = 5000; const int ledChannel1 = 0; const int ledChannel2 = 1; const int ledChannel3 = 2; const int ledChannel4 = 3; const int ledChannel5 = 4; const int resolution = 8; //Json Variable to Hold Slider Values JSONVar sliderValues; //Get Slider Values String getSliderValues(){ sliderValues\\\["sliderValue1"] = String(sliderValue1); sliderValues\\\["sliderValue2"] = String(sliderValue2); sliderValues\\\["sliderValue3"] = String(sliderValue3); sliderValues\\\["sliderValue4"] = String(sliderValue4); sliderValues\\\["sliderValue5"] = String(sliderValue5); String jsonString = JSON.stringify(sliderValues); return jsonString; } // Initialize SPIFFS void initFS() { if (!SPIFFS.begin()) { Serial.println("An error has occurred while mounting SPIFFS"); } else{ Serial.println("SPIFFS mounted successfully"); } } // Initialize WiFi void initWiFi() { WiFi.mode(WIFI_STA); WiFi.begin(ssid, password); Serial.print("Connecting to WiFi .."); while (WiFi.status() != WL_CONNECTED) { Serial.print('.'); delay(1000); } Serial.println(WiFi.localIP()); } void notifyClients(String sliderValues) { ws.textAll(sliderValues); } void handleWebSocketMessage(void \\\*arg, uint8_t \\\*data, size_t len) { AwsFrameInfo \\\*info = (AwsFrameInfo\\\*)arg; if (info->final && info->index == 0 && info->len == len && info->opcode == WS_TEXT) { data\\\[len] = 0; message = (char\\\*)data; if (message.indexOf("1s") >= 0) { sliderValue1 = message.substring(2); dutyCycle1 = map(sliderValue1.toInt(), 0, 100, 0, 255); Serial.println(dutyCycle1); Serial.print(getSliderValues()); notifyClients(getSliderValues()); } if (message.indexOf("2s") >= 0) { sliderValue2 = message.substring(2); dutyCycle2 = map(sliderValue2.toInt(), 0, 100, 0, 255); Serial.println(dutyCycle2); Serial.print(getSliderValues()); notifyClients(getSliderValues()); } if (message.indexOf("3s") >= 0) { sliderValue3 = message.substring(2); dutyCycle3 = map(sliderValue3.toInt(), 0, 100, 0, 255); Serial.println(dutyCycle3); Serial.print(getSliderValues()); notifyClients(getSliderValues()); } if (message.indexOf("4s") >= 0) { sliderValue4 = message.substring(2); dutyCycle4 = map(sliderValue4.toInt(), 0, 100, 0, 255); Serial.println(dutyCycle4); Serial.print(getSliderValues()); notifyClients(getSliderValues()); } if (message.indexOf("5s") >= 0) { sliderValue5 = message.substring(2); dutyCycle5 = map(sliderValue5.toInt(), 0, 100, 0, 255); Serial.println(dutyCycle5); Serial.print(getSliderValues()); notifyClients(getSliderValues()); } if (strcmp((char\\\*)data, "getValues") == 0) { notifyClients(getSliderValues()); } } } void onEvent(AsyncWebSocket \\\*server, AsyncWebSocketClient \\\*client, AwsEventType type, void \\\*arg, uint8_t \\\*data, size_t len) { switch (type) { case WS_EVT_CONNECT: Serial.printf("WebSocket client #%u connected from %s\\\\n", client->id(), client->remoteIP().toString().c_str()); break; case WS_EVT_DISCONNECT: Serial.printf("WebSocket client #%u disconnected\\\\n", client->id()); break; case WS_EVT_DATA: handleWebSocketMessage(arg, data, len); break; case WS_EVT_PONG: case WS_EVT_ERROR: break; } } void initWebSocket() { ws.onEvent(onEvent); server.addHandler(&ws); } void setup() { Serial.begin(115200); pinMode(ledPin1, OUTPUT); pinMode(ledPin2, OUTPUT); pinMode(ledPin3, OUTPUT); pinMode(ledPin4, OUTPUT); pinMode(ledPin5, OUTPUT); initFS(); initWiFi(); // configure LED PWM functionalities ledcSetup(ledChannel1, freq, resolution); ledcSetup(ledChannel2, freq, resolution); ledcSetup(ledChannel3, freq, resolution); ledcSetup(ledChannel4, freq, resolution); ledcSetup(ledChannel5, freq, resolution); // attach the channel to the GPIO to be controlled ledcAttachPin(ledPin1, ledChannel1); ledcAttachPin(ledPin2, ledChannel2); ledcAttachPin(ledPin3, ledChannel3); ledcAttachPin(ledPin4, ledChannel4); ledcAttachPin(ledPin5, ledChannel5); initWebSocket(); // Web Server Root URL server.on("/", HTTP_GET, \\\[](AsyncWebServerRequest \\\*request){ request->send(SPIFFS, "/index.html", "text/html"); }); server.serveStatic("/", SPIFFS, "/"); // Start server server.begin(); } void loop() { ledcWrite(ledChannel1, dutyCycle1); ledcWrite(ledChannel2, dutyCycle2); ledcWrite(ledChannel3, dutyCycle3); ledcWrite(ledChannel4, dutyCycle4); ledcWrite(ledChannel5, dutyCycle5); ws.cleanupClients(); } |
+
+  
+
+
+( \[link to github code](https&#x3A;//github.com/0SaNJ/codettesbootcamp_2023_code/blob/main/ESP_32_multiple_sliders_webserver_code) )
+
+  
+
+
+6\. We repeat the process from last week and upload the spiff then the code then we should have a working web page with sliders and leds. If done right you should get something like this.
+
+  
+
+
+\| \|
+
+\| - \|
+
+\| \|
+
+  
+
+
+\| \|
+
+\| :-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: \|
+
+| \_&amp;lt;!-- Complete project details: https&amp;#x3A;//randtutorials.com/esp32-web-server-websocket-sliders/ -->\_ &amp;lt;!DOCTYPE html> &amp;lt;html> &amp;lt;head> &amp;lt;title>ESP IOT DASHBOARD&amp;lt;/title> &amp;lt;meta name="viewport" content="width=device-width, initial-scale=1"> &amp;lt;link rel="icon" type="image/png" href="favicon.png"> &amp;lt;link rel="stylesheet" type="text/css" href="style.css"> &amp;lt;/head> &amp;lt;body> &amp;lt;div class="topnav"> &amp;lt;h1>Multiple Sliders&amp;lt;/h1> &amp;lt;/div> &amp;lt;div class="content"> &amp;lt;div class="card-grid"> &amp;lt;div class="card"> &amp;lt;p class="card-title">Fader 1&amp;lt;/p> &amp;lt;p class="switch"> &amp;lt;input type="range" onchange="updateSliderPWM(this)" id="slider1" min="0" max="100" step="1" value ="0" class="slider"> &amp;lt;/p> &amp;lt;p class="state">Brightness: &amp;lt;span id="sliderValue1">&amp;lt;/span> &amp;amp;percnt;&amp;lt;/p> &amp;lt;/div> &amp;lt;div class="card"> &amp;lt;p class="card-title"> Fader 2&amp;lt;/p> &amp;lt;p class="switch"> &amp;lt;input type="range" onchange="updateSliderPWM(this)" id="slider2" min="0" max="100" step="1" value ="0" class="slider"> &amp;lt;/p> &amp;lt;p class="state">Brightness: &amp;lt;span id="sliderValue2">&amp;lt;/span> &amp;amp;percnt;&amp;lt;/p> &amp;lt;/div> &amp;lt;div class="card"> &amp;lt;p class="card-title"> Fader 3&amp;lt;/p> &amp;lt;p class="switch"> &amp;lt;input type="range" onchange="updateSliderPWM(this)" id="slider3" min="0" max="100" step="1" value ="0" class="slider"> &amp;lt;/p> &amp;lt;p class="state">Brightness: &amp;lt;span id="sliderValue3">&amp;lt;/span> &amp;amp;percnt;&amp;lt;/p> &amp;lt;/div> &amp;lt;div class="card"> &amp;lt;p class="card-title"> Fader 4&amp;lt;/p> &amp;lt;p class="switch"> &amp;lt;input type="range" onchange="updateSliderPWM(this)" id="slider4" min="0" max="100" step="1" value ="0" class="slider"> &amp;lt;/p> &amp;lt;p class="state">Brightness: &amp;lt;span id="sliderValue4">&amp;lt;/span> &amp;amp;percnt;&amp;lt;/p> &amp;lt;/div> &amp;lt;div class="card"> &amp;lt;p class="card-title"> Fader 5&amp;lt;/p> &amp;lt;p class="switch"> &amp;lt;input type="range" onchange="updateSliderPWM(this)" id="slider5" min="0" max="100" step="1" value ="0" class="slider"> &amp;lt;/p> &amp;lt;p class="state">Brightness: &amp;lt;span id="sliderValue5">&amp;lt;/span> &amp;amp;percnt;&amp;lt;/p> &amp;lt;/div> &amp;lt;/div> &amp;lt;/div> &amp;lt;script src="script.js">&amp;lt;/script> &amp;lt;/body> &amp;lt;/html> |
+
+  
+
+
+( \[link to github code](https&#x3A;//github.com/0SaNJ/codettesbootcamp_2023_code/blob/main/ESP_32_multiple_sliders_webserver_code_html) )
+
+!\[](https&#x3A;//lh3.googleusercontent.com/Kiq5LPlGiglY05WKcEfXxAtmiXb4mS9RZEvfwcQxWhLb2DxahVybeIL1hubCf79SHLi4xGqwfntPl8CWzoO7L-krt2J7vdyxgVH_n14NK3eI2cJjHYEdQFo8r4b6GtKVa7Ryk9sCwJ8hiu8khp0u_Bw)
+
+  
+
+
+7\. We can customize our webpage using css we do that by going into our index.html and configuring there !\[](https&#x3A;//lh6.googleusercontent.com/fC_YUcp3GdrRDsueeUA8--IaVUBqhNtxVVEyf5VOBP2N7rvHW466n6naS4J4iGSZl4DVrnZdMHVO6H6X1LDDdQuQlAfcDC3RJHdus1MFaXh7CE_nWJIxEvrxwxAXyTcrlcWtZdM9dBjZkRSDqEbbTCQ)
+
+8\. The CSS Code
+
+  
+
+
+\| \|
+
+\| :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: \|
+
+| \_/\\\* Complete project details: https&amp;#x3A;//randomnerdtutorials.com/esp32-web-server-websocket-sliders/ \\\*/\_ html { font-family: Arial, Helvetica, sans-serif; display: inline-block; text-align: center; background: rgb(212, 184, 184); } h1 { font-size: 1.8rem; color: black; } p { font-size: 1.4rem; } .topnav { overflow: hidden; background-color: #374fa0; } body { margin: 0; } .content { padding: 30px; } .card-grid { max-width: 700px; margin: 0 auto; display: grid; grid-gap: 2rem; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); } .card { background-color: rgb(216, 79, 79); box-shadow: 2px 2px 12px 1px rgba(140,140,140,.5); } .card-title { font-size: 1.2rem; font-weight: bold; color: #034078 } .state { font-size: 1.2rem; color:#1282A2; } .slider { -webkit-appearance: none; margin: 0 auto; width: 100%; height: 15px; border-radius: 10px; background: #FFD65C; outline: none; } .slider::-webkit-slider-thumb { -webkit-appearance: none; appearance: none; width: 30px; height: 30px; border-radius: 50%; background: #034078; cursor: pointer; } .slider::-moz-range-thumb { width: 30px; height: 30px; border-radius: 50% ; background: #034078; cursor: pointer; } .switch { padding-left: 5%; padding-right: 5%; } |
+
+  
+
+
+( \[link to github code](https&#x3A;//github.com/0SaNJ/codettesbootcamp_2023_code/blob/main/ESP_32_multiple_sliders_webserver_code_css) )
+
+  
+
+
+  
+
+
+\# Week 4
+
+  
+
+
+  
+
+
+\## Day 4 ( online )
+
+  
+
+
+  
+
+
+\### DHT sensor setup:
+
+  
+
+
+1\. First off we have to understand which DHT sensor we have and how we should wire them.
+
+2\. The DHT were using is DHT 11 !\[](https&#x3A;//lh6.googleusercontent.com/mWkx5YTr2VDTtto6UFFYokOdOfJfVijbhHytnyWE4DnoL66uMICdgRzuhderK2ZKWEf6pxNd6fZly4BGklXvIJs3s1tNrlrJ-rSgwh37Rb4dpL9_BAQbSLjbcj0AMw88h41vFGnwFb5Ftw99PbrhZSc)
+
+3\. How to wire the DHT 11!\[](https&#x3A;//lh4.googleusercontent.com/Dj6YQI20XKu4QCsvgCF5rziCsNF7q1_QaQJHDmkoFOVqGxWTJXiiPLPo90RNc5BdRSRe1oXfnV93x1p0jEWb0KozrtHoZMcKbFXHTq5extpRO-XlNRp_aQgvfMYpVVvhnU2FEl0Payc4h-NgFKek0kU)
+
+4\. Then we download the required libraries to get the readings from the DHT !\[](https&#x3A;//lh4.googleusercontent.com/eeIFszhDmkNffY538b2-RZkjZ66_hq6XfbsWaCRQihSz3vpsSKgNj60VAScDBmvnhJ83204WyIXq6-Kp94ojYIVjzJAoKMg7Se6R-cz9zoxaBOnNs4kAoSqODqcpz_zt26JZ9tHvPrAI9OdgmZm5yVU)
+
+5\. Now we download the Adafruit Unified Sensor library !\[](https&#x3A;//lh4.googleusercontent.com/z-z_hKn_8AiDJy8Le9EJHfrzcFR7XLQ5Cj19F6lPluZKs0hkXA4CRq5j0L3U2UbM-6ZFXBQSBSfJSl5PJ_AndQxt_H3GJI5NJRTeNjTBnGgUOWDLM\_-U_4atrRRqDsCHZcL8QROE4FM9ltWV1HjjTvI)( &lt;https&#x3A;//randomnerdtutorials.com/esp32-dht11-dht22-temperature-humidity-sensor-arduino-ide/> )
+
+6\. Then we implement the code
+
+  
+
+
+\| \|
+
+\| :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: \|
+
+| // Example testing sketch for various DHT humidity/temperature sensors written by ladyada // REQUIRES the following Arduino libraries: // - DHT Sensor Library: https&amp;#x3A;//github.com/adafruit/DHT-sensor-library // - Adafruit Unified Sensor Lib: https&amp;#x3A;//github.com/adafruit/Adafruit_Sensor #include "DHT.h" #define DHTPIN 4 // Digital pin connected to the DHT sensor // Feather HUZZAH ESP8266 note: use pins 3, 4, 5, 12, 13 or 14 -- // Pin 15 can work but DHT must be disconnected during program upload. // Uncomment whatever type you're using! //#define DHTTYPE DHT11 // DHT 11 #define DHTTYPE DHT22 // DHT 22 (AM2302), AM2321 //#define DHTTYPE DHT21 // DHT 21 (AM2301) // Connect pin 1 (on the left) of the sensor to +5V // NOTE: If using a board with 3.3V logic like an Arduino Due connect pin 1 // to 3.3V instead of 5V! // Connect pin 2 of the sensor to whatever your DHTPIN is // Connect pin 4 (on the right) of the sensor to GROUND // Connect a 10K resistor from pin 2 (data) to pin 1 (power) of the sensor // Initialize DHT sensor. // Note that older versions of this library took an optional third parameter to // tweak the timings for faster processors. This parameter is no longer needed // as the current DHT reading algorithm adjusts itself to work on faster procs. DHT dht(DHTPIN, DHTTYPE); void setup() { Serial.begin(9600); Serial.println(F("DHTxx test!")); dht.begin(); } void loop() { // Wait a few seconds between measurements. delay(2000); // Reading temperature or humidity takes about 250 milliseconds! // Sensor readings may also be up to 2 seconds 'old' (its a very slow sensor) float h = dht.readHumidity(); // Read temperature as Celsius (the default) float t = dht.readTemperature(); // Read temperature as Fahrenheit (isFahrenheit = true) float f = dht.readTemperature(true); // Check if any reads failed and exit early (to try again). if (isnan(h) \\|\\| isnan(t) \\|\\| isnan(f)) { Serial.println(F("Failed to read from DHT sensor!")); return; } // Compute heat index in Fahrenheit (the default) float hif = dht.computeHeatIndex(f, h); // Compute heat index in Celsius (isFahreheit = false) float hic = dht.computeHeatIndex(t, h, false); Serial.print(F("Humidity: ")); Serial.print(h); Serial.print(F("% Temperature: ")); Serial.print(t); Serial.print(F("°C ")); Serial.print(f); Serial.print(F("°F Heat index: ")); Serial.print(hic); Serial.print(F("°C ")); Serial.print(hif); Serial.println(F("°F")); } |
+
+  
+
+
+( \[link to github code](https&#x3A;//github.com/0SaNJ/codettesbootcamp_2023_code/blob/main/ESP_32_DHT_C%2B%2B) )
+
+  
+
+
+7\. If everything is done right you should get something like this in your serial monitor
+
+!\[](https&#x3A;//lh4.googleusercontent.com/bguT0aQyQ5vqnjorFnBdlvn9IZjF1uEpRNjK-RtvCw4nfGh4Y_Y4LFdUUyhs0o6U24TVwU744HDdEy7mC5yJHBpbtW9osSAEUOat9uTH1YOjUM9VDvV2cTkdeqhDmELuSZj8s3xVuA9scxtwQtXvFrs)
+
+  
+
+
+  
+
+
+\### DHT sensor with web server:
+
+  
+
+
+1\. First off we make a new ino file and import this C++ code ( you can follow this link &lt;https&#x3A;//randomnerdtutorials.com/esp32-dht11-dht22-temperature-humidity-web-server-arduino-ide/> )
+
+2\. The C++ code
+
+  
+
+
+\| \|
+
+\| :-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: \|
+
+| /\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\* Rui Santos Complete project details at https&amp;#x3A;//randomnerdtutorials.com \\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*/ // Import required libraries #include "WiFi.h" #include "ESPAsyncWebServer.h" #include &amp;lt;Adafruit_Sensor.h> #include &amp;lt;DHT.h> // Replace with your network credentials const char\\\* ssid = "REPLACE_WITH_YOUR_SSID"; const char\\\* password = "REPLACE_WITH_YOUR_PASSWORD"; #define DHTPIN 27 // Digital pin connected to the DHT sensor // Uncomment the type of sensor in use: //#define DHTTYPE DHT11 // DHT 11 #define DHTTYPE DHT22 // DHT 22 (AM2302) //#define DHTTYPE DHT21 // DHT 21 (AM2301) DHT dht(DHTPIN, DHTTYPE); // Create AsyncWebServer object on port 80 AsyncWebServer server(80); String readDHTTemperature() { // Sensor readings may also be up to 2 seconds 'old' (its a very slow sensor) // Read temperature as Celsius (the default) float t = dht.readTemperature(); // Read temperature as Fahrenheit (isFahrenheit = true) //float t = dht.readTemperature(true); // Check if any reads failed and exit early (to try again). if (isnan(t)) { Serial.println("Failed to read from DHT sensor!"); return "--"; } else { Serial.println(t); return String(t); } } String readDHTHumidity() { // Sensor readings may also be up to 2 seconds 'old' (its a very slow sensor) float h = dht.readHumidity(); if (isnan(h)) { Serial.println("Failed to read from DHT sensor!"); return "--"; } else { Serial.println(h); return String(h); } } const char index_html\\\[] PROGMEM = R"rawliteral( &amp;lt;!DOCTYPE HTML>&amp;lt;html> &amp;lt;head> &amp;lt;meta name="viewport" content="width=device-width, initial-scale=1"> &amp;lt;link rel="stylesheet" href="https&amp;#x3A;//use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> &amp;lt;style> html { font-family: Arial; display: inline-block; margin: 0px auto; text-align: center; } h2 { font-size: 3.0rem; } p { font-size: 3.0rem; } .units { font-size: 1.2rem; } .dht-labels{ font-size: 1.5rem; vertical-align:middle; padding-bottom: 15px; } &amp;lt;/style> &amp;lt;/head> &amp;lt;body> &amp;lt;h2>ESP32 DHT Server&amp;lt;/h2> &amp;lt;p> &amp;lt;i class="fas fa-thermometer-half" style="color:#059e8a;">&amp;lt;/i> &amp;lt;span class="dht-labels">Temperature&amp;lt;/span> &amp;lt;span id="temperature">%TEMPERATURE%&amp;lt;/span> &amp;lt;sup class="units">&amp;amp;deg;C&amp;lt;/sup> &amp;lt;/p> &amp;lt;p> &amp;lt;i class="fas fa-tint" style="color:#00add6;">&amp;lt;/i> &amp;lt;span class="dht-labels">Humidity&amp;lt;/span> &amp;lt;span id="humidity">%HUMIDITY%&amp;lt;/span> &amp;lt;sup class="units">&amp;amp;percnt;&amp;lt;/sup> &amp;lt;/p> &amp;lt;/body> &amp;lt;script> setInterval(function ( ) { var xhttp = new XMLHttpRequest(); xhttp.onreadystatechange = function() { if (this.readyState == 4 && this.status == 200) { document.getElementById("temperature").innerHTML = this.responseText; } }; xhttp.open("GET", "/temperature", true); xhttp.send(); }, 10000 ) ; setInterval(function ( ) { var xhttp = new XMLHttpRequest(); xhttp.onreadystatechange = function() { if (this.readyState == 4 && this.status == 200) { document.getElementById("humidity").innerHTML = this.responseText; } }; xhttp.open("GET", "/humidity", true); xhttp.send(); }, 10000 ) ; &amp;lt;/script> &amp;lt;/html>)rawliteral"; // Replaces placeholder with DHT values String processor(const String& var){ //Serial.println(var); if(var == "TEMPERATURE"){ return readDHTTemperature(); } else if(var == "HUMIDITY"){ return readDHTHumidity(); } return String(); } void setup(){ // Serial port for debugging purposes Serial.begin(115200); dht.begin(); // Connect to Wi-Fi WiFi.begin(ssid, password); while (WiFi.status() != WL_CONNECTED) { delay(1000); Serial.println("Connecting to WiFi.."); } // Print ESP32 Local IP Address Serial.println(WiFi.localIP()); // Route for root / web page server.on("/", HTTP_GET, \\\[](AsyncWebServerRequest \\\*request){ request->send_P(200, "text/html", index_html, processor); }); server.on("/temperature", HTTP_GET, \\\[](AsyncWebServerRequest \\\*request){ request->send_P(200, "text/plain", readDHTTemperature().c_str()); }); server.on("/humidity", HTTP_GET, \\\[](AsyncWebServerRequest \\\*request){ request->send_P(200, "text/plain", readDHTHumidity().c_str()); }); // Start server server.begin(); } void loop(){ } |
+
+  
+
+
+( \[link to github code](https&#x3A;//github.com/0SaNJ/codettesbootcamp_2023_code/blob/main/ESP_32_DHT_webserver_C%2B%2B) )
+
+  
+
+
+3\. Then we upload spiffs
+
+4\. Then we should get this on your page if everything is done correctly !\[](https&#x3A;//lh5.googleusercontent.com/enH2nBELaCYQgwZAXpicMjuzyPJjBqBrMcN03s6iTAInaVJLChk4CCRfr7OkogAVyhRDkDUDV6ccOJPWpYgQb3LGJHUyOxwpS7FBPP-GCVl6PVJj24aqi7oUXfsyNAxObjXdmxbIn_dqRIcVSlQR1Xk)
+
+  
+
+
+  
+
+
+\# Week 5
+
+  
+
+
+  
+
+
+\## Day 5 ( online )
+
+  
+
+
+  
+
+
+\### MQTT setup:
+
+  
+
+
+1\. First off we download MQTT lens ( &lt;https&#x3A;//chrome.google.com/webstore/detail/mqttlens/hemojaaeigabkbcookmlgmdigohjobjm> )
+
+2\. We need to understand the connection that takes place when sending and parsing data via MQTT, here: !\[](https&#x3A;//lh4.googleusercontent.com/mWaef26Cnh9mlncohXEdV1hbRr8_AzBC4sibpx4Tj0qfP7IAeLfxHhprhlLBnLinlBQZy4pbP89yqTlxbSWCvcn0ABxwvMmX5mjdrVRWKI7_RWXZsapK5OsIRbf6iT3lQYozn1PZvtZ4bqRCXOe4z8g)
+
+3\. For explanation we can follow this link ( &lt;https&#x3A;//techtutorialsx.com/2017/04/24/esp32-publishing-messages-to-mqtt-topic/> )
+
+4\. The C++ code
+
+  
+
+
+\| \|
+
+\| :-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: \|
+
+| \\#include &amp;lt;WiFi.h> #include &amp;lt;PubSubClient.h> const char\\\* ssid = "HUAWEI-2.4G-yzad"; const char\\\* password = "SkNH972g"; const char\\\* mqttServer = "broker.hivemq.com"; const int mqttPort = 1883; const char\\\* mqttUser = ""; const char\\\* mqttPassword = ""; WiFiClient espClient; PubSubClient client(espClient); void setup() { Serial.begin(115200); WiFi.begin(ssid, password); while (WiFi.status() != WL_CONNECTED) { delay(500); Serial.println("Connecting to WiFi.."); } Serial.println("Connected to the WiFi network"); client.setServer(mqttServer, mqttPort); while (!client.connected()) { Serial.println("Connecting to MQTT..."); if (client.connect("ESP32Client", mqttUser, mqttPassword )) { Serial.println("connected"); } else { Serial.print("failed with state "); Serial.print(client.state()); delay(2000); } } client.publish("jay/sanmohadi", "Hello from ESP32"); } void loop() { client.loop(); } |
+
+  
+
+
+( \[link to github code](https&#x3A;//github.com/0SaNJ/codettesbootcamp_2023_code/blob/main/ESP_32_DHT_MQTT_link_c%2B%2B) )
+
+  
+
+
+5\. Then we proceed to make some changes to the code such as !\[](https&#x3A;//lh4.googleusercontent.com/FS20gpgWf7VhpGbNG7Egcz5wBRR2NGjvWcpAXmOOwtL77ZwnqMgtch5nk6MNr4ZyqJNl5GVllqg5PAR6HMNGd6g8SjTmy35D6kZK8Wb-BZ5QC4lXLJBb1lE2ZzDzbokpR39yKWai2nFBjpetZRL6Jus)
+
+6\. Then we go to MQTT lens we change our host name and our port like shown!\[](https&#x3A;//lh3.googleusercontent.com/XfMpDET4qhinzhKYHvJVqCd23gKeTRwsF84Bf2cuBx2dPj2GaCCUTI4GlM1ejNo2j8P5VlNxxT7zb10zoqh5tV_99H8TeAbBgk2HevpxIgZdsZdzUt8pNlJGgSrvPk_owWwJIENc2crnVio5DohRCb8)
+
+7\. Then you should get a message here !\[](https&#x3A;//lh4.googleusercontent.com/9bNF_SWRaa2slzv0ArAyq1iGGzWqTaU3gl7TboNht8Y5k3w-OdnvmoTuztZxmuC3wEU30_ag-lhtHmassDkWOcmyORuqs9aVeDxz6uopfHGQ0fFBqjZh7QWhOMw0T5BwfYatQ8TreGeR4vEEE1U_74g)
+
+  
+
+
+  
+
+
+\# Week 6
+
+  
+
+
+  
+
+
+\## Day 6 ( online )
+
+  
+
+
+  
+
+
+\### DHT and MQTT link:
+
+  
+
+
+1\. Today we are going to send our DHT data over via MQTT. First off we're are going to download the code from here and change our credentials ( Wifi SSID etc ) ( &lt;https&#x3A;//docs.google.com/document/d/1gPfp3f9jbAcFxe7KjdTmtqzEG3QMySqYnl7Sw4jvW3E/edit> )
+
+2\. The C++ code
+
+  
+
+
+\| \|
+
+\| :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: \|
+
+| /\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\* Rui Santos Complete project details at https&amp;#x3A;//randomnerdtutorials.com \\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*/ #include &amp;lt;WiFi.h> #include &amp;lt;ESPAsyncWebServer.h> #include &amp;lt;SPIFFS.h> #include &amp;lt;Wire.h> #include &amp;lt;Adafruit_Sensor.h> #include &amp;lt;PubSubClient.h> #include "DHT.h" // Replace the next variables with your SSID/Password combination const char\\\* ssid = "HUAWEI-2.4G-yzad"; const char\\\* password = "SkNH972g"; // Add your MQTT Broker IP address, example: //const char\\\* mqtt_server = "192.168.1.144"; const char\\\* mqtt_server = "broker.hivemq.com"; WiFiClient espClient; PubSubClient client(espClient); long lastMsg = 0; char msg\\\[50]; int value = 0; #define DHTPIN 4 #define DHTTYPE DHT11 DHT dht(DHTPIN, DHTTYPE); const int ledPin = 2; float temperature = 0; float humidity = 0; AsyncWebServer server(80); String readDHTTemperature() { // Read temperature as Celsius (the default) float t = dht.readTemperature(); // Convert temperature to Fahrenheit //t = 1.8 \\\* t + 32; if (isnan(t)) { Serial.println("Failed to read from DHT sensor!"); return ""; } else { Serial.println(t); return String(t); } } String readDHTHumidity() { float h = dht.readHumidity(); if (isnan(h)) { Serial.println("Failed to read from DHT sensor!"); return ""; } else { Serial.println(h); return String(h); } } void setup() { Serial.begin(115200); // default settings // (you can also pass in a Wire library object like &Wire2) //status = bme.begin(); setup_wifi(); client.setServer(mqtt_server, 1883); client.setCallback(callback); Serial.println(F("DHTxx test!")); pinMode(ledPin,OUTPUT); dht.begin(); // Initialize SPIFFS if(!SPIFFS.begin()){ Serial.println("An Error has occurred while mounting SPIFFS"); return; } } void setup_wifi() { // Connect to Wi-Fi WiFi.begin(ssid, password); WiFi.setSleep(false); while (WiFi.status() != WL_CONNECTED) { delay(1000); Serial.println("Connecting to WiFi.."); } // Print ESP32 Local IP Address Serial.println(WiFi.localIP()); // Route for root / web page server.on("/", HTTP_GET, \\\[](AsyncWebServerRequest \\\*request){ request->send(SPIFFS, "/index.html"); }); server.on("/temperature", HTTP_GET, \\\[](AsyncWebServerRequest \\\*request){ request->send_P(200, "text/plain", readDHTTemperature().c_str()); }); server.on("/humidity", HTTP_GET, \\\[](AsyncWebServerRequest \\\*request){ request->send_P(200, "text/plain", readDHTHumidity().c_str()); }); // Start server server.begin(); } void callback(char\\\* topic, byte\\\* message, unsigned int length) { Serial.print("Message arrived on topic: "); Serial.print(topic); Serial.print(". Message: "); String messageTemp; for (int i = 0; i &amp;lt; length; i++) { Serial.print((char)message\\\[i]); messageTemp += (char)message\\\[i]; } Serial.println(); // Feel free to add more if statements to control more GPIOs with MQTT // If a message is received on the topic esp32/output, you check if the message is either "on" or "off". // Changes the output state according to the message if (String(topic) == "jay/sanmohadi/output") { Serial.print("Changing output to "); if(messageTemp == "on"){ Serial.println("on"); digitalWrite(ledPin, HIGH); } else if(messageTemp == "off"){ Serial.println("off"); digitalWrite(ledPin, LOW); } } } void reconnect() { // Loop until we're reconnected while (!client.connected()) { Serial.print("Attempting MQTT connection..."); // Attempt to connect if (client.connect("ESP32Client")) { Serial.println("connected"); // Subscribe client.subscribe("jay/sanmohadi/output"); } else { Serial.print("failed, rc="); Serial.print(client.state()); Serial.println(" try again in 5 seconds"); // Wait 5 seconds before retrying delay(5000); } } } void loop() { if (!client.connected()) { reconnect(); } client.loop(); long now = millis(); if (now - lastMsg > 5000) { lastMsg = now; // Temperature in Celsius temperature = dht.readTemperature(); // Uncomment the next line to set temperature in Fahrenheit // (and comment the previous temperature line) //temperature = 1.8 \\\* bme.readTemperature() + 32; // Temperature in Fahrenheit // Convert the value to a char array char tempString\\\[8]; dtostrf(temperature, 1, 2, tempString); Serial.print("Temperature: "); Serial.println(tempString); client.publish("jay/sanmohadi/reading/temperature", tempString); humidity = dht.readHumidity(); // Convert the value to a char array char humString\\\[8]; dtostrf(humidity, 1, 2, humString); Serial.print("Humidity: "); Serial.println(humString); client.publish("jay/sanmohadi/reading/humidity", humString); delay(2000); } } |
+
+  
+
+
+3\. Then we upload the spiffs then the code and we should get a reading like shown !\[](https&#x3A;//lh5.googleusercontent.com/AmLNeAOHGsi09rHI4Ao8ojhfF5jGRmfyVRDFQDBAQazU3CXT3kWdraNettzhqYJWBGIivEmibEJWluZOB_D0uf9aXf0jr25L1MOcXd7LR8HwILhmG4oSCb1teEavVnpB8kis6qiyJ2C-uFP55cnhuxk)
+
+4\. For the webpage you should get something like this !\[](https&#x3A;//lh6.googleusercontent.com/sX6TzWBGjdwGM3iL1_Opyy8yVf4Y3yNoqh-O1g643eTx1XpTeGePxg446eFs3FH9iwp67mKvKg0nh8k6NSQyswg_g_8LC166fM9BCUF386WdBD3uMHYID9z9NvqHYHBc_1k9NBvW-vFQS0oPw8dV16c)As time goes on the web page will make a graph
+
+  
+
+
+  
+
+
+\# Week 7
+
+  
+
+
+  
+
+
+\## Day 7 ( online )
+
+  
+
+
+  
+
+
+\### Node.js setup:
+
+  
+
+
+1\. Today we’re going to set up our node.js environment. First off we have to download node.js you can follow this tutorial on how install node.js on ubuntu ( &lt;https&#x3A;//www.knowledgehut.com/blog/web-development/install-nodejs-on-ubuntu> )
+
+2\. Then we use nvm to install node.js version 16.0.0 like here !\[](https&#x3A;//lh6.googleusercontent.com/ibyfe4i0teE-ZSh1Wh6E52d2mjWaywNUnNv1J-JQWot1fwOSBF9Vx-XL1VRSFeAaoph6jpGma2_LaLpkZciSjJdHkacb3wAQO9LpgeDJrlwoKg-YgylGMwxiy5E5lCfQcKDwddO_up971ImLlHH6Z1o)
+
+3\. Then we download the code and customize it. The code can be found here ( &lt;https&#x3A;//drive.google.com/drive/folders/1rq81PdjlsMFowDBo4Yq6Y9wfd-yVzd25?usp=sharing> )
+
+4\. Now we are going to download Mosquitto. The download link can be found here ( &lt;https&#x3A;//mosquitto.org/download/> )
+
+5\. Were also going to download MongoDB Compas ( &lt;https&#x3A;//www.mongodb.com/try/download/compass> )
+
+6\. We’re going to make a folder called nodejs
+
+!\[](https&#x3A;//lh6.googleusercontent.com/kM9_c9xiba37LDlwdz7pU1icC91dfLu2u0omHDKciNEggW4m6HhoHbaGHBEysO3ZYsoySoI3BUn2IhHH6qHEkkmwY8koDh3R5MkxvKEfajFD90bUR6vEEg5SrrVqOlHC4MVsV3j452jjjAKfmaU4IqE)then we go to projects → !\[](https&#x3A;//lh4.googleusercontent.com/R8uCYhPwtzy5hU0I3oVtxEB-BRL00AkwggTL8YJrRghtSw21BoM4Hwxf_onrp7GXxsqEDv8Mb65hl3oULAmKvrBQ5OFGzseyHGUzzIuchyOZtbwGt-vVrzd6hmjvYR94whlKZJ298C3cOz2kFm9S3MM)then we make a folder called mongostack →!\[](https&#x3A;//lh4.googleusercontent.com/k1T2yVYLiCwxfvapLgwdCJ1dQLXlXvrCk2LFkonx1_9XpaiToCjoyMpijscuDTJRRPEyJnxSbJ5JISMXwwpQBvhmESNE4Iy1mmekJGDWrTS3LqVWQjBhvGdgxbJ7TukEeuEmLC5w\_\_gMxRz4EbztVhA) and in that folder we put our app.js and public folder→ !\[](https&#x3A;//lh5.googleusercontent.com/O4bj41aBgiAhnenXverkZm6mWm-QqmieAXtq4gEbdgV\_\_amhzklmxiFdjlNoRLH4TW7hSRL8oniiCwp-HqVX6xUcKwxIgPiVqCY414cGJdcrx77tixczso9m2eHZo9ynZxBUsUgJYugaB-73C8e7c30)then in that public folder we will have these files →!\[](https&#x3A;//lh6.googleusercontent.com/15-AWpi4QBD9eBkSSYT04Ksqd0usPI85HryN27o6eXc4Iz7UytWGZWw3a3z6-67zfHoFFPeYf2Nndebv-ar2wpCfK0Fb8lfyAnEUtIeYpgzSAiDr5u83XxFPuxZLQci0Ls_EgL9STXm99vJKbHVRQes)
+
+7\. Now we open up the app.js file and make some changes to it
+
+!\[](https&#x3A;//lh3.googleusercontent.com/h7TTdvthnq5YZzdz15hpWIzZL86zC8ZiLlLV2wrjx_nFAV76nFDCBxCZ3wdiBpTkY8SYb7Wp79FPCeyPtjfIV8Ynnvanfi4HqhxHwpktSJDn9rquoJnM4Sg5cNiLPxc4UPvWiTG29HeIhBgVo--5yJo)
+
+8\. The .js code
+
+  
+
+
+\| \|
+
+\| :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: \|
+
+| var MongoClient = require('mongodb').MongoClient; var url = "mongodb://localhost:27017/"; // "mongodb://localhost:27017/iotstack"; var express = require('express'); var app = express(); //Server Variables var host = process.env.IP \\|\\| 'localhost'; var port = process.env.PORT \\|\\| 9000; var staticSite = \\\_\\\_dirname + '/public'; var mqtt = require('mqtt') var client = mqtt.connect(\\\[{host:'localhost',port:'1883'}]) //var client = mqtt.connect(\\\[{host:'broker.hivemq.com',port:'1883'}]) // console.log("Nodejs Server Started!"); // on mqtt conect subscribe on tobic test client.on('connect', function () { client.subscribe('jaysanmo/codettes/01', function (err) { console.log("sub scribing to test topic"); if(err) console.log(err) }) }) //when recive message client.on('message', function (topic, message) { json_check(message) }) //check if data json or not function json_check(data) { try { // JSON.parse(data); msg = JSON.parse(data.toString()); // t is JSON so handle it how u want } catch (e) { console.log("message could not valid json " + data.toString); return false; } console.log(msg); var msgobj = { "msg": msg }; // message object Mongo_insert(msgobj) console.log(msgobj); } //insert data in mongodb function Mongo_insert(msg){ MongoClient.connect(url, function(err, db ) { if (err) throw err; var dbo = db.db("cb"); dbo.collection("class").insertOne(msg, function(err, res) { if (err) throw err; console.log("data stored"); //db.close(); }); }); } // ENABLE CORS for Express (so swagger.io and external sites can use it remotely .. SECURE IT LATER!!) app.use(function(req, res, next) { res.header("Access-Control-Allow-Origin", "\\\*"); res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept"); next(); }); // ROUTES FOR OUR API // ============================================================================= var router = express.Router(); // get an instance of the express Router app.use('/', express.static(staticSite)); // Use router for all /api requests if (! process.env.C9_PID) { console.log('Running at http&amp;#x3A;//'+ host +':' + port); } app.listen(port, function() { console.log('Listening')}); |
+
+  
+
+
+( \[link to github code](https&#x3A;//github.com/0SaNJ/codettesbootcamp_2023_code/blob/main/ESP_32_DHT_MQTT_MongDb_Node.js_Mosquitto_link_app.js_code) )
+
+  
+
+
+9\. Then we go to our command console and go to the mongostack folder and download all the necessary files
+
+10\. First is express !\[](https&#x3A;//lh6.googleusercontent.com/9dztERXJcWmc7R8tFyfZQQyfDtmAap-vabTFJAl3ze7GDZqnw3t2D8YT2uIpql8jHMOvRvzXVhJFqxyPyA8nOv9HjJKdi7gvq5UOW1n5i8aqHRlfZ2xwf9DKGGxxe1JhZjNOkuNudfXbexVUmImLkpg)
+
+11\. Then MQTT !\[](https&#x3A;//lh4.googleusercontent.com/0dC0R-zfX6ohR-vhvuCMzMOowQ8WahEDAcqVTCRl6046-U2SFgf9AMlzgbx9bhLLEjkQJuuxCG-G2AEDcTOWH-UdKOOYgJDCOYo5UIkvhW3ypS5OhPg-ClXuLxfN43iqDME71PIWtyVv4Vz1T2u6G94)
+
+12\. Then we open a different console where we search for our ip and we check our ip on ubuntu by using this command !\[](https&#x3A;//lh5.googleusercontent.com/2NUZ7ASylzcOvwjY8wSQzQlZO5bOS0I5e7inswJC2GgE_M7fl_AyMihJJTpNETjXLQk777ZQ6J2xx-ug3Dm4s8T5ItMV_DpU3_0DVTRkIFCyL6D3kcCnNo7GjsAtk6ikFxiTlB-ufRCQ_r_3N7FMQvg)
+
+13\. Then we find our ip here !\[](https&#x3A;//lh4.googleusercontent.com/fzMUka7y34iWXgKjzFUPaE31Aib70EWuRg9avxvnX3-japo3JCOOe8SJwipWIO5K7GVqJHHDFDq14W58nAHC28wzdaciZ00bKXV2a3Gn0kBljwTEoKDCqWOYn2o1ojld06xVTVgpLdqKAHvP9gMxDpU)
+
+14\. Now we go to our mosquitto folder and put a test.conf file in there !\[](https&#x3A;//lh3.googleusercontent.com/HnYTaW4VgtZ0sPNPANfL3U8SDPiAPXexe0eDlRHz1zliO7i1l2TZZlwLJB5WsVSbB5aUL3Dn5CaZopbzUHgAzlvBWlP_Zx7s5eUSlvQjeyXBdWKgHYfpr7ghfSLKyCiFtmBM51xZzc_QJRT0UOML4yw)
+
+15\. In the test.conf we put this !\[](https&#x3A;//lh5.googleusercontent.com/bzBT_c3GAZ8E49cCIl8nXceWWoh6KkLy2A2S-8btiK7A1oD5AOdRgFRdw4mYoMLG0DBji8xNVH8pg5qQ0k5kk8SXMteglH0RwQvB209_ouDH-TovbBo1W7Yzdq\_\_GMXECcSug23J6kCsjQx6ilzF3GQ)
+
+16\. Now we open up a new terminal and path to mosquitto. Then we do
+
+“mosquitto -v -c test.conf” like here !\[](https&#x3A;//lh4.googleusercontent.com/-oj0_ZlvsmnMBJrq7jxtalKmdvNCKpNQxzlAuk38p5PL6o2IZb2tdbizFRCo5-TNKIHswrwkRe3lrAeciLiY06oU6_5huWZeYXZr6snVR4sHKPxiDDJqyYoPxjw6Ku3zffruPAxVIp6IAZt42FtkA2w)but here there's a problem but there is a fix for that first we look on which ip the mosquitto is on by using this command !\[](https&#x3A;//lh5.googleusercontent.com/WCD9FtUgYaOnFn9H-F4yqZ5NTNgVrpf9NusPy3vogSaj2gbLrXuasnIDui3SExVPZXuveTjXIRsP4DrLs4p5JaZWe3NCe6tSKxrbAJZ21t2w3lfl8XNbVE1J94zd3MYDVukJYzwg5jHXT6gc-0n8OgU)
+
+17\. We kill the current running program like here !\[](https&#x3A;//lh5.googleusercontent.com/e9aLDoN0c3cJm4TdVTJV6wNp8ZxZh5zXneYMqeEs_VLu7HDU_kpQpDEefyLRCEhELf4ePQQ5Q1VBjLx0QCordn7-51thW6BACLlYTSi77tYadU7zI4WHaAGLRDv1UhkPUcbZn3nu8QXCwOiB_KG_yDs)
+
+18\. Now the problem should be fixed as seen here !\[](https&#x3A;//lh6.googleusercontent.com/5pi7VY6V8ey-P708u4UfEBizVjAh359OLPNNMxAKlUPOqZqdIvqcKWkxdhTgRy6BldSk9GJyExR_dr-JPCvWeNKjhR2WOC3vLq2JKZEWojaKoyuX6T3zTITKFFd4FvSZNyMQTCk84Jtmod3eiBbxEyM)
+
+19\. Now we go to the mongostack folder and start our app.js file as shown here !\[](https&#x3A;//lh4.googleusercontent.com/kuSbLH8eXNVFaGYYvMvn1QEZlL2yi2ltSANywMgZfffZovAGpUHbkZ8S9l9bwCoLV4YTa7K_aW0Ei5HSnHKkbYo6DwS0ISremYd3w3xlbIi3lrA-opt3rB-mjEJb2QmJFA8bHPYmYGhttku4PeSet9Y)
+
+20\. With all that done we upload the code and see our temps and humid in our serial monitor !\[](https&#x3A;//lh3.googleusercontent.com/lK42PnEAGqOVppPW8Irpw8h9aRNQzGy7CrVJyNPg6PNR6_6WaVuf0qx1YVnUijlVM-oD2LMwcbZqXYuSHviZpVvJiGWj9OT6O2nb91vjegMwmQ8nIzC36oo9i-rcQ6n9d0m81-7sGA5zdvUM-f8hO2w)
+
+21\. We should also see it in our mosquitto terminal like here !\[](https&#x3A;//lh6.googleusercontent.com/3KfEsCpi2FInDbrEGQIMZ0ExGXk0XpeRLXqNbXAsqosRLcw2_S0mWOEjK3a9iFcvEohJhI7LgLa-CPmAc6qxBHwdOzvTAU97vRSQt-HHlLqFh6y5ALOQnGl2XYuEq0yZ5tjQGRCzu38I-BAZtv7N6VE)
+
+22\. And also in our nodejs terminal !\[](https&#x3A;//lh6.googleusercontent.com/AyYxt7SXPxEuczEcp3DwigrWEMNUccw-5j9hyGy0Ty3ou4ncw5NqLEJ8DDZWxLk_6G8oRJVJv9VDJKCOTgddGeoNZuWqGrjr4fjlSUFB0bqOOrX7SWGooO42oGpSZA9jPvMtM5nDbeb7WPZrpb3jNgk)
+
+23\. If we want to see the info on our MQTT lens we have to change the broker to our ip here !\[](https&#x3A;//lh5.googleusercontent.com/Rs7s3-RtozQh_k5u8AyjzVN7rbewifHdVsc9PnXffV2yTYiknxYbvf5ZSqfIHfGVnALgPrhKwih_8_do6ibpSYYuI8fZNvl6umFWHnUidioE9eBP_t8R8XDyZmnFXKiTR_18grQhozBNYvr0D9pjb6w)
+
+24\. And also in our MQTT lens !\[](https&#x3A;//lh5.googleusercontent.com/hGkYzhnJQVdPXceWmFzR2ECkliSn1IzTMkhJ0BcRi3LO8Zy5KEhkakA0Y8ql5hyIyc-E9iToDe_WGdLLat23t_o8AGS6PxBTBLQJSXVmM-yJa4p5Pll-ZW0e0dyaCIda7iRi9KXIHZgg7i_PSJ2E0Lw)
+
+25\. The index.html code
+
+  
+
+
+\| \|
+
+\| :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: \|
+
+| &amp;lt;?xml version="1.0" encoding="UTF-8" standalone="no"?> &amp;lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http&amp;#x3A;//www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> &amp;lt;html xmlns="http&amp;#x3A;//www.w3.org/1999/xhtml"> &amp;lt;head> &amp;lt;title>Mosquitto Websockets&amp;lt;/title> &amp;lt;meta name="viewport" content="width=device-width, initial-scale=1.0"> &amp;lt;script src="mqttws31.js" type="text/javascript">&amp;lt;/script> &amp;lt;script src="jquery.min.js" type="text/javascript">&amp;lt;/script> &amp;lt;script src="config.js" type="text/javascript">&amp;lt;/script> &amp;lt;script src="https&amp;#x3A;//code.highcharts.com/highcharts.js">&amp;lt;/script> &amp;lt;/head> &amp;lt;body> &amp;lt;h1>Mosquitto Websockets&amp;lt;/h1> &amp;lt;div class="widget-container" > &amp;lt;div class="widget"> &amp;lt;i class="fa fa-thermometer-empty">&amp;lt;/i> &amp;lt;span class="label">Temp&amp;lt;/span> &amp;lt;span class="widget-value temp-data">15&amp;lt;/span> &amp;lt;/div> &amp;lt;div class="widget"> &amp;lt;i class="fa fa-tint">&amp;lt;/i> &amp;lt;span class="label">Humid&amp;lt;/span> &amp;lt;span class="widget-value humid-data">50%&amp;lt;/span> &amp;lt;/div> &amp;lt;/div> &amp;lt;div id="chart-container">&amp;lt;/div> &amp;lt;div> &amp;lt;div>Subscribed to &amp;lt;input type='text' id='topic' disabled /> Status: &amp;lt;input type='text' id='status' size="80" disabled />&amp;lt;/div> &amp;lt;ul id='ws' style="font-family: 'Courier New', Courier, monospace;">&amp;lt;/ul> &amp;lt;/div> &amp;lt;script type="text/javascript"> var mqtt; var reconnectTimeout = 2000; function MQTTconnect() { if (typeof path == "undefined") { path = '/mqtt'; } mqtt = new Paho.MQTT.Client( host, port, path, "web\\\_" + parseInt(Math.random() \\\* 100, 10) ); var options = { timeout: 3, useSSL: useTLS, cleanSession: cleansession, onSuccess: onConnect, onFailure: function (message) { $('#status').val("Connection failed: " + message.errorMessage + "Retrying"); setTimeout(MQTTconnect, reconnectTimeout); } }; mqtt.onConnectionLost = onConnectionLost; mqtt.onMessageArrived = onMessageArrived; if (username != null) { options.userName = username; options.password = password; } console.log("Host="+ host + ", port=" + port + ", path=" + path + " TLS = " + useTLS + " username=" + username + " password=" + password); mqtt.connect(options); } function onConnect() { $('#status').val('Connected to ' + host + ':' + port + path); \_// Connection succeeded; subscribe to our topic\_ mqtt.subscribe(topic, {qos: 0}); $('#topic').val(topic); \_// Set up chart\_ chart = Highcharts.chart('chart-container', { chart: { type: 'line', }, title: { text: 'Sensor Data', }, xAxis: { type: 'datetime', title: { text: 'Timestamp' } }, yAxis: \\\[{ title: { text: 'Temp' } }, { title: { text: 'Humid' }, opposite: false \_// display on opposite side of chart\_ }], series: \\\[{ name: 'Temp', data: \\\[], yAxis: 0 \_// use the first yAxis (index 0) for this series\_ }, { name: 'Humid', data: \\\[], yAxis: 1 \_// use the second yAxis (index 1) for this series\_ }] }); } function onConnectionLost(response) { setTimeout(MQTTconnect, reconnectTimeout); $('#status').val("connection lost: " + responseObject.errorMessage + ". Reconnecting"); }; function onMessageArrived(message) { var topic = message.destinationName; var payload = message.payloadString; $('#ws').prepend('&amp;lt;li>' + topic + ' = ' + payload + '&amp;lt;/li>'); \_// Parse message data\_ var data = JSON.parse(payload); var timestamp = new Date().getTime(); var temp = parseFloat(data.temp); var humid = parseFloat(data.humid); chart.series\\\[0].addPoint(\\\[Date.now(), data.temp]); chart.series\\\[1].addPoint(\\\[Date.now(), data.humid]); \_// Redraw the chart\_ chart.redraw(); \_//WIDGET\_ const widgetContainers = document.querySelectorAll('.widget-container'); \_// Loop through each widget container and update the widget data\_ widgetContainers.forEach(widgetElement => { widgetElement.querySelector('.temp-data').textContent = data.temp; widgetElement.querySelector('.humid-data').textContent = data.humid; }); }; $(document).ready(function() { MQTTconnect(); }); &amp;lt;/script> &amp;lt;/body> &amp;lt;/html> &amp;lt;style> .widget-container { display: flex; flex-wrap: wrap; justify-content: space-between; width: 100%; max-width: 1200px; margin: 0 auto; } .widget { flex-basis: calc((100% - 30px) / 4); \_/\\\* 4 widgets in the first row \\\*/\_ margin-bottom: 20px; background-color: #ffffff; padding: 10px; border: 1px solid #e3e3e3; text-align: center; } &amp;lt;/style> |
+
+  
+
+
+( \[link to github code](https&#x3A;//github.com/0SaNJ/codettesbootcamp_2023_code/blob/main/ESP_32_DHT_MQTT_MongoDB_Node.js_Mosquitto_html_code) )
+
+  
+
+
+26\. The C++ code
+
+  
+
+
+\| \|
+
+\| :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: \|
+
+| // Import required libraries #include &amp;lt;WiFi.h> #include &amp;lt;ESPAsyncWebServer.h> #include &amp;lt;SPIFFS.h> #include &amp;lt;Wire.h> #include &amp;lt;Adafruit_Sensor.h> #include &amp;lt;DHT.h> //MQTT #include&amp;lt;PubSubClient.h> #include &amp;lt;ArduinoJson.h> WiFiClient espClient; PubSubClient client(espClient); //MQTT const char \\\* mqtt_broker = "192.168.1.69"; //const char \\\* mqtt_broker = "broker.hivemq.com"; const char \\\* mqtt_topic = "jaysanmo/codettes/01"; // CHANGE SensorID here! const char \\\* mqtt_User = ""; const char \\\* mqtt_Password = ""; // Replace with your network credentials const char\\\* ssid = "Team09"; const char\\\* password = "H@ckTe@m)("; #define DHTPIN 4 #define DHTTYPE DHT11 DHT dht(DHTPIN, DHTTYPE); // Create AsyncWebServer object on port 80 AsyncWebServer server(80); float t = 0; float h = 0; String readDHTTemperature() { // Read temperature as Celsius (the default) float t = dht.readTemperature(); // Convert temperature to Fahrenheit //t = 1.8 \\\* t + 32; if (isnan(t)) { Serial.println("Failed to read from DHT sensor!"); return ""; } else { Serial.println(t); return String(t); } } String readDHTHumidity() { float h = dht.readHumidity(); if (isnan(h)) { Serial.println("Failed to read from DHT sensor!"); return ""; } else { Serial.println(h); return String(h); } } void setup() { // Serial port for debugging purposes Serial.begin(115200); dht.begin(); // Initialize SPIFFS if (!SPIFFS.begin()) { Serial.println("An Error has occurred while mounting SPIFFS"); return; } // Connect to Wi-Fi WiFi.begin(ssid, password); WiFi.setSleep(false); while (WiFi.status() != WL_CONNECTED) { delay(1000); Serial.println("Connecting to WiFi.."); } // Print ESP32 Local IP Address Serial.println(WiFi.localIP()); //MQTT client.setServer(mqtt_broker, 1883); if (initMqtt()) { client.publish("jaysanmo/codettes/01", "Hello from ESP32"); } // Route for root / web page server.on("/", HTTP_GET, \\\[](AsyncWebServerRequest \\\* request) { request->send(SPIFFS, "/index.html"); }); server.on("/temperature", HTTP_GET, \\\[](AsyncWebServerRequest \\\* request) { request->send_P(200, "text/plain", readDHTTemperature().c_str()); }); server.on("/humidity", HTTP_GET, \\\[](AsyncWebServerRequest \\\* request) { request->send_P(200, "text/plain", readDHTHumidity().c_str()); }); // Start server server.begin(); } unsigned long lastMqttTime = millis(); const unsigned long Mqtt_INTERVAL_MS = 2000; void loop() { client.loop(); // Send regular mqtt data if ((millis() - lastMqttTime) > Mqtt_INTERVAL_MS) { if (client.connected()) { //GetWeatherData(); handle_MqttData(); lastMqttTime = millis(); } else { initMqtt(); } } } void GetWeatherData() { } bool initMqtt() { if (!client.connected()) { Serial.println("Connecting to MQTT..."); if (client.connect("ESP32Client", mqtt_User, mqtt_Password )) { Serial.println("connected"); return true; } else { Serial.print("failed with state "); Serial.print(client.state()); delay(2000); return false; } } } void handle_MqttData() { float h = dht.readHumidity(); float t = dht.readTemperature(); StaticJsonDocument&amp;lt;2048> doc; //JsonObject createNestedObject() const; doc\\\["temp"] = t; doc\\\["humid"] = h; char out\\\[2048]; int b = serializeJson(doc, out); serializeJson(doc, Serial); Serial.print("bytes -> "); Serial.print(b, DEC); // add if delivered or not client.publish((char\\\*)mqtt_topic, out) ? Serial.println(" -> delivered") : Serial.println(" -> failed"); } |
+
+  
+
+
+( \[link to github code](https&#x3A;//github.com/0SaNJ/codettesbootcamp_2023_code/blob/main/ESP_32_DHT_MQTT_Node.js_MongoDB_Mosquitto_link_c%2B%2B_code) )
+
+  
+
+
+  
+
+
+\# Week 8
+
+  
+
+
+  
+
+
+\## Day 8 ( online )
+
+  
+
+
+  
+
+
+\### MongoDB connection:
+
+  
+
+
+1\. All the steps from last week
+
+2\. Connect to mongoDB Compass as seen here and you should see this
+
+!\[](https&#x3A;//lh6.googleusercontent.com/UvQ42POGs_q3_aUz78OdOpA8W0MdAfF5CmiVLkrIvwfIwuvX5ZQMjgUOQeamnZ5S-E6_Hw5q1fUrkea_KhjyNuE9WZEzn3c3OSFEmG5O75R3qIrixBSLHhZomhnNQyNtupf3-hRyH\_-AXIj6bEIRzkY)
+
+  
+
+
+  
+
+
+\# Week 9
+
+  
+
+
+  
+
+
+\## Day 9 ( online )
+
+  
+
+
+  
+
+
+\### Live Highcharts:
+
+  
+
+
+1\. Same steps as the last 2 weeks
+
+2\. Now we go into our index.html ( download index.html here &lt;https&#x3A;//drive.google.com/file/d/1kJpv-vVDiMtk_jqT-kp-OBGmptDSfbx5/view?usp=drive_link> ) file in our mongostack folder then we put the highcharts in ( &lt;https&#x3A;//www.highcharts.com/> ) !\[](https&#x3A;//lh3.googleusercontent.com/clLBC6IxhTrxqU5ULTxWGkvYaPAMosAnwNz2HurbCqKtrXFlF9sj3YOLkaVLcdAfIKqJ3iHM6yOv9UbRNIp3mmmy04sJgGuO-4n8TNlFa4jtUMUbpS5f7l4c6G4OfiBSYttP2peCL5VPdl_IjSovOu4) →!\[](https&#x3A;//lh4.googleusercontent.com/rBrHxcObA2WNQEBrHDaG8dbgv-zMF2zEpXgwni7O-YrVOmFT8C2CXZiOc1vqnsO3XE7Cm_XdcNJQYGP2hAM53qsHLghC9jUi6xBhLm2nr1k37NTQpg9bKx9LG-ftMiwoxS444e7QEmHw6zbEd1NZJnY) → !\[](https&#x3A;//lh6.googleusercontent.com/GUtSjO4GwlBMk2CKB4NVwAkKvjW6XVRJBn-V-mdx-1T6afvM9Fm_qPAALxxTW5uIDzXwHoaWxU8MYqkVWQm3CENlJk9faLFzvGbSf-F9vsT-ps9NotpVeVkLI-zt8Lt-NmO6bzSWDCpBE-LNZ2Q4bzg)
+
+3\. Your chart should look something like this !\[](https&#x3A;//lh5.googleusercontent.com/pLiQzXt6ajJk3jo8LQt5MUimQJjJK8BO3Ui4rQhEjgUq_o8jjEsY0PG1mw5GtsRTZbVomuo01QhC3wp4u5HRJWDeZRtt_UVWFb6U-3SlqeQHv5SD7j68oFiga21AaEEmMczf8MTGWNHcj9JIZTsRiag)
+
+  
+
+
+  
+
+
+\# Week 10
+
+  
+
+
+  
+
+
+\## Day 10 ( online )
+
+  
+
+
+  
+
+
+\### Customizing our highcharts:
+
+  
+
+
+1\. First we do the same things as last week and open our index.html
+
+2\. Then we customize it
+
+3\. First we add our icons as shown here
+
+!\[](https&#x3A;//lh3.googleusercontent.com/H-SnpZIp9yv1BKrKSsc7vwA7qdiX9BcXZjw6YO4U1eWrLAbXlPK3Cj_Hj2EF8grcRu4L3SX2ukecAtQOFuG_DYb02mMthN4vFu04FXUWrd3q69wYN8Ajy8VyVWl0ex-ndgS4-ncU8V039Fe_37dd8jY)
+
+4\. Then to update the info the charts we do this
+
+!\[](https&#x3A;//lh5.googleusercontent.com/Fm5wfaNihGWMOhSC5KiP-sSSkWlXB54_nO5lJZMoCfvboKOquyEeqb5U9Gq2tYGkMJAQaW3BhpZNnoCtNbbRP0iiezv-7GDaUjfXpknkGyHss1J6DWm0lCDFU6bH_NFOlX34nu2Z5QKNZN1L4bJUCLk)
+
+5\. Then we style it to our liking here
+
+!\[](https&#x3A;//lh5.googleusercontent.com/t2FFPYuxdXP9b9qCULzkB5pY2RsSr5HS9gVzcSUNQlVjF2FrfzADCKhl3xgFScMEuksUem1VOhdMoWxkx-xLntjR7T3idHZKj21vDRFr7Etxd5aF8ebwgfxC7xjWvrEThUaRIHekD3MnYde_hkYksUE)
+
+6\. It should look something like this !\[](https&#x3A;//lh6.googleusercontent.com/YgBipOvIMb8hq7-Fq5RrRsZyUsKDOsSwK1yh5VwcxAWj7dsauGA1jr2NHci5bWjLcXA-jw-qW8apMWLIJLpvf3bxL51zq4G_xJnd0KOl57-gJnQNnYfPuY4jBrit22n2Lt9o5CsqMiqVqJjBh4lpEL4)
+
+  
+
+
+  
+
+
+\# Week 11
+
+  
+
+
+  
+
+
+\## Day 11 ( online )
+
+  
+
+
+  
+
+
+\### Introduction to API
+
+  
+
+
+1\. First we download VScode ( &lt;https&#x3A;//code.visualstudio.com/Download> ) then we open it
+
+2\. Now we download the rest client extension as shown here
+
+  
+
+
+!\[](https&#x3A;//lh3.googleusercontent.com/5OHEDGydo7YUHSMaKpfF3CbeDaVxcrFSakfDrhsWfdrtq8X3TebWnmY10hFZCEyDMAs8BanLKoIsh13S0XMScXzLAvK7oOHOzqnczHD2V_tklBdIQK8gATYDSihjkQOnb7v5wLG75njdzmupyYmcoGI)
+
+  
+
+
+3\. Create a .js file in your nodejs projects folder like shown
+
+  
+
+
+!\[](https&#x3A;//lh4.googleusercontent.com/9BER7BjNEEyc1axLKPeMnXNSeIoytKAHA9A2wBVUyNRlT5KbRQNDXO9zUkX6LoiSv_yft8pm8U6dgAOd1sVkp2GZolrBdJsZYmWy8ABSVwTLAmwg0-udoysD4mOxT2mZkGsRBRpKVf4Gwx\_\_FRChCUc)
+
+  
+
+
+4\. Then we install the needed libraries using npm the needed libraries are
+
+  
+
+
+!\[](https&#x3A;//lh4.googleusercontent.com/1OJLhqOcOlNAyEEzzn9chEya30AT21S0OVdITK91DbO270aVuDHbAnMCVWpM27hRexDK02uB1T_ZiY66QI-yVPhQgtsgn4h9tpMSEXM6fKmMdU3P9ldYiuZAz0ZE4x1PZJeUd_xsHu8ULBd62NvQfoE)
+
+  
+
+
+5\. Let me show you how to install these libraries. Starting with path
+
+  
+
+
+!\[](https&#x3A;//lh5.googleusercontent.com/qBlVun16Ncv7mNwvoTtl-tithGWZPdg8FM1yasfAQrJ1_EWHQvnumnc698iFC95CbsiHprya0uB72t21nW8j0oVQ8N_eKcu4R-3-Si4V6n_CNVPAOr-oVb8fs_PcABBsSP8zKBrepOtfnUFv_69ReYM) → !\[](https&#x3A;//lh5.googleusercontent.com/9b-tXWkht6barB8RvXyRhsCSkj0NUpyXfk26BM-ZBFz0X94xga8TRdd9qoNOMWHkPieUig-YsuapeRAjj9aUOkPVasMx5akGi4ni4OIdXIchvFCCJAINVF2_jILNZCu5knE82BkW_VxvlZepaBMeC74)
+
+  
+
+
+6\. Then we do the same for the rest of the libraries
+
+  
+
+
+!\[](https&#x3A;//lh6.googleusercontent.com/1alEeH0ong6zYObu5fsflrILBRSSWl0ZC70MF7XJWUOvfpOfEyqSBCg1_A2FoCZW-ZQuaGYKXQ8_oHm-D38GE-zJ39MnPAkdOiGW1vGNdiPc5NLu5FURD_HJqRl7Q-GWP8gI2IMwHEjjkMOtKTUjJ68) → !\[](https&#x3A;//lh3.googleusercontent.com/JPT1levbZzXnLBAauKdMRS3LZaoJ2uKYrqKwbHU0pditcAS9XyRS-VdiKss76eYHkbFDERtt9NPT74amv6sE-6I-KdwMNa9HN3kZCLOxVMA3eu97kySFLKwqUZH0bUCO-ER6DHb0w6uQM5WXs_r7lGw) → !\[](https&#x3A;//lh3.googleusercontent.com/tArcvUDur_fOqW-NUNl3ODsZnVWSwHIZbOjzYzp9RnmRpxmIAEiWNImxOBvk_kKHBu_KB2u6SiJTOJTf73luvaig5Fm8D1kzf-ISsANyl6_tXUoAYdsr07ueCEcb7DwlE3kqvQFiKX4ZWvyItGGxyJ0)
+
+  
+
+
+7\. Now we will explain the code
+
+  
+
+
+!\[](https&#x3A;//lh6.googleusercontent.com/TrD300QWcRxUSM21ZVzx_7bAE6U2IKHQRfzm9_hZJozxyJXyVyeek2BJa84wSrTsJTL39x907Z2BPVr-IKVQlkq4sDJActMJ8OPHK3wJEOjDb-WXrltpEngYCufYBADwWQpVmPoLVYpkKFU03RVSSyU)
+
+  
+
+
+Here is why we need express it. Its for the start of the app
+
+  
+
+
+8\. Now we are initializing a path and saying to access everything that is in the folder.
+
+  
+
+
+!\[](https&#x3A;//lh3.googleusercontent.com/DI6qBnYtzO2YZyzt3w_4Qf9_GqsHVAr-5FECEAzUmhxyvWlO8eISX5Qb930IpwTlhx5RrSQLc4sxZLxodYAXPAz1eJbGhsC26x5fUlOZ7V9vaqw6BSLnGmyrA-Zj73YXhFljwTFi1naA3Urx-34hOjQ)
+
+  
+
+
+9\. Here is where we serve up the page as a blank “canvas” and makes it verified
+
+  
+
+
+!\[](https&#x3A;//lh5.googleusercontent.com/rkVQzXnTzMB8z7BEmcIUMXTDxYSaT4ZV8rxwRq6eyVU8xTtFpXWAERIzWlspXnE0ReW0zF_hqinfIqp7Nn1Wz-CtWwYK3uztafZ2TBTroIqAYl-5Ija8v7j3HX7nPDuochbJN8JDJd904nQbWN8jY4I)
+
+  
+
+
+10\. Now we’re going to make the link
+
+  
+
+
+!\[](https&#x3A;//lh4.googleusercontent.com/sIxwV9OgZZDZs1oMI8RrU54gfgaaJ4x7YEI6R1F_XTEKa42uGOzbm1EY0c7f0l_c0e45qk3a3Kp-ktdgfWU0OTRpCmI4EstR0LRmvarJOmZj-5AtktdLVnRFUjg8rZkuwJ9YYo6wWXKKbkSl57LeQxU)
+
+  
+
+
+11\. Here is where the port will be hosted
+
+  
+
+
+!\[](https&#x3A;//lh4.googleusercontent.com/rFzFdsXpg-Ih0BEi_ZO2A-Ht_swBLCZxdgY_EebgAgrT7bXyDcjrR5SJDUOJ8yprNwdnVsU7B0pydp8QCM-OmDe47GDC36LHHyKgp-mUeI54-P-wtI3HBFGGK5JmsNmOyYeoUKZqNPqWX4JNUvnsSvc)
+
+  
+
+
+12\. Now we start our server like here
+
+  
+
+
+!\[](https&#x3A;//lh4.googleusercontent.com/s81TxkwmQp7JnYV1FCdNQ1gpgtbNrJFVvfeUY5J7p5t1rNU47crjqZop5Ufu6ecuXBQhhRrNtLdxSRoxkzJn9z8N0-j2Fp39vgJ_4qRlU1pR-aQk1qPtB136mjgFYp3xV4bgvXTU2utOkV7F4rx7hZI)
+
+  
+
+
+13\. Then we should get this on our webpage
+
+  
+
+
+!\[](https&#x3A;//lh6.googleusercontent.com/Ct1_Q2JuwnQjfpE8XvA_fxRSqMBDmaL3chPDpuQyhtVaGZyKk60J4JFj3du68Dc7L0FgI3-mfFMs6smd5jHDC-RL6UtWavAh8WmL1IPuYw84HjuL4w4YXw7deMZlIg28LuYmJdiSeR6hOQW83_xSArY)
+
+  
+
+
+14\. The fetch file is to get the data
+
+  
+
+
+The fetch file contains this:
+
+  
+
+
+The await function first gets all the information from the line before it goes to the next line of
+
+  
+
+
+code.
+
+  
+
+
+The code in line 5 indicates that we select the data that is in JSON format.
+
+  
+
+
+!\[](https&#x3A;//lh4.googleusercontent.com/9U-I7X1cPXQ2rhKYHT2UxGUwn8MSUPV81AzRgCdeFlztPXOTHzInGdhfYsZ9yJXYz9M4qZCHxUqi1LGE6xv55He3UotbpWDVh0FFKjZ6ps0cNSduOlfHXw0AehTaoUmv-d6XqBWmZXIbsZqH1abRvIM)
+
+  
+
+
+15\. And here we have the index.html code
+
+  
+
+
+\| \|
+
+\| :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: \|
+
+| &amp;lt;html lang="en"> &amp;lt;head> &amp;lt;meta charset="UTF-8"> &amp;lt;meta http-equiv="X-UA-Compatible" content="IE=edge"> &amp;lt;meta name="viewport" content="width=device-width, initial-scale=1.0"> &amp;lt;title>API&amp;lt;/title> &amp;lt;/head> &amp;lt;body> &amp;lt;button onclick="get(\\\`http&amp;#x3A;//localhost:3000/api?text=text&num=54&boolean=bool\\\`);">fetch&amp;lt;/button> &amp;lt;h1 id="data">No data&amp;lt;/h1> &amp;lt;script src="./fetch.js">&amp;lt;/script> &amp;lt;/body> &amp;lt;/html> |
+
+  
+
+
+  
+
+
+\# Week 12
+
+  
+
+
+  
+
+
+\## Day 12 ( online )
+
+  
+
+
+  
+
+
+\### Introduction into freecad
+
+  
+
+
+1\. First off we download the FreeCAD installer from here ( &lt;https&#x3A;//www.freecad.org/downloads.php> )
+
+2\. Then we right click the shortcut and go to properties as shown
+
+  
+
+
+!\[](https&#x3A;//lh3.googleusercontent.com/acMVOcB0iNOcSSF3-24-eQ-eOaPJZq_Sdchqh6XP5wN8AumjnIuavd3CADx9v-Vzpr62BQy2RBxg2_gU8gbaSexmp6Hq-15cZD7AWf-D51x6BKV9xJqAcTF-Uqh79WQqzxMOS5OoYayJXgayTOoKB4M)
+
+  
+
+
+3\. Now on the properties tab we go to advance as shown here
+
+  
+
+
+!\[](https&#x3A;//lh3.googleusercontent.com/LB8Fb3yEe1Sahv9bYOymOqGtBVwDOm6JZyPS9KdNayk0B-QeqxIOD2XIVlhBguUCBrYaDDJOSwrmq5iGcHXQCVS1nvIjLW5BU87bBKiRfOeSdFk_mvVM3B9fj3jz0dpkJLSVdlzMNTWzoyNraAMfR2Q)
+
+  
+
+
+4\. From there we check the checkbox that says run as administrator, as shown here
+
+  
+
+
+!\[](https&#x3A;//lh3.googleusercontent.com/BdVSKeo5q-5dE_I7PtqrzdumSFMPr00vcnDun1FlbfLSiaTjjzt5DXxvJTuedbBzEIkVkgxazJqyvbRCKRHeMQJFE1AVAtZJq-FIjhrwr0LliITNe4rARyxj5uXSLk8rNrsEeWc3y-a8wZNjVwGjBNA) then we click ok.
+
+  
+
+
+Why do we do this? Later on you will see that you need to change and move files in your programs folder. And to such a task you will need administrator permissions. And that is achieved by doing the above shown steps.
+
+  
+
+
+5\. Now we can open up FreeCAD and you will be greeted by a screen that will ask if you want to give administrator permissions, all we have to do here is click yes
+
+6\. Now when we open FreeCAD we have to check our units first we do that by going to “Edit” and then “Preference”, as shown here !\[](https&#x3A;//lh5.googleusercontent.com/K2dxkmHkK7Lzgiiv5elsFSelc7nCus7BN0jo3EohbeWXwYI4vEgHI-YCOT1pxcx8v1p0L_3l3O65nLkmWO9CsjgfxKr3QR_NWQg8HyWzScg2mOVziPo9vpVlUp5TrRJjLTBqq6aKBR0VlsSvNndqbAY)
+
+7\. From there we go to “Units” and then we select “Standard” as shown here !\[](https&#x3A;//lh5.googleusercontent.com/sSSxQyvSgbh3MjXqHA72DYs9AxhGm03lLN4cZT2stSIcH5GROJCIBo5WvGqVES98QVz3HIIADcIh3UTSJnN6sQXDdC676eALqwMMLdMgcIfeo2tcONsI4qjOev0HpTCaQQiMZ41VoybN6Zmmx7tsElQ)
+
+8\. When you open up FreeCAD you will see this screen what you have to do is click the drop down where you see “Start” and select “Part Designs” as shown here
+
+  
+
+
+!\[](https&#x3A;//lh3.googleusercontent.com/SSCKPKLRC40rjnniBVCohMOmwQms2QfGuF2VFQhRBTj4kROAtWzH1s4_bWSeOVVLr3louKr1ATrW8wcmPk43QOH3gl3eV5ePH7MJJdfCaK2SRn3ZPTWKj76PRFQcUa00NSPFQRIvNjsLtPmeEAe8Xco)
+
+  
+
+
+9\. If you are on the part design bar you will need to find sketch as shown here
+
+  
+
+
+!\[](https&#x3A;//lh5.googleusercontent.com/bzT3k--hnYmjlcpLcRyxMUSi6OG6dKFOZ5PtKf0yyYnEiVDaFo0HLMwNiRtjY-CAhsz7TU1cFKuM1qgWpwikdLVQrvG0rSIphbN_PU2OxI3toIl4ZJP9o3_SW9Vu-u9M8hNuc8Z_1qQzdVnL1J74g6s)
+
+  
+
+
+10\. Then you will see this page. And from here you will need to double click “XY plane”, As shown here
+
+  
+
+
+!\[](https&#x3A;//lh4.googleusercontent.com/ZSTmd20FZtwgTERVRssdsy962UuLVWmI4Bgm599AxTYDLpPizyTGfP_78i6K8wy_FQD4dN-8V2hw7GypB73IC8PvLXissRlvI3S1pnqtvpO-E-iCnFCddZNRffP76WblhTcJwIKaIJGLA2vDuvKvK7I)
+
+  
+
+
+Then you should see a page like this !\[](https&#x3A;//lh3.googleusercontent.com/pk7dYRIY\_-DG_w6IGbZceG7plYWAzLy3Kv4gzbn_FOfY-wMh4_c3-TiWCwzB9cRK_rbTe40MmgnjA4UBpCPQiIM1-uBQrwikSNpviMezMKRzZEtwaGd4O4O0cr_3GxUy8y5vE6_0sd8wX74bDUijNTw)
+
+  
+
+
+11\. From here we create our box. What you will need to do is as follows. First you will need to go to create rectangle here: !\[](https&#x3A;//lh5.googleusercontent.com/lFPiJBQ4l8WNBVXoTo98OQAbwqhRDu6g4rupIEVRz5nIkUJAoGdYttkyJnyJzNC00IdT2Ey_I3dmoBs3-JwrpUXXvZ6cUNWy3yjQeEaXvKmJPYICyuHY3t4RTWSaVRWMPFb0te5Lu-lzWDEK_mScYtk) → Then we can make our square like here !\[](https&#x3A;//lh4.googleusercontent.com/DbcmIBuGhCLhASnVg7f_ZbglfOzc-iCxqHkOTVJyCWu8TAtc92DOw11i_jpr95_m_EsI1CY6yxgG6jofFB7FD\_-a0uzD6SsNRxv8uc2RMsOSyY81dOMQ2pbWNUN82l-fTx7cXLNJVydNwf66s-ErSfY) then we constrain our square ( give it a specific size ), we do that by following the next steps. First we do this !\[](https&#x3A;//lh3.googleusercontent.com/k49Sfq0fehQTzPY6dD0LuYy1m5MmIuPrTCnMo2WBoEAbYcMeHvYBv21hqXG-k3wmmL5_00IGDwlOLlmY-KZybTTBmw81oz9ENRp-NXPErilh_T8CwbcIcidsQMT-\_IvPwSFJToPQmEA5P8JU10X6VIg) This will decide the length of our square, we do that by selecting a horizontal side and picking a number. Then we do this !\[](https&#x3A;//lh6.googleusercontent.com/dyZRD1Ni2V8nNToNoWAS2s8Px740T5RpJLZtmB3JQsyU2q-AQNGkMHe7SjEKK8jSmSD_XmXmhlBZllRWPGwnnX3FjsNCIKL2KyQDyPURAhJCV9PCOaWTOjIt6s1WJ40dfj1risLTQFt3m29nq_WzUso) This will decide the height of our square, we do that by selecting a vertical side and picking a number.
+
+12\. Now if we have done that we should have a square. Like this
+
+  
+
+
+!\[](https&#x3A;//lh3.googleusercontent.com/MLzSvwb6P3_uJg67-7Rfqsrq4CRXRgKvdw5juOhDPj_rt50JC9B5SNUHspa6YdQ_LEUjwiGkQRLJEzDEsXjxPS0jDZiBxZWWBILnLYL_1FEftZFZEkFAjx6-wN9-9nQdWOtHnhPMVqj92L0qs9ubbb8)
+
+  
+
+
+13\. Now we make it a block. We do that with the following steps. We close the left side window by pressing “close” then we go to pad and press that and it should become a square !\[](https&#x3A;//lh5.googleusercontent.com/GYvjdtlJc_peLhpOELskRTnI9e1-V_GBcs3tK7DxkrTkmZX8hBUPS3UGix90GDG_puKisP4G2vd77TouZbbsIFMlsBK1Vn8Rqj6gUBJzCN_LuTDyBRT0rSbgtn7lfb8aX2dR4KoHfh_235xLhu5FM64) → It should look something like this now !\[](https&#x3A;//lh3.googleusercontent.com/3HiUWXtyW1SPgOGgmYoI9UBHUP3yZN_P1dSWYbwj0B90hFU-fN8ScswFYZcaFUR6cFeji-gfNu2RBCn66y662AI2Izi2XrDmwZcGY17UnroLVGit58TUI8UtszvVtwnZFElPFn8P9ftoq3R0ukqFVJ0)
+
+14\. Now if we want to make a hole we should select the sketch then we are going to put a circle. We can follow the following steps.
+
+  
+
+
+!\[](https&#x3A;//lh5.googleusercontent.com/15ktKWw7Q2CTsEvLCZZGa_nBWhsaHBeMWk2uyBxY4xNhgZzwiPO_9j24oa2h8Vkt-c-LPI-c2ZnXGbvKnvBzG5ThhEiWKGytlUoEFyaKupv7FYOnveft-PW8J4cEWzJjF2YVqwIW4SqqpJuBNUojsuo) → !\[](https&#x3A;//lh4.googleusercontent.com/6GWfZoRkrT65M3ctzCojaedZXZd_8hNaZNwaixfdxGxyVT_RynSg8og-CvWK8W_Ggcy5a4oNRWtjd1JwdooKdmnw8x0qias_or-6_UjfhbeQ6Uki2XJFKKwxFanrjLXj3Ak4kPQVIRpmrilG5IyIEYY) → Then we constrain the radius as shown here !\[](https&#x3A;//lh6.googleusercontent.com/Zy27YKLQSWBlUnonpWBGshJLClepWiXKAOLMEDRYEE6ukgVMwXUTWt4iKL3oso3h3JV5v_Ez_Kxzt6qVLzGtosq2h7Gz4GdrEYPlpAeVFRxcxIhjhbphIofYfw2JUbyI5Y8BeHbsplS_AJVsKcjFdpo) → !\[](https&#x3A;//lh5.googleusercontent.com/OqhDbYvrlW-Gd9NBq6aQr53Dl0sxQHIiqKblOZKpwndOpXL3ukhE3p4FLlxO4rYWgPJOL3kmhGeKI7neOuIf4O6PtK4DtekbGHbvJfIk9LTk4i1QiBaFHn7YzqhK0ZYGOeqU7hL1tuEx5PY15-ZsZ1A) → then we constrain the vertical and horizontal like shown!\[](https&#x3A;//lh3.googleusercontent.com/s7fzapciuJtFFYdP5Di5MXG469Ww4upHwEm9h8DK5Z26O3gHWp01IdytrRQLjc2PckmRFoTxx7fwo49-NsHZ_v3K96th4Q-gc91kvRVDhs8XmM_Tpmrks39OOOfHfZucIpn3-W9M4xGsuBJ0CuxGHeg)we constrain the vertical by the “as” ( middle point of the circle ) and the lower left point of the square, we do the same for the horizontal. And it should look something like this !\[](https&#x3A;//lh4.googleusercontent.com/sQpRQh7-4jbezOLvfWrsgn9-HEYOuT70B66P6MB9duRr9t7ahAt0lElmyHX_fTY8WNzp3ZW_vbo_IQuCvTcbcBorG3YKvFs32LJtRru4fMVQTCLqSWtj-WFERhBfmiyd9fdM_ZDHeeuA2QJErPfu0ZA)
+
+  
+
+
+15\. Now if we close the tab on the left we should be left with a square with a hole in it. As shown here
+
+  
+
+
+!\[](https&#x3A;//lh4.googleusercontent.com/F1kD6CudyggspQCUmOon-OoSQlDS-8oNyipFhPW_qV5BclXGEzlih0YcMsC3v7jlfNaWzOISePNHEUFf45ft063IJfcysqjLHwYV0bRa882yDXj41znhByaYmqmmQ36OGl5KDRY2t9YRt1Jr4CzONzA)
+
+  
+
+
+16\. Now to save it First we save it as a dxf, then as an stl so that it can be imported in TinkerCAD we do that by doing the following steps
+
+  
+
+
+We go to drafts!\[](https&#x3A;//lh5.googleusercontent.com/kBGEscrHu21z9a_ohbWNdDJx3TC-gqTVnxrxdctKxU0oRUy-OL1sbjXk7DSwp9B0YPnYanJSrTcGQdrMa6U8OeEqf31YpQTaOpIGVplVHO4Nb2Oe-WeyySME_YYa1qWFEenY82Eez7-6OEIuJiyG6OI) → And then from drafts we select we want we want to export ( our sketch ) then we go to “File” then “Export” !\[](https&#x3A;//lh3.googleusercontent.com/qA89jBdjF3ph0BTzo-jcIsSw45uCCZCU9CQxu0nVmZylKjvKhRp3UMWTJk1MyyQgK6wmcseIfZUUhv6B_F-htOqNcj3-5w4AFjefxfxDNmkap_KI9hE8VepbMkG_4Zklltl8ncHw3X0eBlBqa10Kvyk) → Then we save it as a .dxf !\[](https&#x3A;//lh5.googleusercontent.com/rqUjeQ-vHKFtCJylDxL9RmjJZNkKAC64cxjD_VI_gytkEBIgU0ZaTPKFiWSbWFj0PQGm4TfucUZZbcahXLtEHWABAsMF6pYx8gsoQ0pYl2P0HwoxXc_425NG30x0twEq78V5eGIfQPsIqJvbBaFOxVc) → Now we’re going to export our object as an stl we do that the same way only now we select the pad and then save as an stl, as shown here !\[](https&#x3A;//lh4.googleusercontent.com/SzKOP_O_9cDS6hMkRT0v104fR1tCdCt9LuWDPDNOeiB5WkodbQ8644K8zBNIOWmxCg8WJeUgyvAj783b0bmb6EMYbSFn0lzaApYAX71va0oGQ7lbTVIdxRb-gNtNi_fKNzxJYER_PZiYGldsAj1uJf0)
+
+  
+
+
+  
+
+
+\## Day 13 ( lab )
+
+  
+
+
+  
+
+
+\### Lesson plans
+
+  
+
+
+A well-organized lesson plan typically follows a standard structure to ensure that the learning objectives are met and the content is effectively delivered. While the specific elements may vary depending on the educational level, subject, and teaching style, the basic structure of a lesson plan typically includes the following components:
+
+  
+
+
+1\. Lesson Title and Overview:
+
+  
+
+
+\- Provide a clear and descriptive title for the lesson.
+
+\- Write a brief overview of what the lesson aims to accomplish and its relevance to the overall curriculum.
+
+  
+
+
+2\. Learning Objectives:
+
+  
+
+
+\- Clearly state the specific learning objectives or goals that students should achieve by the end of the lesson.
+
+\- Ensure that the objectives are specific, measurable, achievable, relevant, and time-bound (SMART).
+
+  
+
+
+3\. Prerequisites:
+
+  
+
+
+\- Mention any prerequisite knowledge or skills that students should have before starting the lesson.
+
+\- This helps ensure that all students are prepared for the content covered.
+
+  
+
+
+4\. Materials and Resources:
+
+  
+
+
+\- List all the materials, resources, and teaching aids needed for the lesson, such as textbooks, handouts, multimedia, or props.
+
+  
+
+
+5\. Introduction and Hook:
+
+  
+
+
+\- Introduce the lesson topic and engage students with a compelling "hook" to capture their attention and generate interest in the subject matter.
+
+\- The hook could be a question, a story, a short video, or an intriguing fact related to the lesson.
+
+  
+
+
+6\. Instructional Sequence:
+
+  
+
+
+\- Outline the step-by-step sequence of activities and instruction that will be used to deliver the content.
+
+\- Include transitions between different parts of the lesson for a smooth flow.
+
+  
+
+
+7\. Content Presentation:
+
+  
+
+
+\- Present the main content of the lesson, breaking it down into smaller concepts or sections.
+
+\- Use various teaching strategies, such as lectures, discussions, group activities, and multimedia, to facilitate learning.
+
+  
+
+
+8\. Student Activities and Engagement:
+
+  
+
+
+\- Include activities that encourage active student participation and interaction with the content.
+
+\- These activities could be individual, in pairs, or in groups, depending on the lesson objectives.
+
+  
+
+
+9\. Assessment and Evaluation:
+
+  
+
+
+\- Describe the methods of assessment and evaluation to measure students' understanding of the content and achievement of the learning objectives.
+
+\- This could include formative assessments during the lesson and a summative assessment at the end.
+
+  
+
+
+10\. Closure and Summary:
+
+  
+
+
+\- Summarize the key points of the lesson and connect them back to the learning objectives.
+
+\- Allow students to ask questions and clarify any doubts before concluding the lesson.
+
+  
+
+
+11\. Homework or Extension Activities:
+
+  
+
+
+\- Provide optional homework or extension activities that reinforce the lesson's concepts and allow students to apply their knowledge independently.
+
+  
+
+
+12\. Reflection and Adjustments:
+
+  
+
+
+\- Reflect on the effectiveness of the lesson after its completion.
+
+\- Consider what worked well and what could be improved for future lessons.
+
+  
+
+
+Remember that lesson plans can be flexible and adaptable to accommodate the needs of different learners and teaching environments. The structure provided here serves as a basic framework, and educators may modify it as necessary to suit their specific teaching style and the needs of their students.
+
+  
+
+
+  
+
+
+\### Hole cutting
+
+  
+
+
+1\. First off we’re going to change our units ( \[how to change](https&#x3A;//docs.google.com/document/d/1YZYDE-LanzTTOapvP7wVPxhXV20waDSooY1OuZLtJkk/edit#heading=h.xjwpv0iwzhqw) ) to “Metric small parts” !\[](https&#x3A;//lh4.googleusercontent.com/p1clrV4mdQEkTOvOQEDbSrwCspG6NUMXtbiPFxn9BIEbsmXlWrYPT4yo_AkkrICy90kkbyxrnClc-F3EW7Tf0Bo1NpGbG3Ka1jnWfj2n2XBin3pow3CThtS37QloFvdDnMvTOR8AUcdReXJ-\_MCp2zI) → Then we follow this tutorial on how to set up our holes ( &lt;https&#x3A;//youtu.be/9mQFbBNJJpQ> )
+
+2\. When we have our holes we want to go to “Path” → “Job”.
+
+  
+
+
+!\[](https&#x3A;//lh5.googleusercontent.com/eR9xHyX-qZrYD4xNNGx3DTHAFy9Y3hiYDkWNYV49DdIFWRLGv6H7LVxxcGbwpLGcultspJex3Bz52nbJj-D5DkTTZfMDRS8rmptrkVhxjS2DewMgjvzrEf82dsyEAH2zlkcYro7SsPxX3Ui61gx4ntA) → !\[](https&#x3A;//lh5.googleusercontent.com/-jopxf7LdTrOeM3MOQDh5S8YHGRiMI5dY5zQXETm_Qb6KRlRzzOe6PMGTouvT0Nt4toCJaMfDk0IkH-nUXnipOraL9c0s9QaBEa98tNGfUNzzAxQ2uUqdPLj75eLi-RzVUHVZvefuRdvnpP3XI3CF5c) → Select “Body 1”!\[](https&#x3A;//lh4.googleusercontent.com/WpHeC43WnsZvE5izH-QsNJbyvPuC7Gc-bzGcLmTz3mn395XK--Aq7htItZlc2-AcY7xL9ujNixUnemn7m226rfyoqxh81nNIiWdIkgRbJhu7y14X_HfQm7aJKw-xkf1SFqR9bOFj-u_JJR1UDjfy94M)
+
+  
+
+
+3\. Now you will get a screen on the left hand side in there you will make these following adjustments
+
+  
+
+
+!\[](https&#x3A;//lh5.googleusercontent.com/rOs6c4WhwxI3lcCc74JXUmGUOIDraS5RZjWchzmjNoYfPWAoktK9etsXIbScm4q3y-tV8M8WHCKIYJIdG8nNYqBxVPK7taEHg9lSl02fJeTq-aO2rh_V_DWzlPDZz05OVnRK_59IT0YzPe_BedCSI6k)
+
+  
+
+
+4\. Ok now we go to “Output” and here is where we will save as uccnc by doing the following steps
+
+  
+
+
+!\[](https&#x3A;//lh6.googleusercontent.com/X7SB0BJ-Gcccg_Aq_7A5GNjZ2Fw6qU9d797hvCOBhRxHgkYoT_yxq6BoI-vOfNoYnETvbI0_XzYfYaiEUeBp1IRnx2e-uuGRSsoGrRRr2wIhrZM2_qxtIFCxF0ME1iduyn7JO7Q7EergMhGFS1gnN4k) → !\[](https&#x3A;//lh6.googleusercontent.com/BP2U19iK_WRktsfHHEUScHGD7iaeLRUUTnCj1vpG74aehVZIfNHvTmR9YG7jk8Qm6CcAYjg_pkvCIHIibupbTGQCDnKRuenvbhEbqASR4rEmKjlLicCDhQuzOU-vSywjiK_ga2aFTmByNQQEUN57JP4) → And then you search where you want to save it mine is here
+
+  
+
+
+!\[](https&#x3A;//lh6.googleusercontent.com/xbwkkgQdgSZv5iDbRbgDw7BL7L173UUaohAT0sPAEN3tJu8NiRZAyR8LDMQNHC-Xucj77x5Bk9xgAEeb6dA6u5rGZqHuWIgz2a4u9a94Gsvd9ySCqRWUVvEF2-r7TvFMoRyutwFSRT1M-4_AP_BY-Nw)
+
+  
+
+
+5\. We zoom into the bottom left corner of our “Job” in the “Setup” and then select it as shown here
+
+  
+
+
+!\[](https&#x3A;//lh6.googleusercontent.com/8QVMzZRU3bIiqLF810YpoX2vM7KDzJpPc9zZsNEjfAUUCs6gj709rvCnAXyFtQ6GfsJWhQFZMW-Wl_ev8dIBuoiVGOR9wvMwsWPtqaAdehy9fzuMxxYO_tChqgVLh_WA3fPQFaLixSFmeC1TkCn15DQ) → then we go the screen on the left hand side and then we press “Set Origin” !\[](https&#x3A;//lh5.googleusercontent.com/bT0t3DO2XPMkadKYe5PFw_aIk3zHfghqDhJ5Wl2zO97klOmDI14_MSf1kwIkdxF57A4SgEpOdvPbq0fLGAKtCl6P2KN63Qb_btg7F_9pOoT8aCA2CquWgFK5FwujJ9BTfjm0AGvkm5s3U0NHJxeprAU)
+
+  
+
+
+6\. And you should see something like this
+
+  
+
+
+!\[](https&#x3A;//lh3.googleusercontent.com/d74tHsyj_13yFPv45KMTUE9JL-omxJHl_XoXpiI7W58Z3IubDRCfpbl_gqPmRTpynIyqj9Ow70loghgjr7ASUhXLdF83tmDWWQB_ZJRE3E0Z6a3mRUpe6UlhR21lU1eCg0GDwdgxILLShAbcaRhpZKg)
+
+  
+
+
+7\. And then we click “Ok”, and then you will be brought back to the “Model” screen. On that screen you are going to hide the “Body” by selecting it and pressing spacebar. And do the same with our “Model-Body”
+
+  
+
+
+!\[](https&#x3A;//lh4.googleusercontent.com/euaxx8037zW2ktYa3Yaq6wX8cOTlOdbxufp9KlehMBTy8kw3_Z7e2vp1INP6TwSCkbRDxZ7FbgI8uvEZz5LZmfENbBSBL7zJSAvc36gqlkKV6T3WRdDuuhBwOisEqV8fgKQ8EyulpayMGzTJuffqjBA) → Should look something like this !\[](https&#x3A;//lh6.googleusercontent.com/fnqJjRU63utnkIZ-TPjnLHkMvTlUO936DY4Tf3NXUNAzwQUBuOAsrU1IlgrNP2z1wJkVhl2SBpGuESccH1OcUbXkYPiZPxkUd3hPapSeQbRvezo8xsk-LKCDe9e627cIur8Jxkxn3aMGATXhnnfGN0I)
+
+  
+
+
+8\. Now if we unhide the “Body” and the “Model-Body” it should look something like this
+
+  
+
+
+!\[](https&#x3A;//lh5.googleusercontent.com/tPlQevY4Sef8GWWBjd23jDW9BuRAg0RbCpLv_zmRPqWFZ6IATJzJq4IGDPECoXeF4oQwnBVPHlaghVcIIyoMB084IzuHSJMZgqAq7Rk2YXj1Cd8WJIP1yasbns3QLi64JmCpz36kV4nlNLZsp2V4wlY)
+
+  
+
+
+9\. Moving forward we want to hide the “Body” and we’re going to work on the “Model-Body” . We are going to head to the “ToolBit Dock” found here
+
+  
+
+
+!\[](https&#x3A;//lh3.googleusercontent.com/4j76s8qOf9rVtzaZV_e-21UzAUY5CauM1pWYKx4q-0nSq7czLCgOpETeFdx5LQypZmfgK0lZyyY9HOQ65-LmBXG234R4dwxtl871pENAom7PYyCJI230nxJmwb_pAA0erhQf1\_\_0FqWPX_bJt0LwM4w)
+
+  
+
+
+10\. When you click that you are going to get such a screen on the right hand side !\[](https&#x3A;//lh6.googleusercontent.com/IvlkNdqTJTo971eVMy1QsXe6vfXepeokSSXxrhdX_ljV001qAN6wQZlJYNgZUDItRcqUkZeXzAMwiWazoJLf6bUgUC2Au3SBh-VKPUB3gEvwBC6bLk1DYjAx7OX8P5vF7BhZDlQlI0pyzdviY0eDgWQ) → You want to press the 3 little highlighted bits on the top right hand side and you should see a screen like this !\[](https&#x3A;//lh6.googleusercontent.com/paiwW66oZ6ISnYRLh4HG4edt4fVW0suYL_TzRSXLTgLWXW4aCQPHBQrwVBjU3t73oPf7qaRQNGkDz2KcUEGjw6UN2zBBN5oeUuPf0q2-ta9S6Bmb4iFIkFSprP5A-vvJYMGKKGKQ_YByZAGUKkyzE0I) → now you want to press on the highlighted circle and it will bring you to your folders there is where you will need to find your toolbits, if you downloaded it normally and did not change any of the paths your folder should be here!\[](https&#x3A;//lh5.googleusercontent.com/HSoFKaLbi4laxGxLgKD5NWwJTp9MNzeXN7_KwtvqM25bA6dMSyisrFmUfm5WPqs_dye7RQxJ8CH_kE32XrjVYBgILd8_AHexIsUyTwJAWUn0t3NLF8n13ebnLWPvVMrSdMiw7GQKQBiGO2UfEmmzKHI) ( and this is why we need to run as admin ) and now you should see this screen !\[](https&#x3A;//lh4.googleusercontent.com/LhlGpuiIZMxmTwZUwLqaeHzkSvAxTv7r7xF8ABBLZx-xkA-ZGuPOQbvKJcW_475hcuir-llxCQVGmso9jjEmi869FpoybE7U-C9H76QWKnqvNYXWgJwK3fDfNmy-RfVCdVgMjNPXd62XIfZbGjzsc7o)
+
+11\. We can create our own tool bit by doing these steps ( we are going to make a 3mm end mill )
+
+  
+
+
+Firstly we go to “Create Toolbit” !\[](https&#x3A;//lh4.googleusercontent.com/Znu1El65c_boF84YeQhD1MODXUzQ9l0TEfbZU0WQuXe0UPYlvI3HfC7Jc444i2m0oqg7Q8c3QsI4yR93kGZ_VDlYBqqVSP_MZKiwyUJ7xHM3Sh6bhjnM8_RKID6SvuMP9aKJksPPMeas5weB5_jHhuY) → We should be brought here !\[](https&#x3A;//lh6.googleusercontent.com/CdTyJu5QQOMdGa2xRnovSwz-HRTpIm5MvuurcqL7a1ejQs1gf-bgQChIBTZ_O1FoTn24WdDvpYoiWGWx66Gf5KlMuAG9JRFqQwCZP-UuI0emJSh71ipb5YmdzSGlinCH5NUuNFm8aDDWk-S5_fk9Cwc) from here you select the shape of your tool bit ( for this example we are going to use “endmill” to create our “3mm endmill” )
+
+  
+
+
+12\. After clicking that you need to direct yourself to this folder location !\[](https&#x3A;//lh3.googleusercontent.com/g897BiMiWP9QdkLmbuo0hvMcDZoNDtewqc51lu5Hrxn11Eptx7IUG2cYiSlyQny6A_PvA8O8ff9I2I-8GATyoYBQTcoVvpiUANzKx36F9u5w6eIHRhYYtUevmlDUa-woz9N1siq5pKXlLtx8GJrfLyM) → Now you can save your tool bit here and give it a name ( for this example we’ll call it 3mm_endmill ). With that done you should see this on your screen
+
+  
+
+
+!\[](https&#x3A;//lh4.googleusercontent.com/zcFBvnzHKQ4Agyk_SNLLxDky5Q1l1m44EOcPqeEXkIPq2W-sC7mecpJAwwpbURBMkJ7m05H8zwdyfkloQtEXO_ZRdAoXR6IBxiGfmzwBwaKhg6OG9EOTwVvwO67jEr0xBrwb8flPtsFtVB2tjSMTr3g)
+
+  
+
+
+13\. We press that and it will show you a screen on the right hand side now you will change the sizing as shown here ( is only an example ) !\[](https&#x3A;//lh6.googleusercontent.com/m3XIMJZSq9q6EJyeI9T3XVVcYXOUb_pvy5Yu-6xhyCxG1obUfMlkxE4N9o_FV7W7EW7ZRuJ9fHpinyPsnT0AmNpWhWLsdGJQ7VjJBySJt0OND_u1BvFHi2mLsObQuPY1R84UXmA8gSrmBN8cxXVDk6k) → Then we click “Ok” → And click “Close” on the bottom right
+
+14\. Then we select the “3mm_endmill” and go to the “Tools” folder on the left hand side screen and delete the default one and there you will see the “3mm_endmill” showup we open that and you should see such a screen
+
+  
+
+
+!\[](https&#x3A;//lh5.googleusercontent.com/BLyhWrw0vHADAs1WLpf9Ibu5xjxKQwlrvVhOKWqrIbNalS1-124qn6GOL57YCHEtg7qruTbuYN4MxMy5M6G7pNmGwjbHg15Fuijcn_SeaM4imnmarK35vbO5--It19noO3yCeRC_Gu29t87BNUnM3zM)
+
+  
+
+
+15\. Then we put in these metrics ( it’s an example ) !\[](https&#x3A;//lh5.googleusercontent.com/BvaZvBcDKcXoSvGLFxzA3yuGMuAAI51jv-MBpzB5MgVcDr5wbVuZwQTHKCFxkDFaMNlQbLhD5IwTUivaXZtVxPcIO-c0M7w0Qg8CM2ks-sxNyJRhS88LC32QErCUMQCWUGZER5C-NH9h8bP-Jp_Fn00)
+
+16\. Now we select “Helix”
+
+  
+
+
+!\[](https&#x3A;//lh5.googleusercontent.com/cdzkrEkjpMC6K22y4Khxsy-vC-iRn_aO6o_GC8ZUp865zjf1RjJMtqdbGjILIlEy1ZtFpse-6e3a48ZgHCUdbNpTi0Mk8Vga-mBXgrqt44PpSefkume7Y4hnwIfcKeE9c4J8Zbbcyp4COu31BTwhHlk) → then we should see a screen on the left hand side and we follow these steps → !\[](https&#x3A;//lh6.googleusercontent.com/oEswtoPHB5q6kYkzz6ap2LBUQfJylIqW9pFaKBRODm6LFvMXVqbJ2GNA_k-kXQbkUMCskjl\_-3rC9eOEoC6lBWoShz9b5OkbMIL3RYEXpLd9dR0x1_8UCAhGvE-w_SvugeFnwFcatEP6tG4-5Opicpo) → We then go to “Base Geometry” and select our pocket and click “Ok” → Now we go to “CAM Simulator” !\[](https&#x3A;//lh5.googleusercontent.com/25CpKONZFj8VLd4af-RFLxN6-qYVgKSO3H7k9CURrjKLFxaIkUXe4wms-d20Yjtb3-wUH0MQC1eoVKEic9b921uTCcraiUm6wMBazClZrRpaw_TLkzvO9D154_pQChaVdngg3iQboLSuLE-e_xCizrM) → Then you should see this screen !\[](https&#x3A;//lh6.googleusercontent.com/ydPvS8Saq6qtFXWWd0mbs1xb2gUwMwYuLxIzJJA6PIds9_ms7kdawjGAd2SqIzAV3G2VR1dMXvagMEYbLUAWepOCeYO5XS7UusUVXuxZEHo-itt2uHz4kpIOEFQLe36dLrNdK1gW_cM1Juv-r0NI7kg)
+
+  
+
+
+17\. Now you can simulate it and you should see your pocket getting cut. We are going to drill out the holes now. You want to hide “CutMetrial” and then go to “Profile” !\[](https&#x3A;//lh5.googleusercontent.com/NVhEgm9oI7ms8d4tc9rAMp5cYQK8Tskxx2ZoFT75mA_d3ppku9DXr2LtrK-Z1Lr_86TbNvsjPjpfamMt_59nNcTwIp9y7aD9xJAicXosykXWzCYGOdsUYLvXmkQ63DkMbSoAe0zSVshmc4dnmSMWyeA) → Follow these steps. Frist add the holes !\[](https&#x3A;//lh5.googleusercontent.com/aY1oUNfFitR9ZL85b8mmW6z-ls_a_8ek2d7MqNy2gXm3q5D3JlrRb7zCpm1fYH8i-DDv1DyODp-D_Bta6VNplMJFZeDbOryEMl3JezIKtqKWiBoIDfhq0lDkGS0sZl8qK88mHPCQtUstcUgj0cGIddM) → Go to “Depths” and add these metrics !\[](https&#x3A;//lh6.googleusercontent.com/vMAABgAnJmtwNVaADvGN25NO2uqHjhz9RniqlHoYKRvwRPJiQYYnlEf5PA3SivFZaLlyPC1yGkfJUB1ypkQBEBLvVoIOnOXRfkNuuJSbcvi9H0Cso-5Ky_XBgmpkq-JP2vl9TLdE9BUYt_rAHTLWZFw) → We the select the top of our “Model-Body” and cut that as well with the same metrics and it should look something like this !\[](https&#x3A;//lh3.googleusercontent.com/PCuIDEx68SquiEt7SB1unBB2K2FnRI52i1ymD_5jfoSt1sAUZI8a5q1V9kpXXchWGNh2P7fc_zb7KexYrfoAVlJEDsgyanwM8z9nhe-2adxPDzlzsMLms2Sxzb3MraoHh2v6_SoEGwHUsoHFvcSZel0)
+
+18\. Now we select a operation and then press !\[](https&#x3A;//lh4.googleusercontent.com/LrK3WmaWRTWTS5OT7rJIjZ1BR9MfQCu-WZ-VI\_\_51x_rozxNi-zvqBmQMqxtJIjWThZGK_f8jRvXBa2AmfejG0_1vszK9x-s8U3xBREp6hIQa6AmFb3olwdDt_EXLEi16RQ7_TFFoI3Xw_yXr2BE8t8) → And you should be at a screen like this !\[](https&#x3A;//lh5.googleusercontent.com/KwA2XLtZraHRKnq697xODG9kSKOwBPV0w1COWmM_BJqGIcUm5eEBgVM3E4UBlg48OqD67DKrCOZ6yIjvS0jVpXZQu9IQKx77iKpKrqOf-HXuR47XLTXaHeWPM4-yzdTrRePZZU_Gu2Ccn2DAMsesn7k) Don’t forget to add .uccnc after the name
+
+19\. Now we are going to add tags. Just follow these steps
+
+  
+
+
+Select an “operation” and right click that and you should see this !\[](https&#x3A;//lh4.googleusercontent.com/5G8Wmkxbh3FD1T3aDb-YcjXI1gOZO1hXKn1UH8EZpv6bEn9p0KQBXPbFk52GrexqL-Y76Sjx20b9Um28Vp5LuqPf6bU3p2PVnSY20nigIe1wWq8YAvJ6REVFRxIqAhAT8d2XJI1NfBVOebT6xhd7-Cw) And just tag Dress-up
+
+  
