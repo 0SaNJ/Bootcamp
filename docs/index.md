@@ -1245,7 +1245,7 @@ Day 7 ( online )
 8.  The .js code
 
 |
-```json
+```js
 var MongoClient = require('mongodb').MongoClient;
 var url = "mongodb://localhost:27017/";  // "mongodb://localhost:27017/iotstack";
 
@@ -1546,7 +1546,7 @@ path,
 1.  The C++ code 
 
 |
-
+```c++
 // Import required libraries
 #include <WiFi.h>
 #include <ESPAsyncWebServer.h>
@@ -1709,7 +1709,7 @@ void  handle_MqttData() {
  // add if delivered or not
   client.publish((char*)mqtt_topic, out) ? Serial.println(" -> delivered") : Serial.println(" -> failed");
 }
-
+```
  |
 
 ( [link to github code](https://github.com/0SaNJ/codettesbootcamp_2023_code/blob/main/ESP_32_DHT_MQTT_Node.js_MongoDB_Mosquitto_link_c%2B%2B_code) )
@@ -1839,7 +1839,7 @@ The code in line 5 indicates that we select the data that is in JSON format. 
 1.  And here we have the index.html code
 
 |
-
+```html
 <html  lang="en">
 <head>
  <meta  charset="UTF-8">
@@ -1853,7 +1853,7 @@ The code in line 5 indicates that we select the data that is in JSON format. 
  <script  src="./fetch.js"></script>
 </body>
 </html>
-
+```
  |
 
 Week 12 
@@ -2168,7 +2168,7 @@ Day 16
 C++ Code
 
 |
-
+```c++
 #include <ESPAsyncWebServer.h>
 #include <Adafruit_Sensor.h>
 #include <WiFi.h>
@@ -2373,6 +2373,7 @@ void  handle_MqttData() {
  // Publish the data to MQTT
   client.publish((char *)mqtt_topic, out) ? Serial.println(" -> delivered") : Serial.println(" -> failed");
 }
+```
  |
 
 Github link ( [here](https://github.com/0SaNJ/codettesbootcamp_final_project/blob/main/final_project_c%2B%2B)  )
@@ -2380,223 +2381,472 @@ Github link ( [here](https://github.com/0SaNJ/codettesbootcamp_final_project/blo
 Html code 
 
 |
+```html
+<!DOCTYPE html>
+<html lang="en">
 
-<html  lang="en">
 <head>
- <meta  charset="UTF-8">
- <meta  name="viewport"  content="width=device-width, initial-scale=1.0">
- <title>Insyg</title>
- <script  src="public/mqttws31.js"  type="text/javascript"></script>
- <script  src="public/fetch"></script>
- <script  src="public/jquery.min.js"  type="text/javascript"></script>
- <script  src="public/config.js"  type="text/javascript"></script>
- <script  src="https://code.highcharts.com/highcharts.js"></script>
- <link  rel="stylesheet"  href="./style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Insyg</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="js/mqttws31.js" type="text/javascript"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/config.js" type="text/javascript"></script>
 </head>
+
 <body>
- <div  class="banner"  style="z-index: 1;">
- <div  class="topnav"  style="z-index: 3;">
- <div  class="signature">
- <img  src="./logo-test-insyg.png"  class="sig-img">
- <h3  class="sig-text">insyg</h3>
- </div>
- <div  style="width: 30%"></div>
- <div  class="navButtons">
- <button  class="button"  id="store"><a  style="text-decoration: none;"  href="store.html"><h3  class="btn-text">store</h3></a></button>
- <button  class="button"  id="services"><a  href="#services"  style="text-decoration: none;"><h3  class="btn-text">services</h3></a></button>
- </div>
- </div>
- <div  class="banner-test">
- </div>
- <div  class="content"  id="content">
- <div  class="hat-info-box"  style="z-index: 2;">
- <h3  class="hat-text">
-Revolutionize your health routine with the Smart Health Hat - a sleek fusion of fashion and advanced health tech. This innovative hat features a heart rate sensor, temperature, and humidity monitor, providing real-time health data discreetly. Stay in tune with your body's signals while enjoying unparalleled style. The Smart Health Hat seamlessly integrates into your daily life, enhancing your wellness journey effortlessly. Elevate your lifestyle, prioritize health, and embrace the future of wearable technology. </h3>
- <img  src="./hat image.png" class="hat-img">
- </div>
- <div  class="example-info">
- <div  class="chartboxpage">
- <div  class="chartpage"  id="chart-container"></div>
- </div>
- <div  class="chartboxpage">
- <div  class="chartpage2"  id="chart-container2"></div>
- </div>
+    <!DOCTYPE html>
+    <html lang="en">
 
- <h3  class="chart-text"  style="text-align: right;">Hello</br>
-Here you can find info of your temp and humid in a chart </h3>
- </div>
- </div>
- <div  class="creds"></div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+        </style>
+    </head>
+
+    <body>
+        <div class="navbar">
+            <div class="brand-title">Insyg</div>
+            <button class="toggle-button" id="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+        <div class="profile-sidebar" id="profile-sidebar">
+            <button class="close-button" id="close-button">&times;</button>
+            <div class="profile-details">
+                <img src="img/image.jpg">
+                <h2>Jay Sanmohadi</h2>
+                <p>Email: sanmojay@gmail.com</p>
+                <p>Phone: +597 864-3340</p>
+                <button>Edit Profile</button>
+                <h2>User Profile</h2>
+                <div class="input-box">
+                    <label style="color: white;" for="age">Age:</label>
+                    <select style="background-color: #eb7a33;" id="age" name="age">
+                        <option value="">Select Age</option>
+                        <!-- Generate options from 0 to 100 -->
+                        <script>
+                            for (let i = 0; i <= 100; i++) {
+                                document.getElementById('age').innerHTML += `<option value="${i}">${i}</option>`;
+                            }
+                        </script>
+                    </select>
+                </div>
+                <div class="input-box">
+                    <label style="color: white;" for="gender">Gender:</label>
+                    <select style="background-color: #eb7a33;" id="gender" name="gender">
+                        <option value="">Select Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="input-box">
+                    <label style="color: white;" for="weight">Weight (kg):</label>
+                    <input style="background-color: #eb7a33;" type="number" id="weight" name="height"
+                        placeholder="Enter your weight in kilograms">
+                </div>
+
+                <div class="input-box">
+                    <label style="color: white;" for="height">Height (cm):</label>
+                    <input style="background-color: #eb7a33;" type="number" id="height" name="height"
+                        placeholder="Enter your height in centimeters">
+                </div>
+                <button id="update-profile" onclick="calculateBMI()">Calculate BMI</button>
+                <div style="color: white;" id="result"></div>
+                <div style="color: white;" id="history"></div>
+                <!-- Button to redirect to "chart for meter" -->
+                <!--<button id="chart-meter-button">Chart for Meter</button> -->
+            </div>
+        </div>
+        <div class="container">
+            <form name="chartform" id="date-form">
+            </form>
+            </main>
+            <div class="diagnosis-history">
+                <div class="H3">
+                    <p>DHT11 Sensor</p>
+                </div>
+                <div class="history-container">
+                    <!--<ul style="color:#dd5e0e" class="timeline">
+                    <li>Humidity Sensing</li>
+                    <li>Temperature Sensing</li>
+                </ul> -->
+                    <div class="body-image">
+                        <img src="img/dht_sensor.png">
+                    </div>
+                </div>
+            </div>
+            <div class="info-container">
+                <div class="analog-container">
+                    <!-- Potentiometer Analog Box -->
+                    <h2 style="color: #dd5e0e;">
+                        <span class="widget-value deviceId-data">Humid</span>
+                    </h2>
+                    <span style="color: #dd5e0e;" class="widget-value humid-data">25°C</span>
+                </div>
+                <div class="chart-container" id="chart1-container"></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="diagnosis-history">
+                <div class="H3">
+                    <p>Pulse Sensor</p>
+                </div>
+                <div class="history-container">
+                    <!-- <ul style="color:#69bf64" class="timeline">
+                        <li>2022</li>
+                        <li>2021</li>
+                        <li>2020</li>
+                        <li>2019</li>
+                        <li>2018</li>
+                        <li>2017</li>
+                        <li>2016</li>
+                        <li>2015</li>
+                        <li>2014</li>
+                    </ul> -->
+                    <div class="body-image">
+                        <img src="img/pulse_sensor.png">
+                    </div>
+                </div>
+            </div>
+            <div class="info-container">
+                <div class="analog-container">
+                    <!-- Potentiometer Analog Box -->
+                    <h2 style="color: #dd5e0e;">
+                        <span class="widget-value deviceId-data">HeartBeat</span>
+                    </h2>
+                    <span style="color: #dd5e0e;" class="widget-value HB-data">25°C</span>
+                </div>
+                <div class="chart-container" id="chart2-container"></div>
+            </div>
+        </div>
+        </div>
+    </body>
+
+    </html>
+
+
+    <script type="text/javascript">
+        var chart;
+        var mqtt;
+
+        //var topic = "farmwise/node01/sensors/data"; // Specify the topic here //
+        var topic = "jaysanmo/codettes/01"; // Specify the topic here //
+
+        var responseObject = {}; // define responseObject variable
+        var reconnectTimeout = 2000;
+
+
+        function MQTTconnect() {
+            if (typeof path == "undefined") {
+                path = '/mqtt';
+            }
+            mqtt = new Paho.MQTT.Client(
+                host,
+                port,
+                path,
+                "web_" + parseInt(Math.random() * 100, 10)
+            );
+            var options = {
+                timeout: 3,
+                useSSL: useTLS,
+                cleanSession: cleansession,
+                onSuccess: onConnect,
+                onFailure: function (message) {
+                    $('#status').val("Connection failed: " + message.errorMessage + "Retrying");
+                    setTimeout(MQTTconnect, reconnectTimeout);
+                }
+            };
+
+            mqtt.onConnectionLost = onConnectionLost;
+            mqtt.onMessageArrived = onMessageArrived;
+
+            if (username != null) {
+                options.userName = username;
+                options.password = password;
+            }
+            console.log("Host=" + host + ", port=" + port + ", path=" + path + " TLS = " + useTLS + " username=" + username + " password=" + password);
+            mqtt.connect(options);
+        }
+        function onConnect() {
+
+
+            $('#status').val('Connected to ' + host + ':' + port + path);
+            // Connection succeeded; subscribe to our topic
+            mqtt.subscribe(topic, { qos: 0 });
+            $('#topic2').val(topic);
+
+            // Set up chart
+            chart = Highcharts.chart('chart1-container', {
+                chart: {
+                    type: 'line',
+                    turboThreshold: 0, // set to 0 to disable thresholding and display all points
+                    scrollablePlotArea: {
+                        minWidth: 600,
+                        scrollPositionX: 1
+                    }
+                },
+                title: {
+                    text: 'Sensor Data'
+                },
+                xAxis: {
+                    type: 'datetime',
+                    title: {
+                        text: 'Timestamp'
+                    }
+                },
+                yAxis: [{
+                    title: {
+                        text: 'Temperature'
+                    }
+                }],
+                series: [{
+                    name: 'tempAr1',
+                    data: []
+                }]
+            });
+            chart2 = Highcharts.chart('chart2-container', {
+                chart: {
+                    type: 'line',
+                    turboThreshold: 0, // set to 0 to disable thresholding and display all points
+                    scrollablePlotArea: {
+                        minWidth: 600,
+                        scrollPositionX: 1
+                    }
+                },
+                title: {
+                    text: 'Heartbeat Data over Time',
+                    style: {
+                        color: '#00000'
+                    }
+                },
+                xAxis: {
+                    type: 'datetime', // Use linear type for the x-axis
+                    title: {
+                        text: 'Time',
+                        style: {
+                            color: '#00000'
+                        }
+                    }
+                },
+                yAxis: {
+                    title: {
+                        text: 'Heartbeat',
+                        style: {
+                            color: '#00000'
+                        }
+                    },
+                },
+                series: [{
+                    name: 'Heartbeat',
+                    data: [], // Your heartbeat data here
+                    color: '#FF0000'
+                }]
+            });
+        }
+
+        function onConnectionLost(responseObject) {
+            setTimeout(MQTTconnect, reconnectTimeout);
+            $('#status').val("Connection lost: " + responseObject.errorMessage + ". Reconnecting");
+        }
+
+        const deviceContainers = {};
+
+        function onMessageArrived(message) {
+            console.log("Message arrived: " + message.payloadString);
+            try {
+                var data = JSON.parse(message.payloadString);
+                // Extract data from the payload
+                var deviceId = data.deviceId;
+                var temp = parseFloat(data.temp);
+                console.log('temp value: ' + temp); // Debugging line
+                var timestamp = new Date().getTime(); // Use current time as the timestamp
+                var humid = parseFloat(data.humid);
+                console.log('humid value' + humid)
+                var timestamp = new Date().getTime();
+                var HB = parseFloat(data.HB);
+                console.log('HB value' + HB)
+                var timestamp = new Date().getTime();
+                var pulse = parseFloat(data.pulse);
+                console.log('pulse value' + pulse)
+                var timestamp = new Date().getTime();
+                // Update the widget values
+                $('.humid-data').text(humid);
+                $('.temp-data').text(temp + '°C');
+                $('.HB-data').text(HB);
+                $('.pulse-data').text(pulse);
+
+                // Add the new data points to the chart series
+                if (chart) {
+                    chart.series[0].addPoint([timestamp, temp], true, false); // Add tempAr1 to the first series
+                    chart2.series[0].addPoint([timestamp, pulse], true, false); // Add tempAr1 to the first series
+                    //chart.series[1].addPoint([timestamp, humid], true, false); // Add tempAr1 to the first series
+                }
+            } catch (error) {
+                console.error("Error parsing message payload:", error);
+            }
+        }
+
+
+
+        $(document).ready(function () {
+            MQTTconnect();
+        });
+
+        /* function fetchData(start, end) {
+          console.log('fetchData called with start:', start, 'end:', end);
+          //const url = `/data/chart-data?start=${start.toISOString()}&end=${end.toISOString()}`; 
+          const url = '/data/chart-data?start=2024-02-06T00:00:00.000Z&end=2024-02-08T00:00:00.000Z';
+          console.log('fetchData url:', url);
+          fetch(url)
+            .then(response => response.json())
+            .then(data => {
+              console.log('fetchData data:', data);
+              const chartData = data.map((obj) => ({
+               // x: new Date(obj.msg.timestamp).getTime(),
+               //y: [obj.msg.temp, obj.msg.humid, obj.msg.soil,obj.msg.tempCelsius, obj.msg.salt, obj.msg.light, obj.msg.batt],
+                x: new Date(obj.timestamp).getTime(),
+                y: [obj.temp, obj.humid, obj.soil, obj.salt, obj.light, obj.batt],
+              }));
+              console.log('fetchData chartData:', chartData);
+              chart.series[0].setData(chartData.map(obj => [obj.x, obj.y[0]]));
+              chart.series[1].setData(chartData.map(obj => [obj.x, obj.y[1]]));
+              chart.series[2].setData(chartData.map(obj => [obj.x, obj.y[2]]));
+              chart.series[3].setData(chartData.map(obj => [obj.x, obj.y[3]]));
+              chart.series[4].setData(chartData.map(obj => [obj.x, obj.y[4]]));
+              chart.series[5].setData(chartData.map(obj => [obj.x, obj.y[5]]));
+              chart.series[6].setData(chartData.map(obj => [obj.x, obj.y[6]]));
+            })
+            .catch(error => console.error(error));
+        } */
+
+        function handleSubmit(event) {
+            event.preventDefault();
+            const start = new Date(document.getElementById('start-date').value);
+            const end = new Date(document.getElementById('end-date').value);
+            console.log(start, end);
+            fetchData(start, end);
+        }
+
+        const myform = document.getElementById('date-form');
+        myform.addEventListener('submit', handleSubmit);
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const toggleButton = document.getElementById('toggle-button');
+            const profileSidebar = document.getElementById('profile-sidebar');
+            const closeButton = document.getElementById('close-button');
+
+
+            toggleButton.addEventListener('click', () => {
+                profileSidebar.classList.toggle('active');
+            });
+
+            closeButton.addEventListener('click', () => {
+                profileSidebar.classList.remove('active');
+            });
+
+            // Function to update indicator width based on data
+            function updateIndicatorWidth(boxId, value) {
+                const indicator = document.getElementById(`indicator-${boxId}`);
+                indicator.style.width = (value * 10) + '%'; // Assuming value is between 0 and 10
+            }
+
+            // Retrieve saved profile data from localStorage
+            const savedProfileData = JSON.parse(localStorage.getItem('userProfile'));
+
+            // Populate input fields with saved profile data
+            if (savedProfileData) {
+                document.getElementById('age').value = savedProfileData.age || '';
+                document.getElementById('weight').value = savedProfileData.weight || '';
+                document.getElementById('height').value = savedProfileData.height || '';
+                document.getElementById('gender').value = savedProfileData.gender || '';
+            }
+            // Save user profile data to localStorage when "Update Profile" button is clicked
+            document.getElementById('update-profile').addEventListener('click', () => {
+                const userProfile = {
+                    age: document.getElementById('age').value,
+                    weight: document.getElementById('weight').value,
+                    height: document.getElementById('height').value,
+                    gender: document.getElementById('gender').value
+                };
+                localStorage.setItem('userProfile', JSON.stringify(userProfile));
+                console.log("Profile updated:", userProfile); // Added for debugging
+            });
+
+            function displayDiagnosis(text) {
+                const diagnosisBody = document.getElementById('diagnosis-body');
+                diagnosisBody.innerHTML = text;
+                document.getElementById('diagnosis').style.display = 'block';
+            }
+            // Example: Display received text in the diagnosis box
+            displayDiagnosis('Received text goes here...');
+
+            // Redirect to "chart for meter" page when button is clicked
+            document.getElementById('chart-meter-button').addEventListener('click', () => {
+                window.location.href = "chart-for-meter.html"; // Replace with your actual page URL
+            });
+        });
+
+        function calculateBMI() {
+            var height = parseFloat(document.getElementById('height').value);
+            var weight = parseFloat(document.getElementById('weight').value);
+
+            if (!isNaN(height) && !isNaN(weight) && height > 0 && weight > 0) {
+                var bmi = weight / ((height / 100) * (height / 100));
+                document.getElementById('result').innerHTML = 'Your BMI is: ' + bmi.toFixed(2);
+                addToHistory(height, weight, bmi.toFixed(2));
+            } else {
+                document.getElementById('result').innerHTML = 'Please enter valid height and weight.';
+            }
+        }
+
+        function addToHistory(height, weight, bmi) {
+            var historyDiv = document.getElementById('history');
+            var newItem = document.createElement('div');
+            newItem.innerHTML = '<strong>Height:</strong> ' + height + 'cm, <strong>Weight:</strong> ' + weight + 'kg, <strong>BMI:</strong> ' + bmi;
+            historyDiv.appendChild(newItem);
+        }
+
+
+    </script>
+
+    <!--    <div>
+      <div>Subscribed to <input type='text' id='topic2' disabled />
+        Status: <input type='text' id='status' size="10" disabled /></div>
+        <ul id='ws'"></ul>
+        </div>-->
+    <!-- Bootstrap JS -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>-->
+    </section>
+
+    <!--=============== ABOUT ===============-->
+
+
+    <!--=============== SKILLS ===============-->
+
+
+    <!--=============== PORTFOLIO ===============-->
+
+    <!--=============== CONTACTME ===============-->
+
+    </main>
+
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
 </body>
+
 </html>
-<script  type="text/javascript">
- var mqtt;
- var reconnectTimeout = 2000;
-
- function MQTTconnect() {
- if (typeof path == "undefined") {
-path = '/mqtt';
-      }
-mqtt = new Paho.MQTT.Client(
-          host,
-          port,
-          path,
- "web_" + parseInt(Math.random() * 100, 10)
-      );
- var options = {
- timeout: 3,
- useSSL: useTLS,
- cleanSession: cleansession,
- onSuccess: onConnect,
- onFailure: function (message) {
-              $('#status').val("Connection failed: " + message.errorMessage + "Retrying");
-              setTimeout(MQTTconnect, reconnectTimeout);
-          }
-      };
-
-      mqtt.onConnectionLost = onConnectionLost;
-      mqtt.onMessageArrived = onMessageArrived;
-
- if (username != null) {
-          options.userName = username;
-          options.password = password;
-      }
- console.log("Host=" + host + ", port=" + port + ", path=" + path + " TLS = " + useTLS + " username=" + username + " password=" + password);
-      mqtt.connect(options);
-  }
-
- function onConnect() {
-      $('#status').val('Connected to ' + host + ':' + port + path);
- // Connection succeeded; subscribe to our topic
-mqtt.subscribe(topic, { qos: 0 });
-      $('#topic').val(topic);
-
- // Set up chart
-      chart = Highcharts.chart('chart-container', {
- chart: {
- type: 'line',
- backgroundColor: 'rgba(0,0,0,0)'
-          },
- title: {
- text: 'Sensor Data',
- style: {
- color: '#00000'
-              }
-          },
- xAxis: {
- type: 'datetime',
- title: {
- text: 'Time',
- style: {
- color: '#00000'
-              }
-              }
-          },
- yAxis: [{
- title: {
- text: 'Temp',
- style: {
- color: '#00000'
-              }
-              }
-          }, {
- title: {
- text: 'Humid',
- style: {
- color: '#00000'
-              }
-              },
- gridLineColor: '#00000',
- opposite: false  // display on opposite side of chart
-          }],
- series: [{
- name: 'Temp',
- data: [],
- yAxis: 0  // use the first yAxis (index 0) for this series
-          }, {
- name: 'Humid',
- data: [],
- yAxis: 1  // use the second yAxis (index 1) for this series
-          }]
-      });
-
- // Set up second chart with heartbeat data
-      chart2 = Highcharts.chart('chart-container2', {
- chart: {
- type: 'line', // Set chart type to spline
-backgroundColor: 'rgba(0,0,0,0)'
-          },
- title: {
- text: 'Heartbeat Data over Time',
- style: {
- color: '#00000'
-              }
-          },
- xAxis: {
- type: 'datetime', // Use linear type for the x-axis
-              title: {
- text: 'Time',
- style: {
- color: '#00000'
-                  }
-              }
-          },
- yAxis: {
- title: {
- text: 'Heartbeat',
- style: {
- color: '#00000'
-                  }
-              },
-          },
- series: [{
- name: 'Heartbeat',
- data: [], // Your heartbeat data here
-color: '#FF0000'
-          }]
-      });
-  }
-
- function onConnectionLost(response) {
-      setTimeout(MQTTconnect, reconnectTimeout);
-      $('#status').val("connection lost: " + response.errorMessage + ". Reconnecting");
-  };
-
- function onMessageArrived(message) {
- var topic = message.destinationName;
- var payload = message.payloadString;
-
-      $('#ws').prepend('<li>' + topic + ' = ' + payload + '</li>');
-
- // Parse message data
- var data = JSON.parse(payload);
-
- // Update first chart
-      chart.series[0].addPoint([Date.now(), data.temp]);
-      chart.series[1].addPoint([Date.now(), data.humid]);
-
- // Update second chart with heartbeat data
-      chart2.series[0].addPoint([Date.now(), data.HB]);
-
- // Redraw both charts
-      chart.redraw();
-      chart2.redraw();
-
- // WIDGET
- const widgetContainers = document.querySelectorAll('.widget-container');
-
- // Loop through each widget container and update the widget data
-      widgetContainers.forEach(widgetElement => {
-          widgetElement.querySelector('.temp-data').textContent = data.temp;
-          widgetElement.querySelector('.humid-data').textContent = data.humid;
-      });
-  };
-
-  $(document).ready(function () {
-      MQTTconnect();
-  });
-</script>
-
+```
  |
 
 Github link ( [here](https://github.com/0SaNJ/codettesbootcamp_final_project/blob/main/final_project_html)  )
@@ -2604,157 +2854,300 @@ Github link ( [here](https://github.com/0SaNJ/codettesbootcamp_final_project/blo
 Css code
 
 |
+```css
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow-y: scroll;
 
-body{
- margin:0;
- padding:0;
- overflow-y: scroll;
- background: black;
 }
 
-.banner{
- width:100%;
- height: 400px;
- position: relative;
+.navbar {
+    background-color: #dd5e0e;
+    padding: 15px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.topnav{
- width:100%;
- height: 18%;
- background:transparent;
- display: flex;
- flex-direction: row;
- position: relative;
- z-index:4;
- position: absolute;
+.brand-title {
+    font-size: 1.5rem;
 }
 
-.banner-test{
- width:100%;
- height: 100%;
- background:orange;
- z-index: -2;
- position: absolute;
- display: flex;
- justify-content: right;
- flex-direction: row;
+.toggle-button {
+    background: none;
+    border: none;
+    cursor: pointer;
 }
 
-.signature{
- width: 30%;
- height: 100%;
- display: flex;
- align-items: center;
+.toggle-button .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px auto;
 }
 
-.sig-text{
- font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
- font-size: 33px;
- font-weight: 500;
+.profile-sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #dd5e0e;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: width 0.5s;
+    pointer-events: none;
+    /* Disable pointer events during transition */
+    z-index: 2;
+    /* Ensure profile sidebar appears above other content */
 }
 
-.sig-img{
- height: 80%;
- max-width: 80%;
- margin-left: 3%;
- margin-right: 2%;
+
+.profile-sidebar.active {
+    width: 250px;
+    /* Slide out the sidebar when active */
+    pointer-events: auto;
+    /* Re-enable pointer events when sidebar is fully visible */
 }
 
-.navButtons{
- width:40%;
- height:100%;
- position: relative;
- display: flex;
- align-items: right;
- justify-content: right;
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 36px;
+    color: #ff8234;
+    cursor: pointer;
 }
 
-.button{
- width:150px;
- height: 50%;
- border-style: solid;
- border-color: black;
- border-width: 3px;
- border-radius: 10px;
- margin-top: auto;
- margin-bottom: auto;
- margin-right: 3%;
- background: transparent;
- text-align: center;
- display: flex;
- align-items: center;
- justify-content: center;
+.profile-details {
+    text-align: center;
+    padding: 20px;
+    max-width: 250px;
+    /* Adjust the maximum width to fit the weight input box */
+    margin: auto;
+    /* Center the container horizontally */
 }
 
-.btn-text{
- font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
- font-size: 18px;
- color: white;
+#weight {
+    width: 100%;
+    /* Make the input box fill the available width */
+    box-sizing: border-box;
+    /* Include padding and border in the width calculation */
 }
 
-.content{
- height: 1000px;
- position: relative;
+.profile-details img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
 }
 
-.hat-info-box {
- position: relative;
- justify-content:right;
- display: flex;
- z-index: 5;
- width: 100%;
- height: 50%;
+.profile-details h2 {
+    margin-bottom: 10px;
+    color: white;
 }
 
-.hat-img {
- height: 100%;
+.profile-details p {
+    margin-bottom: 5px;
+    color: white;
 }
 
-.hat-text {
- position: relative;
- top: 150px;
- margin-right:480px;
+.profile-details button {
+    padding: 10px 20px;
+    background-color: #ff8234;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
-.example-info {
- position: relative;
- justify-content:right;
- display: flex;
- z-index: 5;
- width: 100%;
- height: 50%;
- background-color: orange;
- align-items: center;
+.profile-details button:hover {
+    background-color: #777;
 }
 
-.chartboxpage {
- background-color: transparent;
- width: 30%;
- margin: 0px;
- box-sizing: border-box;
- padding: 20px;
- border: 1px;
- border-radius: 10px;
- position: relative;
- display: flex;
- height: 50%;
+.info-container {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.chartpge {
- display: flex;
- position: relative;
+.chart-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    height: 300px;
+    z-index: 1;
 }
 
-.chart-text {
- width: 80%;
+.analog-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    height: 100px;
+    margin-bottom: 10px;
 }
 
-.web-info-box {
- background-color: orange;
- width: 100%;
- height: 50px;
+.diagnosis-history {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+.diagnosis-history .history-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.diagnosis-history .H3 {
+    display: flex;
+    height: 25px;
+    justify-content: center;
+    color: #333;
+    z-index: 1;
+}
+
+.timeline {
+    list-style-type: none;
+    padding: 0;
+}
+
+.timeline li {
+    margin: 10px 0;
+    position: relative;
+    padding-left: 20px;
+}
+
+.timeline li:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 10px;
+    height: 10px;
+    background-color: #333;
+    border-radius: 50%;
+}
+
+.body-image {
+    position: inherit;
+    text-align: center;
+}
+
+.body-image img {
+    max-width: 100%;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.info-container,
+.diagnosis-history {
+    flex: 1;
+    /* Adjusts width to distribute space evenly */
+    margin: 10px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    box-sizing: border-box;
+}
+
+.diagnosis-history ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.diagnosis-history ul li {
+    margin: 5px 0;
+}
+
+.body-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+#result {
+    margin-top: 20px;
+}
+
+#history {
+    text-align: left;
+    max-height: 200px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/* Media Query for Mobile Devices */
+@media only screen and (max-width: 768px) {
+    .profile-details {
+        max-width: 100%;
+        /* Adjust the maximum width to fit the weight input box */
+    }
+
+    .analog-box {
+        width: 100%;
+        /* Set the width to 100% for full width on mobile devices */
+        margin: 20px 0;
+        /* Adjust margin for better spacing */
+    }
+
+    .history-container {
+        flex-direction: column;
+        /* Stack elements vertically on mobile */
+        align-items: center;
+        /* Center align the items */
+        width: 100%;
+        /* Take full width on mobile devices */
+    }
+
+    .container {
+        flex-direction: column;
+        /* Stack the main containers vertically on mobile */
+        padding: 10px;
+    }
+
+    .analog-container,
+    .diagnosis-history {
+        margin: 10px 0;
+        /* Add vertical margin between the containers */
+        padding: 10px;
+    }
+}
+```
  |
 
 Github link ( [here](https://github.com/0SaNJ/codettesbootcamp_final_project/blob/main/final_project_css) )
@@ -2762,85 +3155,92 @@ Github link ( [here](https://github.com/0SaNJ/codettesbootcamp_final_project/blo
 App.js code 
 
 |
-
+```js
 var MongoClient = require('mongodb').MongoClient;
-var url = "mongodb://localhost:27017/"; // "mongodb://localhost:27017/iotstack";
+var url = "mongodb://localhost:27017/";  // "mongodb://localhost:27017/iotstack";
 
 var express = require('express');
 var app = express();
 
-//Server Variables
+// Server Variables
 var host = process.env.IP || 'localhost';
-var port = process.env.PORT || 9000;
+var port = process.env.PORT || 8000;
 
-var staticSite = __dirname + '/.';
+var staticSite = __dirname + '/public';
 
-var mqtt = require('mqtt')
+var mqtt = require('mqtt');
 
-var client  = mqtt.connect([{host:'localhost',port:'1883'}]) //var client  = mqtt.connect([{host:'broker.hivemq.com',port:'1883'}]) //
+//var client = mqtt.connect([{host:'localhost',port:'9001'}]);
+const client = mqtt.connect('ws://192.168.1.18:9001/mqtt');
 console.log("Nodejs Server Started!");
 
-// on mqtt conect subscribe on tobic test
+// Express middleware to serve static files
+app.use(express.static(staticSite));
+
+// Connect to MQTT broker and subscribe to topic
 client.on('connect', function () {
-  client.subscribe('jaysanmo/codettes/01', function (err) {
- console.log("sub scribing to test topic");
- if(err)
- console.log(err)
-  })
-})
+  console.log("Connected to MQTT broker");
+  client.subscribe('jaysanmo/codettes/01', function (err) {
+    if (err) {
+      console.error("Failed to subscribe to MQTT topic:", err);
+    } else {
+      console.log("Subscribed to MQTT topic");
+    }
+  });
+});
 
-//when recive message
+// Handle MQTT messages
 client.on('message', function (topic, message) {
-  json_check(message)
-})
+  console.log("Received message from MQTT:", message.toString());
+  json_check(message);
+});
 
-//check if data json or not
+// Check if message is JSON
 function json_check(data) {
- try {
- // JSON.parse(data);
-msg = JSON.parse(data.toString()); // t is JSON so handle it how u want
-} catch (e) {
- console.log("message could not valid json " + data.toString);
- return  false;
-    }
- console.log(msg);
- var msgobj = { "msg": msg }; // message object
-    Mongo_insert(msgobj)
- console.log(msgobj);
+  try {
+    var msg = JSON.parse(data.toString());
+    console.log("Parsed JSON message:", msg);
+    var msgobj = { "msg": msg }; // message object
+    Mongo_insert(msgobj);
+    console.log("Message object:", msgobj);
+  } catch (e) {
+    console.log("Message could not be parsed as JSON:", data.toString());
+    return false;
+  }
 }
 
-//insert data in mongodb
+// Insert data into MongoDB
 function Mongo_insert(msg){
-MongoClient.connect(url, function(err, db ) {
- if (err) throw err;
- var dbo = db.db("cb");
-    dbo.collection("class").insertOne(msg, function(err, res) {
- if (err) throw err;
- console.log("data stored");
- //db.close();
-    });
-  });
+  MongoClient.connect(url, function(err, db ) {
+    if (err) throw err;
+    var dbo = db.db("cb");
+    dbo.collection("class").insertOne(msg, function(err, res) {
+      if (err) throw err;
+      console.log("Data stored in MongoDB:", msg);
+      db.close();
+    });
+  }); 
 }
 
 // ENABLE CORS for Express (so swagger.io and external sites can use it remotely .. SECURE IT LATER!!)
 app.use(function(req, res, next) {
-  res.header("Access-Control-Allow-Origin", "*");
-  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-  next();
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
 });
 
 // ROUTES FOR OUR API
 // =============================================================================
-var router = express.Router(); // get an instance of the express Router
+var router = express.Router();              // get an instance of the express Router
 
 app.use('/', express.static(staticSite));
 // Use router for all /api requests
 
 if (! process.env.C9_PID) {
- console.log('Running at http://'+ host +':' + port);
+    console.log('Running at http://'+ host +':' + port);
 }
 app.listen(port, function() { console.log('Listening')});
-
+```
  |
 
 Github link ( [here](https://github.com/0SaNJ/codettesbootcamp_final_project/blob/main/final_project_app.js) )
