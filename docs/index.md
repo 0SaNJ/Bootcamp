@@ -568,7 +568,7 @@ Day 3 ( online )
 
 2.  The CSS Code
 
-|```css
+|```CSS
 
 	/* Complete project details: https://randomnerdtutorials.com/esp32-web-server-websocket-sliders/ */
 
