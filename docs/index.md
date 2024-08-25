@@ -73,9 +73,53 @@ We start the codettes bootcamp journey by learning markdown and making our docum
 
 5. C++ Code 
 
-|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-| :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-| /\*\*\*\*\*\*\*\*\*   Rui Santos   Complete project details at https\://randomnerdtutorials.com  \*\*\*\*\*\*\*\*\*/ // Import required libraries #include "WiFi.h" #include "ESPAsyncWebServer.h" #include "SPIFFS.h" // Replace with your network credentials const char\* ssid = "HUAWEI-2.4G-yzad"; const char\* password = "SkNH972g"; // Set LED GPIO const int ledPin = 2; // Stores LED state String ledState; // Create AsyncWebServer object on port 80 AsyncWebServer server(80); // Replaces placeholder with LED state value String processor(const String& var){   Serial.println(var);   if(var == "STATE"){     if(digitalRead(ledPin)){       ledState = "ON";     }     else{       ledState = "OFF";     }     Serial.print(ledState);     return ledState;   }   return String(); }  void setup(){   // Serial port for debugging purposes   Serial.begin(115200);   pinMode(ledPin, OUTPUT);   // Initialize SPIFFS   if(!SPIFFS.begin(true)){     Serial.println("An Error has occurred while mounting SPIFFS");     return;   }   // Connect to Wi-Fi   WiFi.begin(ssid, password);   while (WiFi.status() != WL\_CONNECTED) {     delay(1000);     Serial.println("Connecting to WiFi..");   }   // Print ESP32 Local IP Address   Serial.println(WiFi.localIP());   // Route for root / web page   server.on("/", HTTP\_GET, \[]\(AsyncWebServerRequest \*request){     request->send(SPIFFS, "/index.html", String(), false, processor);   });     // Route to load style.css file   server.on("/style.css", HTTP\_GET, \[]\(AsyncWebServerRequest \*request){     request->send(SPIFFS, "/style.css", "text/css");   });   // Route to set GPIO to HIGH   server.on("/on", HTTP\_GET, \[]\(AsyncWebServerRequest \*request){     digitalWrite(ledPin, HIGH);        request->send(SPIFFS, "/index.html", String(), false, processor);   });     // Route to set GPIO to LOW   server.on("/off", HTTP\_GET, \[]\(AsyncWebServerRequest \*request){     digitalWrite(ledPin, LOW);        request->send(SPIFFS, "/index.html", String(), false, processor);   });   // Start server   server.begin(); }  void loop(){   } |
+|    ```                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+|<!DOCTYPE html>
+<html>
+<head>
+  <title>ESP32 Web Server</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <style>
+html{
+font-family: Helvetica;
+display: inline-block;
+margin: 0px auto;
+text-align: center;
+}
+h1{
+color: #0F3376;
+padding: 2vh;
+}
+p{
+font-size: 1.5rem;
+}
+.button{
+display: inline-block;
+background-color: #008CBA;
+border: none;
+border-radius: 4px;
+color: white;
+padding: 16px 40px;
+text-decoration: none;
+font-size: 30px;
+margin: 2px
+cursor pointer;
+}
+.button2{
+background-color: #f44336;
+}
+</style>
+</head>
+<body>
+  <h1>ESP32 Web Server</h1>
+  <p>GPIO state: <strong> %STATE%</strong></p>
+  <p><a href="/on"><button class="button">ON</button></a></p>
+  <p><a href="/off"><button class="button button2">OFF</button></a></p>
+</body>
+</html>
+```
 
 ( [link to github code ](https://github.com/0SaNJ/codettesbootcamp_2023_code/blob/main/ESP_32_async_webserver_c%2B%2B) )
 
