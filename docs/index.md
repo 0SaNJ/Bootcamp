@@ -162,8 +162,9 @@ void setup(){
 void loop(){
   
 }
-( [link to github code ](https://github.com/0SaNJ/codettesbootcamp_2023_code/blob/main/ESP_32_async_webserver_c%2B%2B) )
 ```
+( [link to github code ](https://github.com/0SaNJ/codettesbootcamp_2023_code/blob/main/ESP_32_async_webserver_c%2B%2B) )
+
 6. Upload ESP32 Sketch Data Upload if you did everything right you should see this → ![](https://lh7-us.googleusercontent.com/xehV0b-3r8lNVU_lSyfDRiC11rgRIfzhdoyaFJ6_S0lhA6k_UUVEL1w5hGIzMKo-6ppjdwlsZYTXE5XRAlkAwhyN_xm5XRpO2ahl9TlsYZhpL1VivTcXnzZBdqHtg26Me_1f-vvmn8OvKNS3tzMpYvE)
 
 7. The html code
@@ -214,9 +215,9 @@ void loop(){
 	  <p><a href="/off"><button class="button button2">OFF</button></a></p>
 	</body>
 	</html>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-
-( [link to github code](https://github.com/0SaNJ/codettesbootcamp_2023_code/blob/main/ESP_32_async_webserver_html) )
 ```
+( [link to github code](https://github.com/0SaNJ/codettesbootcamp_2023_code/blob/main/ESP_32_async_webserver_html) )
+
 8. Now Upload the code and see if it works if everything is done right you should see this ![](https://lh7-us.googleusercontent.com/wE8cUR-U1fjH2OisQ7-5EaA_FMzQxnbgZqXzetbm_6pGYVjJWrjBg1Kq5Fu3uEFXG9zib-fPaRJyEoyRSRdb5VDtQGRO3-ORD-TpFASizN7VSuywjvpd7i-6F3oQEX19qb_ugAFprzKbNW-1HNg1wqk)and should have a led that can turn on and off via websockets like here![](https://lh7-us.googleusercontent.com/sKs7cWCB2rNJaOhB4IUEbUmdvT0q08cBobWJynQtnr3g7rwJzbFcbC3hN6YvgOJ0RbyxQUUqdJBEHOoJDIquS-LvMW26JIIg-KFNUS4rCaaGZ9CA9Ypjlw6mSpmHapQ0uSJ_7b0RY1GKoTwEkaYWmB0)
 
 9. The CSS code
