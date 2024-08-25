@@ -75,89 +75,89 @@ Day 2 ( online )
 
 |
 ```c++
-	/*********\
-	  Rui Santos\
-	  Complete project details at https://randomnerdtutorials.com\
+	/*********
+	  Rui Santos
+	  Complete project details at https://randomnerdtutorials.com
 	*********/
 
-	// Import required libraries\
-	#include "WiFi.h"\
-	#include "ESPAsyncWebServer.h"\
+	// Import required libraries
+	#include "WiFi.h"
+	#include "ESPAsyncWebServer.h"
 	#include "SPIFFS.h"
 
-	// Replace with your network credentials\
-	const  char* ssid = "HUAWEI-2.4G-yzad";\
+	// Replace with your network credentials
+	const  char* ssid = "HUAWEI-2.4G-yzad";
 	const  char* password = "SkNH972g";
 
-	// Set LED GPIO\
-	const  int ledPin = 2;\
-	// Stores LED state\
+	// Set LED GPIO
+	const  int ledPin = 2;
+	// Stores LED state
 	String ledState;
 
-	// Create AsyncWebServer object on port 80\
+	// Create AsyncWebServer object on port 80
 	AsyncWebServer server(80);
 
-	// Replaces placeholder with LED state value\
-	String processor(const String& var){\
-	  Serial.println(var);\
-	 if(var == "STATE"){\
-	 if(digitalRead(ledPin)){\
-	ledState = "ON";\
-	    }\
-	 else{\
-	ledState = "OFF";\
-	    }\
-	    Serial.print(ledState);\
-	 return ledState;\
-	  }\
-	 return String();\
+	// Replaces placeholder with LED state value
+	String processor(const String& var){
+	  Serial.println(var);
+	 if(var == "STATE"){
+	 if(digitalRead(ledPin)){
+	ledState = "ON";
+	    }
+	 else{
+	ledState = "OFF";
+	    }
+	    Serial.print(ledState);
+	 return ledState;
+	  }
+	 return String();
 	}
 
-	void  setup(){\
-	 // Serial port for debugging purposes\
-	  Serial.begin(115200);\
+	void  setup(){
+	 // Serial port for debugging purposes
+	  Serial.begin(115200);
 	  pinMode(ledPin, OUTPUT);
 
-	 // Initialize SPIFFS\
-	 if(!SPIFFS.begin(true)){\
-	    Serial.println("An Error has occurred while mounting SPIFFS");\
-	 return;\
+	 // Initialize SPIFFS
+	 if(!SPIFFS.begin(true)){
+	    Serial.println("An Error has occurred while mounting SPIFFS");
+	 return;
 	  }
 
-	 // Connect to Wi-Fi\
-	  WiFi.begin(ssid, password);\
-	 while (WiFi.status() != WL_CONNECTED) {\
-	    delay(1000);\
-	    Serial.println("Connecting to WiFi..");\
+	 // Connect to Wi-Fi
+	  WiFi.begin(ssid, password);
+	 while (WiFi.status() != WL_CONNECTED) {
+	    delay(1000);
+	    Serial.println("Connecting to WiFi..");
 	  }
 
-	 // Print ESP32 Local IP Address\
+	 // Print ESP32 Local IP Address
 	  Serial.println(WiFi.localIP());
 
-	 // Route for root / web page\
-	  server.on("/", HTTP_GET, [](AsyncWebServerRequest *request){\
-	request->send(SPIFFS, "/index.html", String(), false, processor);\
+	 // Route for root / web page
+	  server.on("/", HTTP_GET, [](AsyncWebServerRequest *request){
+	request->send(SPIFFS, "/index.html", String(), false, processor);
 	  });
 
-	 // Route to load style.css file\
-	  server.on("/style.css", HTTP_GET, [](AsyncWebServerRequest *request){\
-	request->send(SPIFFS, "/style.css", "text/css");\
+	 // Route to load style.css file
+	  server.on("/style.css", HTTP_GET, [](AsyncWebServerRequest *request){
+	request->send(SPIFFS, "/style.css", "text/css");
 	  });
 
-	 // Route to set GPIO to HIGH\
-	  server.on("/on", HTTP_GET, [](AsyncWebServerRequest *request){\
-	    digitalWrite(ledPin, HIGH);\
-	request->send(SPIFFS, "/index.html", String(), false, processor);\
+	 // Route to set GPIO to HIGH
+	  server.on("/on", HTTP_GET, [](AsyncWebServerRequest *request){
+	    digitalWrite(ledPin, HIGH);
+	request->send(SPIFFS, "/index.html", String(), false, processor);
 	  });
 
-	 // Route to set GPIO to LOW\
-	  server.on("/off", HTTP_GET, [](AsyncWebServerRequest *request){\
-	    digitalWrite(ledPin, LOW);\
-	request->send(SPIFFS, "/index.html", String(), false, processor);\
+	 // Route to set GPIO to LOW
+	  server.on("/off", HTTP_GET, [](AsyncWebServerRequest *request){
+	    digitalWrite(ledPin, LOW);
+	request->send(SPIFFS, "/index.html", String(), false, processor);
 	  });
 
-	 // Start server\
-	  server.begin();\
+	 // Start server
+	  server.begin();
 	}
 
 	void  loop(){
@@ -174,50 +174,50 @@ Day 2 ( online )
 
 |
 ```html
-	<!DOCTYPE html>\
-	<html>\
-	<head>\
-	<title>ESP32 Web Server</title>\
-	<meta  name="viewport"  content="width=device-width, initial-scale=1">\
-	<link  rel="icon"  href="data:,">\
-	<link  rel="stylesheet"  type="text/css"  href="style.css">\
-	<style>\
-	html{\
-	font-family: Helvetica;\
-	display: inline-block;\
-	margin: 0px auto;\
-	text-align: center;\
-	}\
-	h1{\
-	color: #0F3376;\
-	padding: 2vh;\
-	}\
-	p{\
-	font-size: 1.5rem;\
-	}\
-	.button{\
-	display: inline-block;\
-	background-color: #008CBA;\
-	border: none;\
-	border-radius: 4px;\
-	color: white;\
-	padding: 16px  40px;\
-	text-decoration: none;\
-	font-size: 30px;\
-	margin: 2px\
-	cursor pointer;\
-	}\
-	.button2{\
-	background-color: #f44336;\
-	}\
-	</style>\
-	</head>\
-	<body>\
-	<h1>ESP32 Web Server</h1>\
-	<p>GPIO state: <strong> %STATE%</strong></p>\
-	<p><a  href="/on"><button  class="button">ON</button></a></p>\
-	<p><a  href="/off"><button  class="button button2">OFF</button></a></p>\
-	</body>\
+	<!DOCTYPE html>
+	<html>
+	<head>
+	<title>ESP32 Web Server</title>
+	<meta  name="viewport"  content="width=device-width, initial-scale=1">
+	<link  rel="icon"  href="data:,">
+	<link  rel="stylesheet"  type="text/css"  href="style.css">
+	<style>
+	html{
+	font-family: Helvetica;
+	display: inline-block;
+	margin: 0px auto;
+	text-align: center;
+	}
+	h1{
+	color: #0F3376;
+	padding: 2vh;
+	}
+	p{
+	font-size: 1.5rem;
+	}
+	.button{
+	display: inline-block;
+	background-color: #008CBA;
+	border: none;
+	border-radius: 4px;
+	color: white;
+	padding: 16px  40px;
+	text-decoration: none;
+	font-size: 30px;
+	margin: 2px
+	cursor pointer;
+	}
+	.button2{
+	background-color: #f44336;
+	}
+	</style>
+	</head>
+	<body>
+	<h1>ESP32 Web Server</h1>
+	<p>GPIO state: <strong> %STATE%</strong></p>
+	<p><a  href="/on"><button  class="button">ON</button></a></p>
+	<p><a  href="/off"><button  class="button button2">OFF</button></a></p>
+	</body>
 	</html>
 ```
  |
@@ -230,33 +230,33 @@ Day 2 ( online )
 
 |
 ```css
-	html {\
-	 font-family: Helvetica;\
-	 display: inline-block;\
-	 margin: 0px auto;\
-	 text-align: center;\
-	}\
-	h1{\
-	 color: #0F3376;\
-	 padding: 2vh;\
-	}\
-	p{\
-	 font-size: 1.5rem;\
-	}\
-	.button {\
-	 display: inline-block;\
-	 background-color: #008CBA;\
-	 border: none;\
-	 border-radius: 4px;\
-	 color: white;\
-	 padding: 16px  40px;\
-	 text-decoration: none;\
-	 font-size: 30px;\
-	 margin: 2px;\
-	 cursor: pointer;\
-	}\
-	.button2 {\
-	 background-color: #f44336;\
+	html {
+	 font-family: Helvetica;
+	 display: inline-block;
+	 margin: 0px auto;
+	 text-align: center;
+	}
+	h1{
+	 color: #0F3376;
+	 padding: 2vh;
+	}
+	p{
+	 font-size: 1.5rem;
+	}
+	.button {
+	 display: inline-block;
+	 background-color: #008CBA;
+	 border: none;
+	 border-radius: 4px;
+	 color: white;
+	 padding: 16px  40px;
+	 text-decoration: none;
+	 font-size: 30px;
+	 margin: 2px;
+	 cursor: pointer;
+	}
+	.button2 {
+	 background-color: #f44336;
 	}
 ```
  |
@@ -281,217 +281,217 @@ Day 3 ( online )
 
 |
 ```
-	/*\
-	  Rui Santos\
+	/*
+	  Rui Santos
 	  Complete project details at https://RandomNerdTutorials.com/esp32-web-server-websocket-sliders/
 
-	  Permission is hereby granted, free of charge, to any person obtaining a copy\
+	  Permission is hereby granted, free of charge, to any person obtaining a copy
 	  of this software and associated documentation files.
 
-	  The above copyright notice and this permission notice shall be included in all\
-	  copies or substantial portions of the Software.\
+	  The above copyright notice and this permission notice shall be included in all
+	  copies or substantial portions of the Software.
 	*/
 
-	#include <Arduino.h>\
-	#include <WiFi.h>\
-	#include <AsyncTCP.h>\
-	#include <ESPAsyncWebServer.h>\
-	#include "SPIFFS.h"\
+	#include <Arduino.h>
+	#include <WiFi.h>
+	#include <AsyncTCP.h>
+	#include <ESPAsyncWebServer.h>
+	#include "SPIFFS.h"
 	#include <Arduino_JSON.h>
 
-	// Replace with your network credentials\
-	const  char* ssid = "HUAWEI-2.4G-yzad";\
+	// Replace with your network credentials
+	const  char* ssid = "HUAWEI-2.4G-yzad";
 	const  char* password = "SkNH972g";
 
-	// Create AsyncWebServer object on port 80\
-	AsyncWebServer server(80);\
+	// Create AsyncWebServer object on port 80
+	AsyncWebServer server(80);
 	// Create a WebSocket object
 
-	AsyncWebSocket ws("/ws");\
-	// Set LED GPIO\
-	const  int ledPin1 = 32;\
-	const  int ledPin2 = 26;\
-	const  int ledPin3 = 14;\
-	const  int ledPin4 = 12;\
+	AsyncWebSocket ws("/ws");
+	// Set LED GPIO
+	const  int ledPin1 = 32;
+	const  int ledPin2 = 26;
+	const  int ledPin3 = 14;
+	const  int ledPin4 = 12;
 	const  int ledPin5 = 13;
 
-	String message = "";\
-	String sliderValue1 = "0";\
-	String sliderValue2 = "0";\
-	String sliderValue3 = "0";\
-	String sliderValue4 = "0";\
+	String message = "";
+	String sliderValue1 = "0";
+	String sliderValue2 = "0";
+	String sliderValue3 = "0";
+	String sliderValue4 = "0";
 	String sliderValue5 = "0";
 
-	int dutyCycle1;\
-	int dutyCycle2;\
-	int dutyCycle3;\
-	int dutyCycle4;\
+	int dutyCycle1;
+	int dutyCycle2;
+	int dutyCycle3;
+	int dutyCycle4;
 	int dutyCycle5;
 
-	// setting PWM properties\
-	const  int freq = 5000;\
-	const  int ledChannel1 = 0;\
-	const  int ledChannel2 = 1;\
-	const  int ledChannel3 = 2;\
-	const  int ledChannel4 = 3;\
+	// setting PWM properties
+	const  int freq = 5000;
+	const  int ledChannel1 = 0;
+	const  int ledChannel2 = 1;
+	const  int ledChannel3 = 2;
+	const  int ledChannel4 = 3;
 	const  int ledChannel5 = 4;
 
 	const  int resolution = 8;
 
-	//Json Variable to Hold Slider Values\
+	//Json Variable to Hold Slider Values
 	JSONVar sliderValues;
 
-	//Get Slider Values\
-	String getSliderValues(){\
-	  sliderValues["sliderValue1"] = String(sliderValue1);\
-	  sliderValues["sliderValue2"] = String(sliderValue2);\
-	  sliderValues["sliderValue3"] = String(sliderValue3);\
-	  sliderValues["sliderValue4"] = String(sliderValue4);\
+	//Get Slider Values
+	String getSliderValues(){
+	  sliderValues["sliderValue1"] = String(sliderValue1);
+	  sliderValues["sliderValue2"] = String(sliderValue2);
+	  sliderValues["sliderValue3"] = String(sliderValue3);
+	  sliderValues["sliderValue4"] = String(sliderValue4);
 	  sliderValues["sliderValue5"] = String(sliderValue5);
 
-	  String jsonString = JSON.stringify(sliderValues);\
-	 return jsonString;\
+	  String jsonString = JSON.stringify(sliderValues);
+	 return jsonString;
 	}
 
-	// Initialize SPIFFS\
-	void  initFS() {\
-	 if (!SPIFFS.begin()) {\
-	    Serial.println("An error has occurred while mounting SPIFFS");\
-	  }\
-	 else{\
-	  Serial.println("SPIFFS mounted successfully");\
-	  }\
+	// Initialize SPIFFS
+	void  initFS() {
+	 if (!SPIFFS.begin()) {
+	    Serial.println("An error has occurred while mounting SPIFFS");
+	  }
+	 else{
+	  Serial.println("SPIFFS mounted successfully");
+	  }
 	}
 
-	// Initialize WiFi\
-	void  initWiFi() {\
-	  WiFi.mode(WIFI_STA);\
-	  WiFi.begin(ssid, password);\
-	  Serial.print("Connecting to WiFi ..");\
-	 while (WiFi.status() != WL_CONNECTED) {\
-	    Serial.print('.');\
-	    delay(1000);\
-	  }\
-	  Serial.println(WiFi.localIP());\
+	// Initialize WiFi
+	void  initWiFi() {
+	  WiFi.mode(WIFI_STA);
+	  WiFi.begin(ssid, password);
+	  Serial.print("Connecting to WiFi ..");
+	 while (WiFi.status() != WL_CONNECTED) {
+	    Serial.print('.');
+	    delay(1000);
+	  }
+	  Serial.println(WiFi.localIP());
 	}
 
-	void  notifyClients(String sliderValues) {\
-	  ws.textAll(sliderValues);\
+	void  notifyClients(String sliderValues) {
+	  ws.textAll(sliderValues);
 	}
 
-	void  handleWebSocketMessage(void *arg, uint8_t *data, size_t len) {\
-	  AwsFrameInfo *info = (AwsFrameInfo*)arg;\
-	 if (info->final && info->index == 0 && info->len == len && info->opcode == WS_TEXT) {\
-	data[len] = 0;\
-	    message = (char*)data;\
-	 if (message.indexOf("1s") >= 0) {\
-	      sliderValue1 = message.substring(2);\
-	dutyCycle1 = map(sliderValue1.toInt(), 0, 100, 0, 255);\
-	      Serial.println(dutyCycle1);\
-	      Serial.print(getSliderValues());\
-	      notifyClients(getSliderValues());\
-	    }\
-	 if (message.indexOf("2s") >= 0) {\
-	      sliderValue2 = message.substring(2);\
-	dutyCycle2 = map(sliderValue2.toInt(), 0, 100, 0, 255);\
-	      Serial.println(dutyCycle2);\
-	      Serial.print(getSliderValues());\
-	      notifyClients(getSliderValues());\
-	    }\
-	 if (message.indexOf("3s") >= 0) {\
-	      sliderValue3 = message.substring(2);\
-	dutyCycle3 = map(sliderValue3.toInt(), 0, 100, 0, 255);\
-	      Serial.println(dutyCycle3);\
-	      Serial.print(getSliderValues());\
-	      notifyClients(getSliderValues());\
-	    }\
-	 if (message.indexOf("4s") >= 0) {\
-	      sliderValue4 = message.substring(2);\
-	dutyCycle4 = map(sliderValue4.toInt(), 0, 100, 0, 255);\
-	      Serial.println(dutyCycle4);\
-	      Serial.print(getSliderValues());\
-	      notifyClients(getSliderValues());\
-	    }\
-	 if (message.indexOf("5s") >= 0) {\
-	      sliderValue5 = message.substring(2);\
-	dutyCycle5 = map(sliderValue5.toInt(), 0, 100, 0, 255);\
-	      Serial.println(dutyCycle5);\
-	      Serial.print(getSliderValues());\
-	      notifyClients(getSliderValues());\
-	    }\
-	 if (strcmp((char*)data, "getValues") == 0) {\
-	      notifyClients(getSliderValues());\
-	    }\
-	  }\
-	}\
-	void  onEvent(AsyncWebSocket *server, AsyncWebSocketClient *client, AwsEventType type, void *arg, uint8_t *data, size_t len) {\
-	 switch (type) {\
-	 case WS_EVT_CONNECT:\
-	      Serial.printf("WebSocket client #%u connected from %s\n", client->id(), client->remoteIP().toString().c_str());\
-	 break;\
-	 case WS_EVT_DISCONNECT:\
-	      Serial.printf("WebSocket client #%u disconnected\n", client->id());\
-	 break;\
-	 case WS_EVT_DATA:\
-	      handleWebSocketMessage(arg, data, len);\
-	 break;\
-	 case WS_EVT_PONG:\
-	 case WS_EVT_ERROR:\
-	 break;\
-	  }\
+	void  handleWebSocketMessage(void *arg, uint8_t *data, size_t len) {
+	  AwsFrameInfo *info = (AwsFrameInfo*)arg;
+	 if (info->final && info->index == 0 && info->len == len && info->opcode == WS_TEXT) {
+	data[len] = 0;
+	    message = (char*)data;
+	 if (message.indexOf("1s") >= 0) {
+	      sliderValue1 = message.substring(2);
+	dutyCycle1 = map(sliderValue1.toInt(), 0, 100, 0, 255);
+	      Serial.println(dutyCycle1);
+	      Serial.print(getSliderValues());
+	      notifyClients(getSliderValues());
+	    }
+	 if (message.indexOf("2s") >= 0) {
+	      sliderValue2 = message.substring(2);
+	dutyCycle2 = map(sliderValue2.toInt(), 0, 100, 0, 255);
+	      Serial.println(dutyCycle2);
+	      Serial.print(getSliderValues());
+	      notifyClients(getSliderValues());
+	    }
+	 if (message.indexOf("3s") >= 0) {
+	      sliderValue3 = message.substring(2);
+	dutyCycle3 = map(sliderValue3.toInt(), 0, 100, 0, 255);
+	      Serial.println(dutyCycle3);
+	      Serial.print(getSliderValues());
+	      notifyClients(getSliderValues());
+	    }
+	 if (message.indexOf("4s") >= 0) {
+	      sliderValue4 = message.substring(2);
+	dutyCycle4 = map(sliderValue4.toInt(), 0, 100, 0, 255);
+	      Serial.println(dutyCycle4);
+	      Serial.print(getSliderValues());
+	      notifyClients(getSliderValues());
+	    }
+	 if (message.indexOf("5s") >= 0) {
+	      sliderValue5 = message.substring(2);
+	dutyCycle5 = map(sliderValue5.toInt(), 0, 100, 0, 255);
+	      Serial.println(dutyCycle5);
+	      Serial.print(getSliderValues());
+	      notifyClients(getSliderValues());
+	    }
+	 if (strcmp((char*)data, "getValues") == 0) {
+	      notifyClients(getSliderValues());
+	    }
+	  }
+	}
+	void  onEvent(AsyncWebSocket *server, AsyncWebSocketClient *client, AwsEventType type, void *arg, uint8_t *data, size_t len) {
+	 switch (type) {
+	 case WS_EVT_CONNECT:
+	      Serial.printf("WebSocket client #%u connected from %sn", client->id(), client->remoteIP().toString().c_str());
+	 break;
+	 case WS_EVT_DISCONNECT:
+	      Serial.printf("WebSocket client #%u disconnectedn", client->id());
+	 break;
+	 case WS_EVT_DATA:
+	      handleWebSocketMessage(arg, data, len);
+	 break;
+	 case WS_EVT_PONG:
+	 case WS_EVT_ERROR:
+	 break;
+	  }
 	}
 
-	void  initWebSocket() {\
-	  ws.onEvent(onEvent);\
-	  server.addHandler(&ws);\
+	void  initWebSocket() {
+	  ws.onEvent(onEvent);
+	  server.addHandler(&ws);
 	}
 
-	void  setup() {\
-	  Serial.begin(115200);\
-	  pinMode(ledPin1, OUTPUT);\
-	  pinMode(ledPin2, OUTPUT);\
-	  pinMode(ledPin3, OUTPUT);\
-	  pinMode(ledPin4, OUTPUT);\
-	  pinMode(ledPin5, OUTPUT);\
-	  initFS();\
+	void  setup() {
+	  Serial.begin(115200);
+	  pinMode(ledPin1, OUTPUT);
+	  pinMode(ledPin2, OUTPUT);
+	  pinMode(ledPin3, OUTPUT);
+	  pinMode(ledPin4, OUTPUT);
+	  pinMode(ledPin5, OUTPUT);
+	  initFS();
 	  initWiFi();
 
-	 // configure LED PWM functionalities\
-	  ledcSetup(ledChannel1, freq, resolution);\
-	  ledcSetup(ledChannel2, freq, resolution);\
-	  ledcSetup(ledChannel3, freq, resolution);\
-	  ledcSetup(ledChannel4, freq, resolution);\
+	 // configure LED PWM functionalities
+	  ledcSetup(ledChannel1, freq, resolution);
+	  ledcSetup(ledChannel2, freq, resolution);
+	  ledcSetup(ledChannel3, freq, resolution);
+	  ledcSetup(ledChannel4, freq, resolution);
 	  ledcSetup(ledChannel5, freq, resolution);
 
-	 // attach the channel to the GPIO to be controlled\
-	  ledcAttachPin(ledPin1, ledChannel1);\
-	  ledcAttachPin(ledPin2, ledChannel2);\
-	  ledcAttachPin(ledPin3, ledChannel3);\
-	  ledcAttachPin(ledPin4, ledChannel4);\
+	 // attach the channel to the GPIO to be controlled
+	  ledcAttachPin(ledPin1, ledChannel1);
+	  ledcAttachPin(ledPin2, ledChannel2);
+	  ledcAttachPin(ledPin3, ledChannel3);
+	  ledcAttachPin(ledPin4, ledChannel4);
 	  ledcAttachPin(ledPin5, ledChannel5);
 
 	  initWebSocket();
 
-	 // Web Server Root URL\
-	  server.on("/", HTTP_GET, [](AsyncWebServerRequest *request){\
-	request->send(SPIFFS, "/index.html", "text/html");\
+	 // Web Server Root URL
+	  server.on("/", HTTP_GET, [](AsyncWebServerRequest *request){
+	request->send(SPIFFS, "/index.html", "text/html");
 	  });
 
 	  server.serveStatic("/", SPIFFS, "/");
 
-	 // Start server\
+	 // Start server
 	  server.begin();
 
 	}
 
-	void  loop() {\
-	  ledcWrite(ledChannel1, dutyCycle1);\
-	  ledcWrite(ledChannel2, dutyCycle2);\
-	  ledcWrite(ledChannel3, dutyCycle3);\
-	  ledcWrite(ledChannel4, dutyCycle4);\
+	void  loop() {
+	  ledcWrite(ledChannel1, dutyCycle1);
+	  ledcWrite(ledChannel2, dutyCycle2);
+	  ledcWrite(ledChannel3, dutyCycle3);
+	  ledcWrite(ledChannel4, dutyCycle4);
 	  ledcWrite(ledChannel5, dutyCycle5);
 
-	  ws.cleanupClients();\
+	  ws.cleanupClients();
 	}
 ```
  |
@@ -504,64 +504,64 @@ Day 3 ( online )
 ```html
 	<!-- Complete project details: https://randtutorials.com/esp32-web-server-websocket-sliders/ -->
 
-	<!DOCTYPE html>\
-	<html>\
-	<head>\
-	<title>ESP IOT DASHBOARD</title>\
-	<meta  name="viewport"  content="width=device-width, initial-scale=1">\
-	<link  rel="icon"  type="image/png"  href="favicon.png">\
-	<link  rel="stylesheet"  type="text/css"  href="style.css">\
-	</head>\
-	<body>\
-	<div  class="topnav">\
-	<h1>Multiple Sliders</h1>\
-	</div>\
-	<div  class="content">\
-	<div  class="card-grid">\
-	<div  class="card">\
-	<p  class="card-title">Fader 1</p>\
-	<p  class="switch">\
-	<input  type="range"  onchange="updateSliderPWM(this)"  id="slider1"  min="0"  max="100"  step="1"  value ="0"  class="slider">\
-	</p>\
-	<p  class="state">Brightness: <span  id="sliderValue1"></span> &percnt;</p>\
-	</div>\
-	<div  class="card">\
-	<p  class="card-title"> Fader 2</p>\
-	<p  class="switch">\
-	<input  type="range"  onchange="updateSliderPWM(this)"  id="slider2"  min="0"  max="100"  step="1"  value ="0"  class="slider">\
-	</p>\
-	<p  class="state">Brightness: <span  id="sliderValue2"></span> &percnt;</p>\
-	</div>\
-	<div  class="card">\
-	<p  class="card-title"> Fader 3</p>\
-	<p  class="switch">\
-	<input  type="range"  onchange="updateSliderPWM(this)"  id="slider3"  min="0"  max="100"  step="1"  value ="0"  class="slider">\
-	</p>\
-	<p  class="state">Brightness: <span  id="sliderValue3"></span> &percnt;</p>\
-	</div>\
-	<div  class="card">\
-	<p  class="card-title"> Fader 4</p>\
-	<p  class="switch">\
-	<input  type="range"  onchange="updateSliderPWM(this)"  id="slider4"  min="0"  max="100"  step="1"  value ="0"  class="slider">\
-	</p>\
-	<p  class="state">Brightness: <span  id="sliderValue4"></span> &percnt;</p>\
-	</div>\
-	<div  class="card">\
-	<p  class="card-title"> Fader 5</p>\
-	<p  class="switch">\
-	<input  type="range"  onchange="updateSliderPWM(this)"  id="slider5"  min="0"  max="100"  step="1"  value ="0"  class="slider">\
-	</p>\
-	<p  class="state">Brightness: <span  id="sliderValue5"></span> &percnt;</p>\
-	</div>\
-	</div>\
-	</div>\
-	<script  src="script.js"></script>\
-	</body>\
+	<!DOCTYPE html>
+	<html>
+	<head>
+	<title>ESP IOT DASHBOARD</title>
+	<meta  name="viewport"  content="width=device-width, initial-scale=1">
+	<link  rel="icon"  type="image/png"  href="favicon.png">
+	<link  rel="stylesheet"  type="text/css"  href="style.css">
+	</head>
+	<body>
+	<div  class="topnav">
+	<h1>Multiple Sliders</h1>
+	</div>
+	<div  class="content">
+	<div  class="card-grid">
+	<div  class="card">
+	<p  class="card-title">Fader 1</p>
+	<p  class="switch">
+	<input  type="range"  onchange="updateSliderPWM(this)"  id="slider1"  min="0"  max="100"  step="1"  value ="0"  class="slider">
+	</p>
+	<p  class="state">Brightness: <span  id="sliderValue1"></span> &percnt;</p>
+	</div>
+	<div  class="card">
+	<p  class="card-title"> Fader 2</p>
+	<p  class="switch">
+	<input  type="range"  onchange="updateSliderPWM(this)"  id="slider2"  min="0"  max="100"  step="1"  value ="0"  class="slider">
+	</p>
+	<p  class="state">Brightness: <span  id="sliderValue2"></span> &percnt;</p>
+	</div>
+	<div  class="card">
+	<p  class="card-title"> Fader 3</p>
+	<p  class="switch">
+	<input  type="range"  onchange="updateSliderPWM(this)"  id="slider3"  min="0"  max="100"  step="1"  value ="0"  class="slider">
+	</p>
+	<p  class="state">Brightness: <span  id="sliderValue3"></span> &percnt;</p>
+	</div>
+	<div  class="card">
+	<p  class="card-title"> Fader 4</p>
+	<p  class="switch">
+	<input  type="range"  onchange="updateSliderPWM(this)"  id="slider4"  min="0"  max="100"  step="1"  value ="0"  class="slider">
+	</p>
+	<p  class="state">Brightness: <span  id="sliderValue4"></span> &percnt;</p>
+	</div>
+	<div  class="card">
+	<p  class="card-title"> Fader 5</p>
+	<p  class="switch">
+	<input  type="range"  onchange="updateSliderPWM(this)"  id="slider5"  min="0"  max="100"  step="1"  value ="0"  class="slider">
+	</p>
+	<p  class="state">Brightness: <span  id="sliderValue5"></span> &percnt;</p>
+	</div>
+	</div>
+	</div>
+	<script  src="script.js"></script>
+	</body>
 	</html>
 ```
  |
 
-( [link to github code](https://github.com/0SaNJ/codettesbootcamp_2023_code/blob/main/ESP_32_multiple_sliders_webserver_code_html)  )\
+( [link to github code](https://github.com/0SaNJ/codettesbootcamp_2023_code/blob/main/ESP_32_multiple_sliders_webserver_code_html)  )
 ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXf1o34hyX6PMIFUoglTbc8ip964laRKVtNadvNwfbBktb0chL2eC6cq1FRUNJfHI9Qkb4_quC2gEJrwB4lRa550LnXND2t2sicl1vp-CUdbK-rXwFNZqR_VcigGAHBYcMQVeS_8ZbXVzz2MLn71ZvXYJeI?key=y_viQYfMEKmV8AynRuZczA)
 
 1.  We can customize our webpage using css we do that by going into our index.html and configuring there ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXcdZIRcgsYKhgodd5vtRbeoiVJEGQBF_zu-FqeS9U4xnXmrfQ1svY_xYA3tFPHr51h9_Or5RrfdHQycxpvRcus7ys541ElN-TBHlvaAuK-VZ6eopzBkdenwOQp9rS-KQv-VVPpo8HBRtKrAoOQslsqRJlyW?key=y_viQYfMEKmV8AynRuZczA)
@@ -572,77 +572,77 @@ Day 3 ( online )
 
 	/* Complete project details: https://randomnerdtutorials.com/esp32-web-server-websocket-sliders/ */
 
-	html {\
-	font-family: Arial, Helvetica, sans-serif;\
-	display: inline-block;\
-	text-align: center;\
-	background: rgb(212, 184, 184);\
-	}\
-	h1 {\
-	font-size: 1.8rem;\
-	color: black;\
-	}\
-	p {\
-	font-size: 1.4rem;\
-	}\
-	.topnav {\
-	overflow: hidden;\
-	background-color: #374fa0;\
-	}\
-	body {\
-	margin: 0;\
-	}\
-	.content {\
-	padding: 30px;\
-	}\
-	.card-grid {\
-	max-width: 700px;\
-	margin: 0 auto;\
-	display: grid;\
-	grid-gap: 2rem;\
-	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));\
-	}\
-	.card {\
-	background-color: rgb(216, 79, 79);\
-	box-shadow: 2px  2px  12px  1px  rgba(140,140,140,.5);\
-	}\
-	.card-title {\
-	font-size: 1.2rem;\
-	font-weight: bold;\
-	color: #034078\
-	}\
-	.state {\
-	font-size: 1.2rem;\
-	color:#1282A2;\
-	}\
-	.slider {\
-	-webkit-appearance: none;\
-	margin: 0 auto;\
-	width: 100%;\
-	height: 15px;\
-	border-radius: 10px;\
-	background: #FFD65C;\
-	outline: none;\
-	}\
-	.slider::-webkit-slider-thumb {\
-	-webkit-appearance: none;\
-	appearance: none;\
-	width: 30px;\
-	height: 30px;\
-	border-radius: 50%;\
-	background: #034078;\
-	cursor: pointer;\
-	}\
-	.slider::-moz-range-thumb {\
-	width: 30px;\
-	height: 30px;\
-	border-radius: 50% ;\
-	background: #034078;\
-	cursor: pointer;\
-	}\
-	.switch {\
-	padding-left: 5%;\
-	padding-right: 5%;\
+	html {
+	font-family: Arial, Helvetica, sans-serif;
+	display: inline-block;
+	text-align: center;
+	background: rgb(212, 184, 184);
+	}
+	h1 {
+	font-size: 1.8rem;
+	color: black;
+	}
+	p {
+	font-size: 1.4rem;
+	}
+	.topnav {
+	overflow: hidden;
+	background-color: #374fa0;
+	}
+	body {
+	margin: 0;
+	}
+	.content {
+	padding: 30px;
+	}
+	.card-grid {
+	max-width: 700px;
+	margin: 0 auto;
+	display: grid;
+	grid-gap: 2rem;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	}
+	.card {
+	background-color: rgb(216, 79, 79);
+	box-shadow: 2px  2px  12px  1px  rgba(140,140,140,.5);
+	}
+	.card-title {
+	font-size: 1.2rem;
+	font-weight: bold;
+	color: #034078
+	}
+	.state {
+	font-size: 1.2rem;
+	color:#1282A2;
+	}
+	.slider {
+	-webkit-appearance: none;
+	margin: 0 auto;
+	width: 100%;
+	height: 15px;
+	border-radius: 10px;
+	background: #FFD65C;
+	outline: none;
+	}
+	.slider::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background: #034078;
+	cursor: pointer;
+	}
+	.slider::-moz-range-thumb {
+	width: 30px;
+	height: 30px;
+	border-radius: 50% ;
+	background: #034078;
+	cursor: pointer;
+	}
+	.switch {
+	padding-left: 5%;
+	padding-right: 5%;
 	}
 ```
  |
@@ -671,83 +671,83 @@ Day 4 ( online )
 
 |
 ```c++
-	// Example testing sketch for various DHT humidity/temperature sensors written by ladyada\
-	// REQUIRES the following Arduino libraries:\
-	// - DHT Sensor Library: https://github.com/adafruit/DHT-sensor-library\
+	// Example testing sketch for various DHT humidity/temperature sensors written by ladyada
+	// REQUIRES the following Arduino libraries:
+	// - DHT Sensor Library: https://github.com/adafruit/DHT-sensor-library
 	// - Adafruit Unified Sensor Lib: https://github.com/adafruit/Adafruit_Sensor
 
 	#include "DHT.h"
 
-	#define DHTPIN 4     // Digital pin connected to the DHT sensor\
-	// Feather HUZZAH ESP8266 note: use pins 3, 4, 5, 12, 13 or 14 --\
+	#define DHTPIN 4     // Digital pin connected to the DHT sensor
+	// Feather HUZZAH ESP8266 note: use pins 3, 4, 5, 12, 13 or 14 --
 	// Pin 15 can work but DHT must be disconnected during program upload.
 
-	// Uncomment whatever type you're using!\
-	//#define DHTTYPE DHT11   // DHT 11\
-	#define DHTTYPE DHT22   // DHT 22  (AM2302), AM2321\
+	// Uncomment whatever type you're using!
+	//#define DHTTYPE DHT11   // DHT 11
+	#define DHTTYPE DHT22   // DHT 22  (AM2302), AM2321
 	//#define DHTTYPE DHT21   // DHT 21 (AM2301)
 
-	// Connect pin 1 (on the left) of the sensor to +5V\
-	// NOTE: If using a board with 3.3V logic like an Arduino Due connect pin 1\
-	// to 3.3V instead of 5V!\
-	// Connect pin 2 of the sensor to whatever your DHTPIN is\
-	// Connect pin 4 (on the right) of the sensor to GROUND\
+	// Connect pin 1 (on the left) of the sensor to +5V
+	// NOTE: If using a board with 3.3V logic like an Arduino Due connect pin 1
+	// to 3.3V instead of 5V!
+	// Connect pin 2 of the sensor to whatever your DHTPIN is
+	// Connect pin 4 (on the right) of the sensor to GROUND
 	// Connect a 10K resistor from pin 2 (data) to pin 1 (power) of the sensor
 
-	// Initialize DHT sensor.\
-	// Note that older versions of this library took an optional third parameter to\
-	// tweak the timings for faster processors.  This parameter is no longer needed\
-	// as the current DHT reading algorithm adjusts itself to work on faster procs.\
+	// Initialize DHT sensor.
+	// Note that older versions of this library took an optional third parameter to
+	// tweak the timings for faster processors.  This parameter is no longer needed
+	// as the current DHT reading algorithm adjusts itself to work on faster procs.
 	DHT dht(DHTPIN, DHTTYPE);
 
-	void  setup() {\
-	  Serial.begin(9600);\
+	void  setup() {
+	  Serial.begin(9600);
 	  Serial.println(F("DHTxx test!"));
 
-	  dht.begin();\
+	  dht.begin();
 	}
 
-	void  loop() {\
-	 // Wait a few seconds between measurements.\
+	void  loop() {
+	 // Wait a few seconds between measurements.
 	  delay(2000);
 
-	 // Reading temperature or humidity takes about 250 milliseconds!\
-	 // Sensor readings may also be up to 2 seconds 'old' (its a very slow sensor)\
-	 float h = dht.readHumidity();\
-	 // Read temperature as Celsius (the default)\
-	 float t = dht.readTemperature();\
-	 // Read temperature as Fahrenheit (isFahrenheit = true)\
+	 // Reading temperature or humidity takes about 250 milliseconds!
+	 // Sensor readings may also be up to 2 seconds 'old' (its a very slow sensor)
+	 float h = dht.readHumidity();
+	 // Read temperature as Celsius (the default)
+	 float t = dht.readTemperature();
+	 // Read temperature as Fahrenheit (isFahrenheit = true)
 	 float f = dht.readTemperature(true);
 
-	 // Check if any reads failed and exit early (to try again).\
-	 if (isnan(h) || isnan(t) || isnan(f)) {\
-	    Serial.println(F("Failed to read from DHT sensor!"));\
-	 return;\
+	 // Check if any reads failed and exit early (to try again).
+	 if (isnan(h) || isnan(t) || isnan(f)) {
+	    Serial.println(F("Failed to read from DHT sensor!"));
+	 return;
 	  }
 
-	 // Compute heat index in Fahrenheit (the default)\
-	 float hif = dht.computeHeatIndex(f, h);\
-	 // Compute heat index in Celsius (isFahreheit = false)\
+	 // Compute heat index in Fahrenheit (the default)
+	 float hif = dht.computeHeatIndex(f, h);
+	 // Compute heat index in Celsius (isFahreheit = false)
 	 float hic = dht.computeHeatIndex(t, h, false);
 
-	  Serial.print(F("Humidity: "));\
-	  Serial.print(h);\
-	  Serial.print(F("%  Temperature: "));\
-	  Serial.print(t);\
-	  Serial.print(F("°C "));\
-	  Serial.print(f);\
-	  Serial.print(F("°F  Heat index: "));\
-	  Serial.print(hic);\
-	  Serial.print(F("°C "));\
-	  Serial.print(hif);\
-	  Serial.println(F("°F"));\
+	  Serial.print(F("Humidity: "));
+	  Serial.print(h);
+	  Serial.print(F("%  Temperature: "));
+	  Serial.print(t);
+	  Serial.print(F("°C "));
+	  Serial.print(f);
+	  Serial.print(F("°F  Heat index: "));
+	  Serial.print(hic);
+	  Serial.print(F("°C "));
+	  Serial.print(hif);
+	  Serial.println(F("°F"));
 	}
 ```
  |
 
 ( [link to github code](https://github.com/0SaNJ/codettesbootcamp_2023_code/blob/main/ESP_32_DHT_C%2B%2B) )
 
-1.  If everything is done right you should get something like this in your serial monitor\
+1.  If everything is done right you should get something like this in your serial monitor
     ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXe8YDNa75JvEq370UdNZlhpOiUhO7FrRMDKYj-fzbSUfFAz-EStS6pK9vzmNI4-t3jtJBEgj2TuLV-MDD61N6QKcWJZAJKfycA7y-taKCK007Zfq0UlzGjaP5epHVGYnEQ_k0rpnjHLOb_12303yHNJwWki?key=y_viQYfMEKmV8AynRuZczA)
 
 ### DHT sensor with web server:
@@ -758,166 +758,166 @@ Day 4 ( online )
 
 |
 ```c++
-/*********\
-  Rui Santos\
-  Complete project details at https://randomnerdtutorials.com\
+/*********
+  Rui Santos
+  Complete project details at https://randomnerdtutorials.com
 *********/
 
-// Import required libraries\
-#include "WiFi.h"\
-#include "ESPAsyncWebServer.h"\
-#include <Adafruit_Sensor.h>\
+// Import required libraries
+#include "WiFi.h"
+#include "ESPAsyncWebServer.h"
+#include <Adafruit_Sensor.h>
 #include <DHT.h>
 
-// Replace with your network credentials\
-const  char* ssid = "REPLACE_WITH_YOUR_SSID";\
+// Replace with your network credentials
+const  char* ssid = "REPLACE_WITH_YOUR_SSID";
 const  char* password = "REPLACE_WITH_YOUR_PASSWORD";
 
 #define DHTPIN 27     // Digital pin connected to the DHT sensor
 
-// Uncomment the type of sensor in use:\
-//#define DHTTYPE    DHT11     // DHT 11\
-#define DHTTYPE    DHT22     // DHT 22 (AM2302)\
+// Uncomment the type of sensor in use:
+//#define DHTTYPE    DHT11     // DHT 11
+#define DHTTYPE    DHT22     // DHT 22 (AM2302)
 //#define DHTTYPE    DHT21     // DHT 21 (AM2301)
 
 DHT dht(DHTPIN, DHTTYPE);
 
-// Create AsyncWebServer object on port 80\
+// Create AsyncWebServer object on port 80
 AsyncWebServer server(80);
 
-String readDHTTemperature() {\
- // Sensor readings may also be up to 2 seconds 'old' (its a very slow sensor)\
- // Read temperature as Celsius (the default)\
- float t = dht.readTemperature();\
- // Read temperature as Fahrenheit (isFahrenheit = true)\
- //float t = dht.readTemperature(true);\
- // Check if any reads failed and exit early (to try again).\
- if (isnan(t)) {\
-    Serial.println("Failed to read from DHT sensor!");\
- return  "--";\
-  }\
- else {\
-    Serial.println(t);\
- return String(t);\
-  }\
+String readDHTTemperature() {
+ // Sensor readings may also be up to 2 seconds 'old' (its a very slow sensor)
+ // Read temperature as Celsius (the default)
+ float t = dht.readTemperature();
+ // Read temperature as Fahrenheit (isFahrenheit = true)
+ //float t = dht.readTemperature(true);
+ // Check if any reads failed and exit early (to try again).
+ if (isnan(t)) {
+    Serial.println("Failed to read from DHT sensor!");
+ return  "--";
+  }
+ else {
+    Serial.println(t);
+ return String(t);
+  }
 }
 
-String readDHTHumidity() {\
- // Sensor readings may also be up to 2 seconds 'old' (its a very slow sensor)\
- float h = dht.readHumidity();\
- if (isnan(h)) {\
-    Serial.println("Failed to read from DHT sensor!");\
- return  "--";\
-  }\
- else {\
-    Serial.println(h);\
- return String(h);\
-  }\
+String readDHTHumidity() {
+ // Sensor readings may also be up to 2 seconds 'old' (its a very slow sensor)
+ float h = dht.readHumidity();
+ if (isnan(h)) {
+    Serial.println("Failed to read from DHT sensor!");
+ return  "--";
+  }
+ else {
+    Serial.println(h);
+ return String(h);
+  }
 }
 
-const  char index_html[] PROGMEM = R"rawliteral(\
-<!DOCTYPE HTML><html>\
-<head>\
-  <meta name="viewport" content="width=device-width, initial-scale=1">\
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">\
-  <style>\
-    html {\
-    font-family: Arial;\
-    display: inline-block;\
-margin: 0px auto;\
-    text-align: center;\
-    }\
-h2 { font-size: 3.0rem; }\
-p { font-size: 3.0rem; }\
-.units { font-size: 1.2rem; }\
-    .dht-labels{\
-font-size: 1.5rem;\
-      vertical-align:middle;\
-padding-bottom: 15px;\
-    }\
-  </style>\
-</head>\
-<body>\
-  <h2>ESP32 DHT Server</h2>\
-  <p>\
-<i class="fas fa-thermometer-half" style="color:#059e8a;"></i>\
-<span class="dht-labels">Temperature</span>\
-    <span id="temperature">%TEMPERATURE%</span>\
-<sup class="units">&deg;C</sup>\
-  </p>\
-  <p>\
-<i class="fas fa-tint" style="color:#00add6;"></i>\
-<span class="dht-labels">Humidity</span>\
-    <span id="humidity">%HUMIDITY%</span>\
-<sup class="units">&percnt;</sup>\
-  </p>\
-</body>\
-<script>\
-setInterval(function ( ) {\
- var xhttp = new XMLHttpRequest();\
-  xhttp.onreadystatechange = function() {\
- if (this.readyState == 4 && this.status == 200) {\
-      document.getElementById("temperature").innerHTML = this.responseText;\
-    }\
-  };\
-  xhttp.open("GET", "/temperature", true);\
-  xhttp.send();\
+const  char index_html[] PROGMEM = R"rawliteral(
+<!DOCTYPE HTML><html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <style>
+    html {
+    font-family: Arial;
+    display: inline-block;
+margin: 0px auto;
+    text-align: center;
+    }
+h2 { font-size: 3.0rem; }
+p { font-size: 3.0rem; }
+.units { font-size: 1.2rem; }
+    .dht-labels{
+font-size: 1.5rem;
+      vertical-align:middle;
+padding-bottom: 15px;
+    }
+  </style>
+</head>
+<body>
+  <h2>ESP32 DHT Server</h2>
+  <p>
+<i class="fas fa-thermometer-half" style="color:#059e8a;"></i>
+<span class="dht-labels">Temperature</span>
+    <span id="temperature">%TEMPERATURE%</span>
+<sup class="units">&deg;C</sup>
+  </p>
+  <p>
+<i class="fas fa-tint" style="color:#00add6;"></i>
+<span class="dht-labels">Humidity</span>
+    <span id="humidity">%HUMIDITY%</span>
+<sup class="units">&percnt;</sup>
+  </p>
+</body>
+<script>
+setInterval(function ( ) {
+ var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+ if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("temperature").innerHTML = this.responseText;
+    }
+  };
+  xhttp.open("GET", "/temperature", true);
+  xhttp.send();
 }, 10000 ) ;
 
-setInterval(function ( ) {\
- var xhttp = new XMLHttpRequest();\
-  xhttp.onreadystatechange = function() {\
- if (this.readyState == 4 && this.status == 200) {\
-      document.getElementById("humidity").innerHTML = this.responseText;\
-    }\
-  };\
-  xhttp.open("GET", "/humidity", true);\
-  xhttp.send();\
-}, 10000 ) ;\
-</script>\
+setInterval(function ( ) {
+ var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+ if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("humidity").innerHTML = this.responseText;
+    }
+  };
+  xhttp.open("GET", "/humidity", true);
+  xhttp.send();
+}, 10000 ) ;
+</script>
 </html>)rawliteral";
 
-// Replaces placeholder with DHT values\
-String processor(const String& var){\
-  //Serial.println(var);\
-  if(var == "TEMPERATURE"){\
-    return readDHTTemperature();\
-  }\
-  else if(var == "HUMIDITY"){\
-    return readDHTHumidity();\
-  }\
-  return String();\
+// Replaces placeholder with DHT values
+String processor(const String& var){
+  //Serial.println(var);
+  if(var == "TEMPERATURE"){
+    return readDHTTemperature();
+  }
+  else if(var == "HUMIDITY"){
+    return readDHTHumidity();
+  }
+  return String();
 }
 
-void setup(){\
-  // Serial port for debugging purposes\
+void setup(){
+  // Serial port for debugging purposes
   Serial.begin(115200);
 
   dht.begin();
 
-  // Connect to Wi-Fi\
-  WiFi.begin(ssid, password);\
-  while (WiFi.status() != WL_CONNECTED) {\
-    delay(1000);\
-    Serial.println("Connecting to WiFi..");\
+  // Connect to Wi-Fi
+  WiFi.begin(ssid, password);
+  while (WiFi.status() != WL_CONNECTED) {
+    delay(1000);
+    Serial.println("Connecting to WiFi..");
   }
 
-  // Print ESP32 Local IP Address\
+  // Print ESP32 Local IP Address
   Serial.println(WiFi.localIP());
 
-  // Route for root / web page\
-  server.on("/", HTTP_GET, [](AsyncWebServerRequest *request){\
-    request->send_P(200, "text/html", index_html, processor);\
-  });\
-  server.on("/temperature", HTTP_GET, [](AsyncWebServerRequest *request){\
-    request->send_P(200, "text/plain", readDHTTemperature().c_str());\
-  });\
-  server.on("/humidity", HTTP_GET, [](AsyncWebServerRequest *request){\
-    request->send_P(200, "text/plain", readDHTHumidity().c_str());\
+  // Route for root / web page
+  server.on("/", HTTP_GET, [](AsyncWebServerRequest *request){
+    request->send_P(200, "text/html", index_html, processor);
+  });
+  server.on("/temperature", HTTP_GET, [](AsyncWebServerRequest *request){
+    request->send_P(200, "text/plain", readDHTTemperature().c_str());
+  });
+  server.on("/humidity", HTTP_GET, [](AsyncWebServerRequest *request){
+    request->send_P(200, "text/plain", readDHTHumidity().c_str());
   });
 
-  // Start server\
-  server.begin();\
+  // Start server
+  server.begin();
 }
 
 void loop(){
@@ -950,34 +950,34 @@ Day 5 ( online )
 
 |
 
-#include <WiFi.h>\
+#include <WiFi.h>
 #include <PubSubClient.h>
 
-const  char* ssid = "HUAWEI-2.4G-yzad";\
-const  char* password = "SkNH972g";\
-const  char* mqttServer = "broker.hivemq.com";\
-const  int mqttPort = 1883;\
-const  char* mqttUser = "";\
+const  char* ssid = "HUAWEI-2.4G-yzad";
+const  char* password = "SkNH972g";
+const  char* mqttServer = "broker.hivemq.com";
+const  int mqttPort = 1883;
+const  char* mqttUser = "";
 const  char* mqttPassword = "";
 
-WiFiClient espClient;\
+WiFiClient espClient;
 PubSubClient client(espClient);
 
 void  setup() {
 
-  Serial.begin(115200);\
+  Serial.begin(115200);
   WiFi.begin(ssid, password);
 
- while (WiFi.status() != WL_CONNECTED) {\
-    delay(500);\
-    Serial.println("Connecting to WiFi..");\
+ while (WiFi.status() != WL_CONNECTED) {
+    delay(500);
+    Serial.println("Connecting to WiFi..");
   }
 
   Serial.println("Connected to the WiFi network");
 
   client.setServer(mqttServer, mqttPort);
 
- while (!client.connected()) {\
+ while (!client.connected()) {
     Serial.println("Connecting to MQTT...");
 
  if (client.connect("ESP32Client", mqttUser, mqttPassword )) {
@@ -986,19 +986,19 @@ void  setup() {
 
 } else {
 
-      Serial.print("failed with state ");\
-      Serial.print(client.state());\
+      Serial.print("failed with state ");
+      Serial.print(client.state());
       delay(2000);
 
-    }\
+    }
   }
 
   client.publish("jay/sanmohadi", "Hello from ESP32");
 
 }
 
-void  loop() {\
-  client.loop();\
+void  loop() {
+  client.loop();
 }
 
  |
@@ -1025,191 +1025,191 @@ Day 6 ( online )
 
 |
 
-/*********\
-  Rui Santos\
-  Complete project details at https://randomnerdtutorials.com\
+/*********
+  Rui Santos
+  Complete project details at https://randomnerdtutorials.com
 *********/
 
-#include <WiFi.h>\
-#include <ESPAsyncWebServer.h>\
-#include <SPIFFS.h>\
-#include <Wire.h>\
-#include <Adafruit_Sensor.h>\
+#include <WiFi.h>
+#include <ESPAsyncWebServer.h>
+#include <SPIFFS.h>
+#include <Wire.h>
+#include <Adafruit_Sensor.h>
 #include <PubSubClient.h>
 
 #include "DHT.h"
 
-// Replace the next variables with your SSID/Password combination\
-const  char* ssid = "HUAWEI-2.4G-yzad";\
+// Replace the next variables with your SSID/Password combination
+const  char* ssid = "HUAWEI-2.4G-yzad";
 const  char* password = "SkNH972g";
 
-// Add your MQTT Broker IP address, example:\
-//const char* mqtt_server = "192.168.1.144";\
+// Add your MQTT Broker IP address, example:
+//const char* mqtt_server = "192.168.1.144";
 const  char* mqtt_server = "broker.hivemq.com";
 
-WiFiClient espClient;\
-PubSubClient client(espClient);\
-long lastMsg = 0;\
-char msg[50];\
-int  value = 0;\
-#define DHTPIN 4\
-#define DHTTYPE DHT11\
-DHT dht(DHTPIN, DHTTYPE);\
-const  int ledPin = 2;\
-float temperature = 0;\
-float humidity = 0;\
+WiFiClient espClient;
+PubSubClient client(espClient);
+long lastMsg = 0;
+char msg[50];
+int  value = 0;
+#define DHTPIN 4
+#define DHTTYPE DHT11
+DHT dht(DHTPIN, DHTTYPE);
+const  int ledPin = 2;
+float temperature = 0;
+float humidity = 0;
 AsyncWebServer server(80);
 
-String readDHTTemperature() {\
- // Read temperature as Celsius (the default)\
- float t = dht.readTemperature();\
- // Convert temperature to Fahrenheit\
- //t = 1.8 * t + 32;\
- if (isnan(t)) {\
-    Serial.println("Failed to read from DHT sensor!");\
- return  "";\
-  }\
- else {\
-    Serial.println(t);\
- return String(t);\
-  }\
-}\
-String readDHTHumidity() {\
- float h = dht.readHumidity();\
- if (isnan(h)) {\
-    Serial.println("Failed to read from DHT sensor!");\
- return  "";\
-  }\
- else {\
-    Serial.println(h);\
- return String(h);\
-  }\
+String readDHTTemperature() {
+ // Read temperature as Celsius (the default)
+ float t = dht.readTemperature();
+ // Convert temperature to Fahrenheit
+ //t = 1.8 * t + 32;
+ if (isnan(t)) {
+    Serial.println("Failed to read from DHT sensor!");
+ return  "";
+  }
+ else {
+    Serial.println(t);
+ return String(t);
+  }
+}
+String readDHTHumidity() {
+ float h = dht.readHumidity();
+ if (isnan(h)) {
+    Serial.println("Failed to read from DHT sensor!");
+ return  "";
+  }
+ else {
+    Serial.println(h);
+ return String(h);
+  }
 }
 
-void  setup() {\
-  Serial.begin(115200);\
- // default settings\
- // (you can also pass in a Wire library object like &Wire2)\
- //status = bme.begin();\
-  setup_wifi();\
-client.setServer(mqtt_server, 1883);\
-  client.setCallback(callback);\
-  Serial.println(F("DHTxx test!"));\
-  pinMode(ledPin,OUTPUT);\
-  dht.begin();\
- // Initialize SPIFFS\
- if(!SPIFFS.begin()){\
-    Serial.println("An Error has occurred while mounting SPIFFS");\
- return;\
+void  setup() {
+  Serial.begin(115200);
+ // default settings
+ // (you can also pass in a Wire library object like &Wire2)
+ //status = bme.begin();
+  setup_wifi();
+client.setServer(mqtt_server, 1883);
+  client.setCallback(callback);
+  Serial.println(F("DHTxx test!"));
+  pinMode(ledPin,OUTPUT);
+  dht.begin();
+ // Initialize SPIFFS
+ if(!SPIFFS.begin()){
+    Serial.println("An Error has occurred while mounting SPIFFS");
+ return;
   }
 
 }
 
-void  setup_wifi() {\
-// Connect to Wi-Fi\
-  WiFi.begin(ssid, password);\
-  WiFi.setSleep(false);\
- while (WiFi.status() != WL_CONNECTED) {\
-    delay(1000);\
-    Serial.println("Connecting to WiFi..");\
-  }\
-// Print ESP32 Local IP Address\
-  Serial.println(WiFi.localIP());\
-// Route for root / web page\
-  server.on("/", HTTP_GET, [](AsyncWebServerRequest *request){\
-request->send(SPIFFS, "/index.html");\
-  });\
-  server.on("/temperature", HTTP_GET, [](AsyncWebServerRequest   *request){\
-    request->send_P(200, "text/plain", readDHTTemperature().c_str());\
-  });\
-  server.on("/humidity", HTTP_GET, [](AsyncWebServerRequest *request){\
-    request->send_P(200, "text/plain", readDHTHumidity().c_str());\
-  });\
-// Start server\
-  server.begin();\
+void  setup_wifi() {
+// Connect to Wi-Fi
+  WiFi.begin(ssid, password);
+  WiFi.setSleep(false);
+ while (WiFi.status() != WL_CONNECTED) {
+    delay(1000);
+    Serial.println("Connecting to WiFi..");
+  }
+// Print ESP32 Local IP Address
+  Serial.println(WiFi.localIP());
+// Route for root / web page
+  server.on("/", HTTP_GET, [](AsyncWebServerRequest *request){
+request->send(SPIFFS, "/index.html");
+  });
+  server.on("/temperature", HTTP_GET, [](AsyncWebServerRequest   *request){
+    request->send_P(200, "text/plain", readDHTTemperature().c_str());
+  });
+  server.on("/humidity", HTTP_GET, [](AsyncWebServerRequest *request){
+    request->send_P(200, "text/plain", readDHTHumidity().c_str());
+  });
+// Start server
+  server.begin();
 }
 
-void  callback(char* topic, byte* message, unsigned int length) {\
-  Serial.print("Message arrived on topic: ");\
-  Serial.print(topic);\
-  Serial.print(". Message: ");\
+void  callback(char* topic, byte* message, unsigned int length) {
+  Serial.print("Message arrived on topic: ");
+  Serial.print(topic);
+  Serial.print(". Message: ");
   String messageTemp;
 
- for (int i = 0; i < length; i++) {\
-    Serial.print((char)message[i]);\
-    messageTemp += (char)message[i];\
-  }\
+ for (int i = 0; i < length; i++) {
+    Serial.print((char)message[i]);
+    messageTemp += (char)message[i];
+  }
   Serial.println();
 
  // Feel free to add more if statements to control more GPIOs with MQTT
 
- // If a message is received on the topic esp32/output, you check if the message is either "on" or "off".\
- // Changes the output state according to the message\
- if (String(topic) == "jay/sanmohadi/output") {\
-    Serial.print("Changing output to ");\
- if(messageTemp == "on"){\
-      Serial.println("on");\
-      digitalWrite(ledPin, HIGH);\
-    }\
- else  if(messageTemp == "off"){\
-      Serial.println("off");\
-      digitalWrite(ledPin, LOW);\
-    }\
-  }\
+ // If a message is received on the topic esp32/output, you check if the message is either "on" or "off".
+ // Changes the output state according to the message
+ if (String(topic) == "jay/sanmohadi/output") {
+    Serial.print("Changing output to ");
+ if(messageTemp == "on"){
+      Serial.println("on");
+      digitalWrite(ledPin, HIGH);
+    }
+ else  if(messageTemp == "off"){
+      Serial.println("off");
+      digitalWrite(ledPin, LOW);
+    }
+  }
 }
 
-void  reconnect() {\
- // Loop until we're reconnected\
- while (!client.connected()) {\
-    Serial.print("Attempting MQTT connection...");\
- // Attempt to connect\
- if (client.connect("ESP32Client")) {\
-      Serial.println("connected");\
- // Subscribe\
-      client.subscribe("jay/sanmohadi/output");\
-} else {\
-      Serial.print("failed, rc=");\
-      Serial.print(client.state());\
-      Serial.println(" try again in 5 seconds");\
- // Wait 5 seconds before retrying\
-      delay(5000);\
-    }\
-  }\
+void  reconnect() {
+ // Loop until we're reconnected
+ while (!client.connected()) {
+    Serial.print("Attempting MQTT connection...");
+ // Attempt to connect
+ if (client.connect("ESP32Client")) {
+      Serial.println("connected");
+ // Subscribe
+      client.subscribe("jay/sanmohadi/output");
+} else {
+      Serial.print("failed, rc=");
+      Serial.print(client.state());
+      Serial.println(" try again in 5 seconds");
+ // Wait 5 seconds before retrying
+      delay(5000);
+    }
+  }
 }
 
-void  loop() {\
- if (!client.connected()) {\
-    reconnect();\
-  }\
+void  loop() {
+ if (!client.connected()) {
+    reconnect();
+  }
   client.loop();
 
- long now = millis();\
- if (now - lastMsg > 5000) {\
+ long now = millis();
+ if (now - lastMsg > 5000) {
     lastMsg = now;
 
- // Temperature in Celsius\
-    temperature = dht.readTemperature();\
- // Uncomment the next line to set temperature in Fahrenheit\
- // (and comment the previous temperature line)\
+ // Temperature in Celsius
+    temperature = dht.readTemperature();
+ // Uncomment the next line to set temperature in Fahrenheit
+ // (and comment the previous temperature line)
  //temperature = 1.8 * bme.readTemperature() + 32; // Temperature in Fahrenheit
 
- // Convert the value to a char array\
- char tempString[8];\
-dtostrf(temperature, 1, 2, tempString);\
-    Serial.print("Temperature: ");\
-    Serial.println(tempString);\
+ // Convert the value to a char array
+ char tempString[8];
+dtostrf(temperature, 1, 2, tempString);
+    Serial.print("Temperature: ");
+    Serial.println(tempString);
     client.publish("jay/sanmohadi/reading/temperature", tempString);
 
     humidity = dht.readHumidity();
 
- // Convert the value to a char array\
- char humString[8];\
-dtostrf(humidity, 1, 2, humString);\
-    Serial.print("Humidity: ");\
-    Serial.println(humString);\
-    client.publish("jay/sanmohadi/reading/humidity", humString);\
-    delay(2000);\
-  }\
+ // Convert the value to a char array
+ char humString[8];
+dtostrf(humidity, 1, 2, humString);
+    Serial.print("Humidity: ");
+    Serial.println(humString);
+    client.publish("jay/sanmohadi/reading/humidity", humString);
+    delay(2000);
+  }
 }
 
  |
@@ -1236,92 +1236,92 @@ Day 7 ( online )
 
 5.  Were also going to download MongoDB Compas ( <https://www.mongodb.com/try/download/compass> )
 
-6.  We're going to make a folder called nodejs\
+6.  We're going to make a folder called nodejs
     ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXe1Czedz-xbZp7A23MTMwGQUOGdkMHkfe73q44XtGBLZplyY8j3fdS2SEZiOqcUQAW_rOnFGmYe9LsLj5vOkdrBRPJAZgdt0y_s_DNIaWARsezzfFfmBP2RIm9pWKImW9syH9uW7j9UHPFa6kEOBXfK5faX?key=y_viQYfMEKmV8AynRuZczA)then we go to projects → ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdRz3r-oyb7k3oGZfehllQkIL50SEXOtb6wp9oSlnlMRFWaPvK16-6Zei9SaMjX_h10_EUw0uwt8fhbJgoSnaVX8EP9figQmuVcdxCMK5pRjGd2T9SHV1Ix30bu9mqQ57FSX-e-OWeAurXR2TIBwoaAe8s?key=y_viQYfMEKmV8AynRuZczA)then we make a folder called mongostack →![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdc6ynJ4Bud-tMZEUebBy6YGXcbTLuUUA0wuVQeMmPaw_Fk09gRNNa35DZ0TZGE13uhCEePzrLWJbQh_aK9FdGayaE58piBDzZkUeJSbTXRfITiYdl3EIjVfdGLNAHBbrMK2eKbO7JqRlZPtCPEvdhwhuop?key=y_viQYfMEKmV8AynRuZczA) and in that folder we put our app.js and public folder→ ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXf0a-gGgz2fZnXb9vU600Eb_p6jjgFYPHM-RfEg8CY8Bvk1YYNEQv7fx2F_pvkzm3v0Nd39xeM5Q5F2s4V6zrFuOJBuPsQmaMKMp0TNFVNuvgA1Msr7KTCFM72_uPbeCVZ35mU95y0zI_SlZAUnkAos0__M?key=y_viQYfMEKmV8AynRuZczA)then in that public folder we will have these files →![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXceysE0860q_FEU4cAyBK7MO4zsBmitLyhphqocJ8oDbIjSNWLHW5fVByGR3W6RQ5SogkJFIjP-74sdczuECq1NyJ98cFHfNSl8lIB4eSzNofTXMoave_sIQoatgTM9ai46RnG4j6ZLMql3vQg7QGe_xKQ?key=y_viQYfMEKmV8AynRuZczA)
 
-7.  Now we open up the app.js file and make some changes to it\
+7.  Now we open up the app.js file and make some changes to it
     ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXcE_Mgfijl-zdvu63ILOjarKcFQlli5KgcPNwegLqZscVtC__UqiPlt25FPsbYfxXmZk_FFt8AQdKCRtVWn9-aO09jbRZEyNHLcXyuKfk_fRjM8VoqOEJN_zzvtS05NYBgIM-8corIHQrgHIZI-8zRFi0vu?key=y_viQYfMEKmV8AynRuZczA)
 
 8.  The .js code
 
 |
 
-var MongoClient = require('mongodb').MongoClient;\
+var MongoClient = require('mongodb').MongoClient;
 var url = "mongodb://localhost:27017/";  // "mongodb://localhost:27017/iotstack";
 
-var express = require('express');\
+var express = require('express');
 var app = express();
 
-//Server Variables\
-var host = process.env.IP || 'localhost';\
+//Server Variables
+var host = process.env.IP || 'localhost';
 var port = process.env.PORT || 9000;
 
 var staticSite = __dirname + '/public';
 
 var mqtt = require('mqtt')
 
-var client  = mqtt.connect([{host:'localhost',port:'1883'}]) //var client  = mqtt.connect([{host:'broker.hivemq.com',port:'1883'}]) //\
+var client  = mqtt.connect([{host:'localhost',port:'1883'}]) //var client  = mqtt.connect([{host:'broker.hivemq.com',port:'1883'}]) //
 console.log("Nodejs Server Started!");
 
-// on mqtt conect subscribe on tobic test\
-client.on('connect', function () {\
-  client.subscribe('jaysanmo/codettes/01', function (err) {\
-console.log("sub scribing to test topic");\
-      if(err)\
-      console.log(err)\
-  })\
+// on mqtt conect subscribe on tobic test
+client.on('connect', function () {
+  client.subscribe('jaysanmo/codettes/01', function (err) {
+console.log("sub scribing to test topic");
+      if(err)
+      console.log(err)
+  })
 })
 
-//when recive message\
-client.on('message', function (topic, message) {\
-  json_check(message)\
+//when recive message
+client.on('message', function (topic, message) {
+  json_check(message)
 })
 
-//check if data json or not\
-function json_check(data) {\
-    try {\
-      // JSON.parse(data);\
-msg = JSON.parse(data.toString()); // t is JSON so handle it how u want\
-    } catch (e) {\
-console.log("message could not valid json " + data.toString);\
-        return false;\
-    }\
-console.log(msg);\
-var msgobj = { "msg": msg }; // message object\
-    Mongo_insert(msgobj)\
-console.log(msgobj);\
+//check if data json or not
+function json_check(data) {
+    try {
+      // JSON.parse(data);
+msg = JSON.parse(data.toString()); // t is JSON so handle it how u want
+    } catch (e) {
+console.log("message could not valid json " + data.toString);
+        return false;
+    }
+console.log(msg);
+var msgobj = { "msg": msg }; // message object
+    Mongo_insert(msgobj)
+console.log(msgobj);
 }
 
-//insert data in mongodb\
-function Mongo_insert(msg){\
-MongoClient.connect(url, function(err, db ) {\
-    if (err) throw err;\
-    var dbo = db.db("cb");\
-    dbo.collection("class").insertOne(msg, function(err, res) {\
-      if (err) throw err;\
-  console.log("data stored");\
-      //db.close();\
-    });\
-  });\
+//insert data in mongodb
+function Mongo_insert(msg){
+MongoClient.connect(url, function(err, db ) {
+    if (err) throw err;
+    var dbo = db.db("cb");
+    dbo.collection("class").insertOne(msg, function(err, res) {
+      if (err) throw err;
+  console.log("data stored");
+      //db.close();
+    });
+  });
 }
 
-// ENABLE CORS for Express (so swagger.io and external sites can use it remotely .. SECURE IT LATER!!)\
-app.use(function(req, res, next) {\
-  res.header("Access-Control-Allow-Origin", "*");\
-  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");\
-  next();\
+// ENABLE CORS for Express (so swagger.io and external sites can use it remotely .. SECURE IT LATER!!)
+app.use(function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
 });
 
-// ROUTES FOR OUR API\
-// =============================================================================\
+// ROUTES FOR OUR API
+// =============================================================================
 var router = express.Router();              // get an instance of the express Router
 
-app.use('/', express.static(staticSite));\
+app.use('/', express.static(staticSite));
 // Use router for all /api requests
 
-if (! process.env.C9_PID) {\
-    console.log('Running at http://'+ host +':' + port);\
-}\
+if (! process.env.C9_PID) {
+    console.log('Running at http://'+ host +':' + port);
+}
 app.listen(port, function() { console.log('Listening')});
 
  |
@@ -1342,7 +1342,7 @@ app.listen(port, function() { console.log('Listening')});
 
 7.  In the test.conf we put this ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXf24FsieO03wl9_v6AdyqkwD63b-JLzywXgLHgy-boJkWas7YpuMu5tQ9hoPyUIUDijDMTSOsE1dAI11nlpSX_0_LTy8klLdRSmnGdfhluvvpvKGvWbxBYZtYdNc6-mJ8ArRC77CwATUM-9dWBxHCL1IIlL?key=y_viQYfMEKmV8AynRuZczA)
 
-8.  Now we open up a new terminal and path to mosquitto. Then we do\
+8.  Now we open up a new terminal and path to mosquitto. Then we do
     "mosquitto -v -c test.conf" like here ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXck0s55-nvC7TXF0gVRhwkBFcLn3ghPgdq1FuCyaJ7I0BymYjbWiWHcdOigtWSl17kGPXTtjYVGrkyijvNvW46OEa7nec8wBsCaif0v-PJUDeyOX4Zd70dtBvPN172inLBD7TElX-X1cwoV8oyAFdaWITL2?key=y_viQYfMEKmV8AynRuZczA)but here there's a problem but there is a fix for that first we look on which ip the mosquitto is on by using this command ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXfS5iVPmH57dFygoTr7Q7py7cwyK279wPVroLP4NPxdNA2yiWoi-7bEEdky_x5IlJ67q33PoyP0CuGJMzcxhUtD42V6HQob6r2YCnjWgaMQlE4U-iWFrKvo1aP_66R6J4ATAHqr_AYJSSQfO1a9BkL4IXRv?key=y_viQYfMEKmV8AynRuZczA)
 
 9.  We kill the current running program like here ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXe9fy2uzQc7v4j3g4ofl5Aslq7mf92cphbNIYoyOuG3xox53QLIH8oi7RX9zM8T-jb_iN2R5D_We2ZRvoQEXONrLMD1DsFZpmnp-GpfvL3fP1p1s3O33BoDVmMioIfm5h2vFaRWgIcMCRNjffl6n1MURQS1?key=y_viQYfMEKmV8AynRuZczA)
@@ -1365,178 +1365,178 @@ app.listen(port, function() { console.log('Listening')});
 
 |
 
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>\
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">\
-<html  xmlns="http://www.w3.org/1999/xhtml">\
- <head>\
- <title>Mosquitto Websockets</title>\
- <meta  name="viewport"  content="width=device-width, initial-scale=1.0">\
- <script  src="mqttws31.js"  type="text/javascript"></script>\
- <script  src="jquery.min.js"  type="text/javascript"></script>\
- <script  src="config.js"  type="text/javascript"></script>\
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html  xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+ <title>Mosquitto Websockets</title>
+ <meta  name="viewport"  content="width=device-width, initial-scale=1.0">
+ <script  src="mqttws31.js"  type="text/javascript"></script>
+ <script  src="jquery.min.js"  type="text/javascript"></script>
+ <script  src="config.js"  type="text/javascript"></script>
  <script  src="https://code.highcharts.com/highcharts.js"></script>
 
- </head>\
- <body>\
- <h1>Mosquitto Websockets</h1>\
- <div  class="widget-container" >\
- <div  class="widget">\
- <i  class="fa fa-thermometer-empty"></i>\
- <span  class="label">Temp</span>\
- <span  class="widget-value temp-data">15</span>\
+ </head>
+ <body>
+ <h1>Mosquitto Websockets</h1>
+ <div  class="widget-container" >
+ <div  class="widget">
+ <i  class="fa fa-thermometer-empty"></i>
+ <span  class="label">Temp</span>
+ <span  class="widget-value temp-data">15</span>
  </div>
 
- <div  class="widget">\
- <i  class="fa fa-tint"></i>\
- <span  class="label">Humid</span>\
- <span  class="widget-value humid-data">50%</span>\
- </div>\
- </div>\
- <div  id="chart-container"></div>\
- <div>\
- <div>Subscribed to <input  type='text'  id='topic'  disabled />\
+ <div  class="widget">
+ <i  class="fa fa-tint"></i>
+ <span  class="label">Humid</span>
+ <span  class="widget-value humid-data">50%</span>
+ </div>
+ </div>
+ <div  id="chart-container"></div>
+ <div>
+ <div>Subscribed to <input  type='text'  id='topic'  disabled />
 Status: <input  type='text'  id='status'  size="80"  disabled /></div>
 
- <ul  id='ws'  style="font-family: 'Courier New', Courier, monospace;"></ul>\
- </div>\
- <script  type="text/javascript">\
- var mqtt;\
+ <ul  id='ws'  style="font-family: 'Courier New', Courier, monospace;"></ul>
+ </div>
+ <script  type="text/javascript">
+ var mqtt;
  var reconnectTimeout = 2000;
 
- function MQTTconnect() {\
-if (typeof path == "undefined") {\
-path = '/mqtt';\
-}\
-mqtt = new Paho.MQTT.Client(\
-host,\
-port,\
-path,\
-"web_" + parseInt(Math.random() * 100, 10)\
-);\
- var options = {\
- timeout: 3,\
- useSSL: useTLS,\
- cleanSession: cleansession,\
- onSuccess: onConnect,\
- onFailure: function (message) {\
-                $('#status').val("Connection failed: " + message.errorMessage + "Retrying");\
-                setTimeout(MQTTconnect, reconnectTimeout);\
-            }\
+ function MQTTconnect() {
+if (typeof path == "undefined") {
+path = '/mqtt';
+}
+mqtt = new Paho.MQTT.Client(
+host,
+port,
+path,
+"web_" + parseInt(Math.random() * 100, 10)
+);
+ var options = {
+ timeout: 3,
+ useSSL: useTLS,
+ cleanSession: cleansession,
+ onSuccess: onConnect,
+ onFailure: function (message) {
+                $('#status').val("Connection failed: " + message.errorMessage + "Retrying");
+                setTimeout(MQTTconnect, reconnectTimeout);
+            }
         };
 
-        mqtt.onConnectionLost = onConnectionLost;\
+        mqtt.onConnectionLost = onConnectionLost;
         mqtt.onMessageArrived = onMessageArrived;
 
- if (username != null) {\
-            options.userName = username;\
-            options.password = password;\
-        }\
- console.log("Host="+ host + ", port=" + port + ", path=" + path + " TLS = " + useTLS + " username=" + username + " password=" + password);\
-        mqtt.connect(options);\
+ if (username != null) {
+            options.userName = username;
+            options.password = password;
+        }
+ console.log("Host="+ host + ", port=" + port + ", path=" + path + " TLS = " + useTLS + " username=" + username + " password=" + password);
+        mqtt.connect(options);
     }
 
- function onConnect() {\
-        $('#status').val('Connected to ' + host + ':' + port + path);\
- // Connection succeeded; subscribe to our topic\
-        mqtt.subscribe(topic, {qos: 0});\
+ function onConnect() {
+        $('#status').val('Connected to ' + host + ':' + port + path);
+ // Connection succeeded; subscribe to our topic
+        mqtt.subscribe(topic, {qos: 0});
         $('#topic').val(topic);
 
- // Set up chart\
-        chart = Highcharts.chart('chart-container', {\
- chart: {\
- type: 'line',\
-        },\
- title: {\
- text: 'Sensor Data',\
-        },\
- xAxis: {\
- type: 'datetime',\
- title: {\
- text: 'Timestamp'\
-          }\
-        },\
- yAxis: [{\
- title: {\
- text: 'Temp'\
-          }\
-        }, {\
- title: {\
- text: 'Humid'\
-          },\
- opposite: false  // display on opposite side of chart\
-        }],\
- series: [{\
- name: 'Temp',\
- data: [],\
- yAxis: 0  // use the first yAxis (index 0) for this series\
-        }, {\
- name: 'Humid',\
- data: [],\
- yAxis: 1  // use the second yAxis (index 1) for this series\
-        }]\
-      });\
+ // Set up chart
+        chart = Highcharts.chart('chart-container', {
+ chart: {
+ type: 'line',
+        },
+ title: {
+ text: 'Sensor Data',
+        },
+ xAxis: {
+ type: 'datetime',
+ title: {
+ text: 'Timestamp'
+          }
+        },
+ yAxis: [{
+ title: {
+ text: 'Temp'
+          }
+        }, {
+ title: {
+ text: 'Humid'
+          },
+ opposite: false  // display on opposite side of chart
+        }],
+ series: [{
+ name: 'Temp',
+ data: [],
+ yAxis: 0  // use the first yAxis (index 0) for this series
+        }, {
+ name: 'Humid',
+ data: [],
+ yAxis: 1  // use the second yAxis (index 1) for this series
+        }]
+      });
     }
 
- function onConnectionLost(response) {\
-        setTimeout(MQTTconnect, reconnectTimeout);\
+ function onConnectionLost(response) {
+        setTimeout(MQTTconnect, reconnectTimeout);
         $('#status').val("connection lost: " + responseObject.errorMessage + ". Reconnecting");
 
     };
 
  function onMessageArrived(message) {
 
- var topic = message.destinationName;\
+ var topic = message.destinationName;
  var payload = message.payloadString;
 
         $('#ws').prepend('<li>' + topic + ' = ' + payload + '</li>');
 
- // Parse message data\
- var data = JSON.parse(payload);\
- var timestamp = new  Date().getTime();\
- var temp = parseFloat(data.temp);\
+ // Parse message data
+ var data = JSON.parse(payload);
+ var timestamp = new  Date().getTime();
+ var temp = parseFloat(data.temp);
  var humid = parseFloat(data.humid);
 
-        chart.series[0].addPoint([Date.now(), data.temp]);\
-        chart.series[1].addPoint([Date.now(), data.humid]);\
- // Redraw the chart\
+        chart.series[0].addPoint([Date.now(), data.temp]);
+        chart.series[1].addPoint([Date.now(), data.humid]);
+ // Redraw the chart
         chart.redraw();
 
- //WIDGET\
+ //WIDGET
  const widgetContainers = document.querySelectorAll('.widget-container');
 
- // Loop through each widget container and update the widget data\
-        widgetContainers.forEach(widgetElement => {\
-          widgetElement.querySelector('.temp-data').textContent = data.temp;\
-          widgetElement.querySelector('.humid-data').textContent = data.humid;\
-        });\
+ // Loop through each widget container and update the widget data
+        widgetContainers.forEach(widgetElement => {
+          widgetElement.querySelector('.temp-data').textContent = data.temp;
+          widgetElement.querySelector('.humid-data').textContent = data.humid;
+        });
     };
 
-    $(document).ready(function() {\
-        MQTTconnect();\
+    $(document).ready(function() {
+        MQTTconnect();
     });
 
- </script>\
- </body>\
+ </script>
+ </body>
 </html>
 
-<style>\
- .widget-container {\
- display: flex;\
- flex-wrap: wrap;\
- justify-content: space-between;\
- width: 100%;\
- max-width: 1200px;\
- margin: 0 auto;\
+<style>
+ .widget-container {
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-between;
+ width: 100%;
+ max-width: 1200px;
+ margin: 0 auto;
     }
 
- .widget {\
- flex-basis: calc((100% - 30px) / 4); /* 4 widgets in the first row */\
- margin-bottom: 20px;\
- background-color: #ffffff;\
- padding: 10px;\
- border: 1px solid #e3e3e3;\
- text-align: center;\
-    }\
+ .widget {
+ flex-basis: calc((100% - 30px) / 4); /* 4 widgets in the first row */
+ margin-bottom: 20px;
+ background-color: #ffffff;
+ padding: 10px;
+ border: 1px solid #e3e3e3;
+ text-align: center;
+    }
 </style>
 
  |
@@ -1547,167 +1547,167 @@ path,\
 
 |
 
-// Import required libraries\
-#include <WiFi.h>\
-#include <ESPAsyncWebServer.h>\
-#include <SPIFFS.h>\
-#include <Wire.h>\
-#include <Adafruit_Sensor.h>\
+// Import required libraries
+#include <WiFi.h>
+#include <ESPAsyncWebServer.h>
+#include <SPIFFS.h>
+#include <Wire.h>
+#include <Adafruit_Sensor.h>
 #include <DHT.h>
 
-//MQTT\
-#include<PubSubClient.h>\
+//MQTT
+#include<PubSubClient.h>
 #include <ArduinoJson.h>
 
-WiFiClient espClient;\
+WiFiClient espClient;
 PubSubClient client(espClient);
 
-//MQTT\
-const  char * mqtt_broker = "192.168.1.69";\
-//const char * mqtt_broker = "broker.hivemq.com";\
-const  char * mqtt_topic = "jaysanmo/codettes/01"; // CHANGE SensorID here!\
-const  char * mqtt_User = "";\
+//MQTT
+const  char * mqtt_broker = "192.168.1.69";
+//const char * mqtt_broker = "broker.hivemq.com";
+const  char * mqtt_topic = "jaysanmo/codettes/01"; // CHANGE SensorID here!
+const  char * mqtt_User = "";
 const  char * mqtt_Password = "";
 
-// Replace with your network credentials\
-const  char* ssid = "Team09";\
+// Replace with your network credentials
+const  char* ssid = "Team09";
 const  char* password = "H@ckTe@m)(";
 
-#define DHTPIN 4\
-#define DHTTYPE    DHT11\
-DHT dht(DHTPIN, DHTTYPE);\
-// Create AsyncWebServer object on port 80\
+#define DHTPIN 4
+#define DHTTYPE    DHT11
+DHT dht(DHTPIN, DHTTYPE);
+// Create AsyncWebServer object on port 80
 AsyncWebServer server(80);
 
-float t = 0;\
+float t = 0;
 float h = 0;
 
-String readDHTTemperature() {\
- // Read temperature as Celsius (the default)\
- float t = dht.readTemperature();\
- // Convert temperature to Fahrenheit\
- //t = 1.8 * t + 32;\
- if (isnan(t)) {\
-    Serial.println("Failed to read from DHT sensor!");\
- return  "";\
-  }\
- else {\
-    Serial.println(t);\
- return String(t);\
-  }\
-}\
-String readDHTHumidity() {\
- float h = dht.readHumidity();\
- if (isnan(h)) {\
-    Serial.println("Failed to read from DHT sensor!");\
- return  "";\
-  }\
- else {\
-    Serial.println(h);\
- return String(h);\
-  }\
-}\
-void  setup() {\
- // Serial port for debugging purposes\
-  Serial.begin(115200);\
-  dht.begin();\
- // Initialize SPIFFS\
- if (!SPIFFS.begin()) {\
-    Serial.println("An Error has occurred while mounting SPIFFS");\
- return;\
-  }\
- // Connect to Wi-Fi\
-  WiFi.begin(ssid, password);\
-  WiFi.setSleep(false);\
- while (WiFi.status() != WL_CONNECTED) {\
-    delay(1000);\
-    Serial.println("Connecting to WiFi..");\
-  }\
- // Print ESP32 Local IP Address\
+String readDHTTemperature() {
+ // Read temperature as Celsius (the default)
+ float t = dht.readTemperature();
+ // Convert temperature to Fahrenheit
+ //t = 1.8 * t + 32;
+ if (isnan(t)) {
+    Serial.println("Failed to read from DHT sensor!");
+ return  "";
+  }
+ else {
+    Serial.println(t);
+ return String(t);
+  }
+}
+String readDHTHumidity() {
+ float h = dht.readHumidity();
+ if (isnan(h)) {
+    Serial.println("Failed to read from DHT sensor!");
+ return  "";
+  }
+ else {
+    Serial.println(h);
+ return String(h);
+  }
+}
+void  setup() {
+ // Serial port for debugging purposes
+  Serial.begin(115200);
+  dht.begin();
+ // Initialize SPIFFS
+ if (!SPIFFS.begin()) {
+    Serial.println("An Error has occurred while mounting SPIFFS");
+ return;
+  }
+ // Connect to Wi-Fi
+  WiFi.begin(ssid, password);
+  WiFi.setSleep(false);
+ while (WiFi.status() != WL_CONNECTED) {
+    delay(1000);
+    Serial.println("Connecting to WiFi..");
+  }
+ // Print ESP32 Local IP Address
   Serial.println(WiFi.localIP());
 
- //MQTT\
-client.setServer(mqtt_broker, 1883);\
- if (initMqtt()) {\
-    client.publish("jaysanmo/codettes/01", "Hello from ESP32");\
+ //MQTT
+client.setServer(mqtt_broker, 1883);
+ if (initMqtt()) {
+    client.publish("jaysanmo/codettes/01", "Hello from ESP32");
   }
 
- // Route for root / web page\
-  server.on("/", HTTP_GET, [](AsyncWebServerRequest * request) {\
-request->send(SPIFFS, "/index.html");\
-  });\
-  server.on("/temperature", HTTP_GET, [](AsyncWebServerRequest   * request) {\
-    request->send_P(200, "text/plain", readDHTTemperature().c_str());\
-  });\
-  server.on("/humidity", HTTP_GET, [](AsyncWebServerRequest * request) {\
-    request->send_P(200, "text/plain", readDHTHumidity().c_str());\
-  });\
- // Start server\
-  server.begin();\
+ // Route for root / web page
+  server.on("/", HTTP_GET, [](AsyncWebServerRequest * request) {
+request->send(SPIFFS, "/index.html");
+  });
+  server.on("/temperature", HTTP_GET, [](AsyncWebServerRequest   * request) {
+    request->send_P(200, "text/plain", readDHTTemperature().c_str());
+  });
+  server.on("/humidity", HTTP_GET, [](AsyncWebServerRequest * request) {
+    request->send_P(200, "text/plain", readDHTHumidity().c_str());
+  });
+ // Start server
+  server.begin();
 }
 
-unsigned long lastMqttTime = millis();\
-const unsigned long Mqtt_INTERVAL_MS = 2000;\
+unsigned long lastMqttTime = millis();
+const unsigned long Mqtt_INTERVAL_MS = 2000;
 void  loop() {
 
   client.loop();
 
- // Send regular mqtt data\
- if ((millis() - lastMqttTime) > Mqtt_INTERVAL_MS) {\
- if (client.connected())\
-    {\
- //GetWeatherData();\
-      handle_MqttData();\
-      lastMqttTime = millis();\
-} else\
-    {\
-      initMqtt();\
+ // Send regular mqtt data
+ if ((millis() - lastMqttTime) > Mqtt_INTERVAL_MS) {
+ if (client.connected())
+    {
+ //GetWeatherData();
+      handle_MqttData();
+      lastMqttTime = millis();
+} else
+    {
+      initMqtt();
     }
 
-  }\
-}\
-void  GetWeatherData()\
+  }
+}
+void  GetWeatherData()
 {
 
 }
 
-bool  initMqtt()\
-{\
- if (!client.connected()) {\
+bool  initMqtt()
+{
+ if (!client.connected()) {
     Serial.println("Connecting to MQTT...");
 
  if (client.connect("ESP32Client", mqtt_User, mqtt_Password )) {
 
-      Serial.println("connected");\
+      Serial.println("connected");
  return  true;
 
 } else {
 
-      Serial.print("failed with state ");\
-      Serial.print(client.state());\
-      delay(2000);\
- return  false;\
-    }\
-  }\
+      Serial.print("failed with state ");
+      Serial.print(client.state());
+      delay(2000);
+ return  false;
+    }
+  }
 }
 
-void  handle_MqttData() {\
- float h = dht.readHumidity();\
+void  handle_MqttData() {
+ float h = dht.readHumidity();
  float t = dht.readTemperature();
 
-  StaticJsonDocument<2048> doc;\
+  StaticJsonDocument<2048> doc;
  //JsonObject createNestedObject() const;
 
-  doc["temp"] = t;\
+  doc["temp"] = t;
   doc["humid"] = h;
 
- char  out[2048];\
- int b = serializeJson(doc, out);\
-  serializeJson(doc, Serial);\
-  Serial.print("bytes ->  ");\
-  Serial.print(b, DEC);\
- // add if delivered or not\
-  client.publish((char*)mqtt_topic, out) ? Serial.println(" -> delivered") : Serial.println(" -> failed");\
+ char  out[2048];
+ int b = serializeJson(doc, out);
+  serializeJson(doc, Serial);
+  Serial.print("bytes ->  ");
+  Serial.print(b, DEC);
+ // add if delivered or not
+  client.publish((char*)mqtt_topic, out) ? Serial.println(" -> delivered") : Serial.println(" -> failed");
 }
 
  |
@@ -1724,7 +1724,7 @@ Day 8 ( online )
 
 1.  All the steps from last week 
 
-2.  Connect to mongoDB Compass as seen here and you should see this\
+2.  Connect to mongoDB Compass as seen here and you should see this
     ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXe-LqqLB4K_lcvFfW4A23cL8GKT4mObZHxlxTDZCimSErovG4idjmEe4rrksxJ0OElypUZ5Ls0RRc9tTlWHtHkymA8YXGCaDrkTUuCuxm-BovFrf49bl_VQVkqqeHM0TmKK0jn2xadfm2o_rteVBxYe_xh5?key=y_viQYfMEKmV8AynRuZczA)
 
 Week 9
@@ -1753,13 +1753,13 @@ Day 10 ( online )
 
 2.  Then we customize it 
 
-3.  First we add our icons as shown here\
+3.  First we add our icons as shown here
     ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdjyHVoQVF9scYCy7WuFykChtRGk-V--zD-TEDKFmoPJtz1Z-ScKVMoQu_fYFTYk7nxthHKhD9sMNloUPb4hJaJPTbAFwsiBua0JclFz5tRanYGIxTm0AC5SrLM9Z5GHZA01m772KwZvpqQuM4g-9RX1gRB?key=y_viQYfMEKmV8AynRuZczA)
 
-4.  Then to update the info the charts we do this\
+4.  Then to update the info the charts we do this
     ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXfoYrRKQ8_cmxESTBIbVY04wK15JTHtkkIqw7IpLA29Q10bSmWQHSiTDarLcYjMp8CQcbrLkSzFaZ8Gks0Ayo1sOdbNuAKpvmriw-F361wVOR0hb9SrtMzypb6Shzyf1F4VqnT8lbGPnQfn2dem_D6BDU8?key=y_viQYfMEKmV8AynRuZczA)
 
-5.  Then we style it to our liking here\
+5.  Then we style it to our liking here
     ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXfzlyEgzM1dhgVUK77FfdIjIPYCi-JP2DlY94jSqxQeR2_Xlj8kkLtDixtJt-jQMijuyHbrVElFNt0hT0zTXv_lgmMtICet_NvANySeOfIaZhF8dwTw_x9BkRSBYDX5RggcFvXgmydkr96C-QOonB3TBB9L?key=y_viQYfMEKmV8AynRuZczA)
 
 6.  It should look something like this ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXeY6QCb2y9W72BTBTJ6aqe_RX07fiu6lCQFalf8GKX4UpACWG0KwmYYOA5z16VzAsHiDqHwxf-1FMPR4_mRnEa3wnTui7KiovtXolYfJweSI7NKUOKkll4JByzAcG3-m8eclLwDUYk21UWdLE_5GgjfrcA?key=y_viQYfMEKmV8AynRuZczA)
@@ -1840,18 +1840,18 @@ The code in line 5 indicates that we select the data that is in JSON format. 
 
 |
 
-<html  lang="en">\
-<head>\
- <meta  charset="UTF-8">\
- <meta  http-equiv="X-UA-Compatible"  content="IE=edge">\
- <meta  name="viewport"  content="width=device-width, initial-scale=1.0">\
- <title>API</title>\
-</head>\
-<body>\
- <button  onclick="get(`http://localhost:3000/api?text=text&num=54&boolean=bool`);">fetch</button>\
- <h1  id="data">No data</h1>\
- <script  src="./fetch.js"></script>\
-</body>\
+<html  lang="en">
+<head>
+ <meta  charset="UTF-8">
+ <meta  http-equiv="X-UA-Compatible"  content="IE=edge">
+ <meta  name="viewport"  content="width=device-width, initial-scale=1.0">
+ <title>API</title>
+</head>
+<body>
+ <button  onclick="get(`http://localhost:3000/api?text=text&num=54&boolean=bool`);">fetch</button>
+ <h1  id="data">No data</h1>
+ <script  src="./fetch.js"></script>
+</body>
 </html>
 
  |
@@ -2169,210 +2169,210 @@ C++ Code
 
 |
 
-#include <ESPAsyncWebServer.h>\
-#include <Adafruit_Sensor.h>\
-#include <WiFi.h>\
-#include <SPIFFS.h>\
-#include <Wire.h>\
-#include <Adafruit_Sensor.h>\
-#include <DHT.h>\
-#include <PubSubClient.h>\
+#include <ESPAsyncWebServer.h>
+#include <Adafruit_Sensor.h>
+#include <WiFi.h>
+#include <SPIFFS.h>
+#include <Wire.h>
+#include <Adafruit_Sensor.h>
+#include <DHT.h>
+#include <PubSubClient.h>
 #include <ArduinoJson.h>
 
-WiFiClient espClient;\
+WiFiClient espClient;
 PubSubClient client(espClient);
 
-// MQTT\
-const  char *mqtt_broker = "192.168.1.21";\
-const  char *mqtt_topic = "jaysanmo/codettes/01"; // CHANGE SensorID here!\
-const  char *mqtt_User = "";\
+// MQTT
+const  char *mqtt_broker = "192.168.1.21";
+const  char *mqtt_topic = "jaysanmo/codettes/01"; // CHANGE SensorID here!
+const  char *mqtt_User = "";
 const  char *mqtt_Password = "";
 
-// Replace with your network credentials\
-const  char *ssid = "Team09";\
+// Replace with your network credentials
+const  char *ssid = "Team09";
 const  char *password = "H@ckTe@m)(";
 
-#define DHTPIN 4\
-#define DHTTYPE DHT11\
+#define DHTPIN 4
+#define DHTTYPE DHT11
 DHT dht(DHTPIN, DHTTYPE);
 
-class  PulseSensor {\
-private:\
- int sensorPin;\
- int signalVal;\
+class  PulseSensor {
+private:
+ int sensorPin;
+ int signalVal;
  int beatsPerMinute;
 
-public:\
+public:
   PulseSensor(int pin) : sensorPin(pin), signalVal(0), beatsPerMinute(0) {}
 
- void  setup() {\
- // Additional setup for Pulse Sensor if needed\
+ void  setup() {
+ // Additional setup for Pulse Sensor if needed
   }
 
- void  readData() {\
+ void  readData() {
     signalVal = analogRead(sensorPin);
 
- // Map the raw sensor value to a realistic range of beats per minute\
+ // Map the raw sensor value to a realistic range of beats per minute
 beatsPerMinute = map(signalVal, 0, 4096, 60, 120);
 
-    delay(1100); // Adjust the delay as needed\
+    delay(1100); // Adjust the delay as needed
   }
 
- int  getBeatsPerMinute(int which) {\
- return which == 1 ? beatsPerMinute : signalVal;\
-  }\
+ int  getBeatsPerMinute(int which) {
+ return which == 1 ? beatsPerMinute : signalVal;
+  }
 };
 
 PulseSensor pulseSensor(34); // Adjust to the correct pin for ESP32
 
-class  DHTSensor {\
-private:\
- int pin;\
- float humidity;\
+class  DHTSensor {
+private:
+ int pin;
+ float humidity;
  float temperature;
 
-public:\
+public:
   DHTSensor(int sensorPin) : pin(sensorPin), humidity(0), temperature(0) {}
 
- void  setup() {\
-    dht.begin();\
+ void  setup() {
+    dht.begin();
   }
 
- void  readData() {\
-    humidity = dht.readHumidity();\
-    temperature = dht.readTemperature();\
-    delay(2000); // Adjust the delay as needed\
+ void  readData() {
+    humidity = dht.readHumidity();
+    temperature = dht.readTemperature();
+    delay(2000); // Adjust the delay as needed
   }
 
- float  getHumidity() {\
- return humidity;\
+ float  getHumidity() {
+ return humidity;
   }
 
- float  getTemperature() {\
- return temperature;\
-  }\
+ float  getTemperature() {
+ return temperature;
+  }
 };
 
 DHTSensor dhtSensor(DHTPIN);
 
-void  setup() {\
-  Serial.begin(115200);\
-  pulseSensor.setup();\
+void  setup() {
+  Serial.begin(115200);
+  pulseSensor.setup();
   dhtSensor.setup();
 
- // Initialize SPIFFS\
- if (!SPIFFS.begin()) {\
-    Serial.println("An Error has occurred while mounting SPIFFS");\
- return;\
+ // Initialize SPIFFS
+ if (!SPIFFS.begin()) {
+    Serial.println("An Error has occurred while mounting SPIFFS");
+ return;
   }
 
- // Connect to Wi-Fi\
-  WiFi.begin(ssid, password);\
-  WiFi.setSleep(false);\
- while (WiFi.status() != WL_CONNECTED) {\
-    delay(1000);\
-    Serial.println("Connecting to WiFi..");\
+ // Connect to Wi-Fi
+  WiFi.begin(ssid, password);
+  WiFi.setSleep(false);
+ while (WiFi.status() != WL_CONNECTED) {
+    delay(1000);
+    Serial.println("Connecting to WiFi..");
   }
 
- // Print ESP32 Local IP Address\
+ // Print ESP32 Local IP Address
   Serial.println(WiFi.localIP());
 
- // MQTT\
-client.setServer(mqtt_broker, 1883);\
- if (initMqtt()) {\
-    client.publish("jaysanmo/codettes/01", "Hello from ESP32");\
-  }\
+ // MQTT
+client.setServer(mqtt_broker, 1883);
+ if (initMqtt()) {
+    client.publish("jaysanmo/codettes/01", "Hello from ESP32");
+  }
 }
 
-unsigned long lastMqttTime = millis();\
+unsigned long lastMqttTime = millis();
 const unsigned long Mqtt_INTERVAL_MS = 2000;
 
-void  loop() {\
+void  loop() {
   client.loop();
 
- // Send regular MQTT data\
- if ((millis() - lastMqttTime) > Mqtt_INTERVAL_MS) {\
- if (client.connected()) {\
-      handle_MqttData();\
-      lastMqttTime = millis();\
-} else {\
-      initMqtt();\
-    }\
+ // Send regular MQTT data
+ if ((millis() - lastMqttTime) > Mqtt_INTERVAL_MS) {
+ if (client.connected()) {
+      handle_MqttData();
+      lastMqttTime = millis();
+} else {
+      initMqtt();
+    }
   }
 
- // Pulse Sensor code\
+ // Pulse Sensor code
   pulseSensor.readData();
 
- // DHT Sensor code\
+ // DHT Sensor code
   dhtSensor.readData();
 
- // CLI\
- if (Serial.available() > 0) {\
- char command = Serial.read();\
-    processCommand(command);\
-  }\
+ // CLI
+ if (Serial.available() > 0) {
+ char command = Serial.read();
+    processCommand(command);
+  }
 }
 
-void  processCommand(char command) {\
- switch (command) {\
- case  'R':\
-      pulseSensor.setup();\
-      dhtSensor.setup();\
-      Serial.println("Pulse Sensor and DHT Sensor setup complete.");\
+void  processCommand(char command) {
+ switch (command) {
+ case  'R':
+      pulseSensor.setup();
+      dhtSensor.setup();
+      Serial.println("Pulse Sensor and DHT Sensor setup complete.");
  break;
 
- case  'D':\
-      Serial.println("Pulse Sensor Data:");\
-      Serial.println("Raw Signal Value: " + String(pulseSensor.getBeatsPerMinute(0)));\
+ case  'D':
+      Serial.println("Pulse Sensor Data:");
+      Serial.println("Raw Signal Value: " + String(pulseSensor.getBeatsPerMinute(0)));
       Serial.println("Beats Per Minute: " + String(pulseSensor.getBeatsPerMinute(1)));
 
-      Serial.println("DHT Sensor Data:");\
-      Serial.println("Humidity: " + String(dhtSensor.getHumidity()) + "%");\
-      Serial.println("Temperature: " + String(dhtSensor.getTemperature()) + "°C");\
+      Serial.println("DHT Sensor Data:");
+      Serial.println("Humidity: " + String(dhtSensor.getHumidity()) + "%");
+      Serial.println("Temperature: " + String(dhtSensor.getTemperature()) + "°C");
  break;
 
- default:\
-      Serial.println("Invalid command. Available commands: R (Setup Sensors), D (Display Sensor Data)");\
-  }\
+ default:
+      Serial.println("Invalid command. Available commands: R (Setup Sensors), D (Display Sensor Data)");
+  }
 }
 
-bool  initMqtt() {\
- if (!client.connected()) {\
+bool  initMqtt() {
+ if (!client.connected()) {
     Serial.println("Connecting to MQTT...");
 
- if (client.connect("ESP32Client", mqtt_User, mqtt_Password)) {\
-      Serial.println("Connected");\
- return  true;\
-} else {\
-      Serial.print("Failed with state ");\
-      Serial.print(client.state());\
-      delay(2000);\
- return  false;\
-    }\
-  }\
+ if (client.connect("ESP32Client", mqtt_User, mqtt_Password)) {
+      Serial.println("Connected");
+ return  true;
+} else {
+      Serial.print("Failed with state ");
+      Serial.print(client.state());
+      delay(2000);
+ return  false;
+    }
+  }
 }
 
-void  handle_MqttData() {\
- float h = dhtSensor.getHumidity();\
+void  handle_MqttData() {
+ float h = dhtSensor.getHumidity();
  float t = dhtSensor.getTemperature();
 
-  StaticJsonDocument<1023> doc;\
-  doc["temp"] = t;\
-  doc["humid"] = h;\
-  doc["pulse"] = pulseSensor.getBeatsPerMinute(0);\
-  doc["HB"] = pulseSensor.getBeatsPerMinute(1);\
-  doc["dht_humid"] = h;\
+  StaticJsonDocument<1023> doc;
+  doc["temp"] = t;
+  doc["humid"] = h;
+  doc["pulse"] = pulseSensor.getBeatsPerMinute(0);
+  doc["HB"] = pulseSensor.getBeatsPerMinute(1);
+  doc["dht_humid"] = h;
   doc["dht_temp"] = t;
 
- char  out[128];\
- int b = serializeJson(doc, out);\
-  serializeJson(doc, Serial);\
-  Serial.print("bytes -> ");\
+ char  out[128];
+ int b = serializeJson(doc, out);
+  serializeJson(doc, Serial);
+  Serial.print("bytes -> ");
   Serial.print(b, DEC);
 
- // Publish the data to MQTT\
-  client.publish((char *)mqtt_topic, out) ? Serial.println(" -> delivered") : Serial.println(" -> failed");\
-}\
+ // Publish the data to MQTT
+  client.publish((char *)mqtt_topic, out) ? Serial.println(" -> delivered") : Serial.println(" -> failed");
+}
  |
 
 Github link ( [here](https://github.com/0SaNJ/codettesbootcamp_final_project/blob/main/final_project_c%2B%2B)  )
@@ -2381,220 +2381,220 @@ Html code 
 
 |
 
-<html  lang="en">\
-<head>\
- <meta  charset="UTF-8">\
- <meta  name="viewport"  content="width=device-width, initial-scale=1.0">\
- <title>Insyg</title>\
- <script  src="public/mqttws31.js"  type="text/javascript"></script>\
- <script  src="public/fetch"></script>\
- <script  src="public/jquery.min.js"  type="text/javascript"></script>\
- <script  src="public/config.js"  type="text/javascript"></script>\
- <script  src="https://code.highcharts.com/highcharts.js"></script>\
- <link  rel="stylesheet"  href="./style.css">\
-</head>\
-<body>\
- <div  class="banner"  style="z-index: 1;">\
- <div  class="topnav"  style="z-index: 3;">\
- <div  class="signature">\
- <img  src="./logo-test-insyg.png"  class="sig-img">\
- <h3  class="sig-text">insyg</h3>\
- </div>\
- <div  style="width: 30%"></div>\
- <div  class="navButtons">\
- <button  class="button"  id="store"><a  style="text-decoration: none;"  href="store.html"><h3  class="btn-text">store</h3></a></button>\
- <button  class="button"  id="services"><a  href="#services"  style="text-decoration: none;"><h3  class="btn-text">services</h3></a></button>\
- </div>\
- </div>\
- <div  class="banner-test">\
- </div>\
- <div  class="content"  id="content">\
- <div  class="hat-info-box"  style="z-index: 2;">\
- <h3  class="hat-text">\
-Revolutionize your health routine with the Smart Health Hat - a sleek fusion of fashion and advanced health tech. This innovative hat features a heart rate sensor, temperature, and humidity monitor, providing real-time health data discreetly. Stay in tune with your body's signals while enjoying unparalleled style. The Smart Health Hat seamlessly integrates into your daily life, enhancing your wellness journey effortlessly. Elevate your lifestyle, prioritize health, and embrace the future of wearable technology. </h3>\
- <img  src="./hat image.png" class="hat-img">\
- </div>\
- <div  class="example-info">\
- <div  class="chartboxpage">\
- <div  class="chartpage"  id="chart-container"></div>\
- </div>\
- <div  class="chartboxpage">\
- <div  class="chartpage2"  id="chart-container2"></div>\
+<html  lang="en">
+<head>
+ <meta  charset="UTF-8">
+ <meta  name="viewport"  content="width=device-width, initial-scale=1.0">
+ <title>Insyg</title>
+ <script  src="public/mqttws31.js"  type="text/javascript"></script>
+ <script  src="public/fetch"></script>
+ <script  src="public/jquery.min.js"  type="text/javascript"></script>
+ <script  src="public/config.js"  type="text/javascript"></script>
+ <script  src="https://code.highcharts.com/highcharts.js"></script>
+ <link  rel="stylesheet"  href="./style.css">
+</head>
+<body>
+ <div  class="banner"  style="z-index: 1;">
+ <div  class="topnav"  style="z-index: 3;">
+ <div  class="signature">
+ <img  src="./logo-test-insyg.png"  class="sig-img">
+ <h3  class="sig-text">insyg</h3>
+ </div>
+ <div  style="width: 30%"></div>
+ <div  class="navButtons">
+ <button  class="button"  id="store"><a  style="text-decoration: none;"  href="store.html"><h3  class="btn-text">store</h3></a></button>
+ <button  class="button"  id="services"><a  href="#services"  style="text-decoration: none;"><h3  class="btn-text">services</h3></a></button>
+ </div>
+ </div>
+ <div  class="banner-test">
+ </div>
+ <div  class="content"  id="content">
+ <div  class="hat-info-box"  style="z-index: 2;">
+ <h3  class="hat-text">
+Revolutionize your health routine with the Smart Health Hat - a sleek fusion of fashion and advanced health tech. This innovative hat features a heart rate sensor, temperature, and humidity monitor, providing real-time health data discreetly. Stay in tune with your body's signals while enjoying unparalleled style. The Smart Health Hat seamlessly integrates into your daily life, enhancing your wellness journey effortlessly. Elevate your lifestyle, prioritize health, and embrace the future of wearable technology. </h3>
+ <img  src="./hat image.png" class="hat-img">
+ </div>
+ <div  class="example-info">
+ <div  class="chartboxpage">
+ <div  class="chartpage"  id="chart-container"></div>
+ </div>
+ <div  class="chartboxpage">
+ <div  class="chartpage2"  id="chart-container2"></div>
  </div>
 
- <h3  class="chart-text"  style="text-align: right;">Hello</br>\
-Here you can find info of your temp and humid in a chart </h3>\
- </div>\
- </div>\
- <div  class="creds"></div>\
-</body>\
-</html>\
-<script  type="text/javascript">\
- var mqtt;\
+ <h3  class="chart-text"  style="text-align: right;">Hello</br>
+Here you can find info of your temp and humid in a chart </h3>
+ </div>
+ </div>
+ <div  class="creds"></div>
+</body>
+</html>
+<script  type="text/javascript">
+ var mqtt;
  var reconnectTimeout = 2000;
 
- function MQTTconnect() {\
- if (typeof path == "undefined") {\
-path = '/mqtt';\
-      }\
-mqtt = new Paho.MQTT.Client(\
-          host,\
-          port,\
-          path,\
- "web_" + parseInt(Math.random() * 100, 10)\
-      );\
- var options = {\
- timeout: 3,\
- useSSL: useTLS,\
- cleanSession: cleansession,\
- onSuccess: onConnect,\
- onFailure: function (message) {\
-              $('#status').val("Connection failed: " + message.errorMessage + "Retrying");\
-              setTimeout(MQTTconnect, reconnectTimeout);\
-          }\
+ function MQTTconnect() {
+ if (typeof path == "undefined") {
+path = '/mqtt';
+      }
+mqtt = new Paho.MQTT.Client(
+          host,
+          port,
+          path,
+ "web_" + parseInt(Math.random() * 100, 10)
+      );
+ var options = {
+ timeout: 3,
+ useSSL: useTLS,
+ cleanSession: cleansession,
+ onSuccess: onConnect,
+ onFailure: function (message) {
+              $('#status').val("Connection failed: " + message.errorMessage + "Retrying");
+              setTimeout(MQTTconnect, reconnectTimeout);
+          }
       };
 
-      mqtt.onConnectionLost = onConnectionLost;\
+      mqtt.onConnectionLost = onConnectionLost;
       mqtt.onMessageArrived = onMessageArrived;
 
- if (username != null) {\
-          options.userName = username;\
-          options.password = password;\
-      }\
- console.log("Host=" + host + ", port=" + port + ", path=" + path + " TLS = " + useTLS + " username=" + username + " password=" + password);\
-      mqtt.connect(options);\
+ if (username != null) {
+          options.userName = username;
+          options.password = password;
+      }
+ console.log("Host=" + host + ", port=" + port + ", path=" + path + " TLS = " + useTLS + " username=" + username + " password=" + password);
+      mqtt.connect(options);
   }
 
- function onConnect() {\
-      $('#status').val('Connected to ' + host + ':' + port + path);\
- // Connection succeeded; subscribe to our topic\
-mqtt.subscribe(topic, { qos: 0 });\
+ function onConnect() {
+      $('#status').val('Connected to ' + host + ':' + port + path);
+ // Connection succeeded; subscribe to our topic
+mqtt.subscribe(topic, { qos: 0 });
       $('#topic').val(topic);
 
- // Set up chart\
-      chart = Highcharts.chart('chart-container', {\
- chart: {\
- type: 'line',\
- backgroundColor: 'rgba(0,0,0,0)'\
-          },\
- title: {\
- text: 'Sensor Data',\
- style: {\
- color: '#00000'\
-              }\
-          },\
- xAxis: {\
- type: 'datetime',\
- title: {\
- text: 'Time',\
- style: {\
- color: '#00000'\
-              }\
-              }\
-          },\
- yAxis: [{\
- title: {\
- text: 'Temp',\
- style: {\
- color: '#00000'\
-              }\
-              }\
-          }, {\
- title: {\
- text: 'Humid',\
- style: {\
- color: '#00000'\
-              }\
-              },\
- gridLineColor: '#00000',\
- opposite: false  // display on opposite side of chart\
-          }],\
- series: [{\
- name: 'Temp',\
- data: [],\
- yAxis: 0  // use the first yAxis (index 0) for this series\
-          }, {\
- name: 'Humid',\
- data: [],\
- yAxis: 1  // use the second yAxis (index 1) for this series\
-          }]\
+ // Set up chart
+      chart = Highcharts.chart('chart-container', {
+ chart: {
+ type: 'line',
+ backgroundColor: 'rgba(0,0,0,0)'
+          },
+ title: {
+ text: 'Sensor Data',
+ style: {
+ color: '#00000'
+              }
+          },
+ xAxis: {
+ type: 'datetime',
+ title: {
+ text: 'Time',
+ style: {
+ color: '#00000'
+              }
+              }
+          },
+ yAxis: [{
+ title: {
+ text: 'Temp',
+ style: {
+ color: '#00000'
+              }
+              }
+          }, {
+ title: {
+ text: 'Humid',
+ style: {
+ color: '#00000'
+              }
+              },
+ gridLineColor: '#00000',
+ opposite: false  // display on opposite side of chart
+          }],
+ series: [{
+ name: 'Temp',
+ data: [],
+ yAxis: 0  // use the first yAxis (index 0) for this series
+          }, {
+ name: 'Humid',
+ data: [],
+ yAxis: 1  // use the second yAxis (index 1) for this series
+          }]
       });
 
- // Set up second chart with heartbeat data\
-      chart2 = Highcharts.chart('chart-container2', {\
- chart: {\
- type: 'line', // Set chart type to spline\
-backgroundColor: 'rgba(0,0,0,0)'\
-          },\
- title: {\
- text: 'Heartbeat Data over Time',\
- style: {\
- color: '#00000'\
-              }\
-          },\
- xAxis: {\
- type: 'datetime', // Use linear type for the x-axis\
-              title: {\
- text: 'Time',\
- style: {\
- color: '#00000'\
-                  }\
-              }\
-          },\
- yAxis: {\
- title: {\
- text: 'Heartbeat',\
- style: {\
- color: '#00000'\
-                  }\
-              },\
-          },\
- series: [{\
- name: 'Heartbeat',\
- data: [], // Your heartbeat data here\
-color: '#FF0000'\
-          }]\
-      });\
+ // Set up second chart with heartbeat data
+      chart2 = Highcharts.chart('chart-container2', {
+ chart: {
+ type: 'line', // Set chart type to spline
+backgroundColor: 'rgba(0,0,0,0)'
+          },
+ title: {
+ text: 'Heartbeat Data over Time',
+ style: {
+ color: '#00000'
+              }
+          },
+ xAxis: {
+ type: 'datetime', // Use linear type for the x-axis
+              title: {
+ text: 'Time',
+ style: {
+ color: '#00000'
+                  }
+              }
+          },
+ yAxis: {
+ title: {
+ text: 'Heartbeat',
+ style: {
+ color: '#00000'
+                  }
+              },
+          },
+ series: [{
+ name: 'Heartbeat',
+ data: [], // Your heartbeat data here
+color: '#FF0000'
+          }]
+      });
   }
 
- function onConnectionLost(response) {\
-      setTimeout(MQTTconnect, reconnectTimeout);\
-      $('#status').val("connection lost: " + response.errorMessage + ". Reconnecting");\
+ function onConnectionLost(response) {
+      setTimeout(MQTTconnect, reconnectTimeout);
+      $('#status').val("connection lost: " + response.errorMessage + ". Reconnecting");
   };
 
- function onMessageArrived(message) {\
- var topic = message.destinationName;\
+ function onMessageArrived(message) {
+ var topic = message.destinationName;
  var payload = message.payloadString;
 
       $('#ws').prepend('<li>' + topic + ' = ' + payload + '</li>');
 
- // Parse message data\
+ // Parse message data
  var data = JSON.parse(payload);
 
- // Update first chart\
-      chart.series[0].addPoint([Date.now(), data.temp]);\
+ // Update first chart
+      chart.series[0].addPoint([Date.now(), data.temp]);
       chart.series[1].addPoint([Date.now(), data.humid]);
 
- // Update second chart with heartbeat data\
+ // Update second chart with heartbeat data
       chart2.series[0].addPoint([Date.now(), data.HB]);
 
- // Redraw both charts\
-      chart.redraw();\
+ // Redraw both charts
+      chart.redraw();
       chart2.redraw();
 
- // WIDGET\
+ // WIDGET
  const widgetContainers = document.querySelectorAll('.widget-container');
 
- // Loop through each widget container and update the widget data\
-      widgetContainers.forEach(widgetElement => {\
-          widgetElement.querySelector('.temp-data').textContent = data.temp;\
-          widgetElement.querySelector('.humid-data').textContent = data.humid;\
-      });\
+ // Loop through each widget container and update the widget data
+      widgetContainers.forEach(widgetElement => {
+          widgetElement.querySelector('.temp-data').textContent = data.temp;
+          widgetElement.querySelector('.humid-data').textContent = data.humid;
+      });
   };
 
-  $(document).ready(function () {\
-      MQTTconnect();\
-  });\
+  $(document).ready(function () {
+      MQTTconnect();
+  });
 </script>
 
  |
@@ -2605,154 +2605,154 @@ Css code
 
 |
 
-body{\
- margin:0;\
- padding:0;\
- overflow-y: scroll;\
- background: black;\
+body{
+ margin:0;
+ padding:0;
+ overflow-y: scroll;
+ background: black;
 }
 
-.banner{\
- width:100%;\
- height: 400px;\
- position: relative;\
+.banner{
+ width:100%;
+ height: 400px;
+ position: relative;
 }
 
-.topnav{\
- width:100%;\
- height: 18%;\
- background:transparent;\
- display: flex;\
- flex-direction: row;\
- position: relative;\
- z-index:4;\
- position: absolute;\
+.topnav{
+ width:100%;
+ height: 18%;
+ background:transparent;
+ display: flex;
+ flex-direction: row;
+ position: relative;
+ z-index:4;
+ position: absolute;
 }
 
-.banner-test{\
- width:100%;\
- height: 100%;\
- background:orange;\
- z-index: -2;\
- position: absolute;\
- display: flex;\
- justify-content: right;\
- flex-direction: row;\
+.banner-test{
+ width:100%;
+ height: 100%;
+ background:orange;
+ z-index: -2;
+ position: absolute;
+ display: flex;
+ justify-content: right;
+ flex-direction: row;
 }
 
-.signature{\
- width: 30%;\
- height: 100%;\
- display: flex;\
- align-items: center;\
+.signature{
+ width: 30%;
+ height: 100%;
+ display: flex;
+ align-items: center;
 }
 
-.sig-text{\
- font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;\
- font-size: 33px;\
- font-weight: 500;\
+.sig-text{
+ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ font-size: 33px;
+ font-weight: 500;
 }
 
-.sig-img{\
- height: 80%;\
- max-width: 80%;\
- margin-left: 3%;\
- margin-right: 2%;\
+.sig-img{
+ height: 80%;
+ max-width: 80%;
+ margin-left: 3%;
+ margin-right: 2%;
 }
 
-.navButtons{\
- width:40%;\
- height:100%;\
- position: relative;\
- display: flex;\
- align-items: right;\
- justify-content: right;\
+.navButtons{
+ width:40%;
+ height:100%;
+ position: relative;
+ display: flex;
+ align-items: right;
+ justify-content: right;
 }
 
-.button{\
- width:150px;\
- height: 50%;\
- border-style: solid;\
- border-color: black;\
- border-width: 3px;\
- border-radius: 10px;\
- margin-top: auto;\
- margin-bottom: auto;\
- margin-right: 3%;\
- background: transparent;\
- text-align: center;\
- display: flex;\
- align-items: center;\
- justify-content: center;\
+.button{
+ width:150px;
+ height: 50%;
+ border-style: solid;
+ border-color: black;
+ border-width: 3px;
+ border-radius: 10px;
+ margin-top: auto;
+ margin-bottom: auto;
+ margin-right: 3%;
+ background: transparent;
+ text-align: center;
+ display: flex;
+ align-items: center;
+ justify-content: center;
 }
 
-.btn-text{\
- font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;\
- font-size: 18px;\
- color: white;\
+.btn-text{
+ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ font-size: 18px;
+ color: white;
 }
 
-.content{\
- height: 1000px;\
- position: relative;\
+.content{
+ height: 1000px;
+ position: relative;
 }
 
-.hat-info-box {\
- position: relative;\
- justify-content:right;\
- display: flex;\
- z-index: 5;\
- width: 100%;\
- height: 50%;\
+.hat-info-box {
+ position: relative;
+ justify-content:right;
+ display: flex;
+ z-index: 5;
+ width: 100%;
+ height: 50%;
 }
 
-.hat-img {\
- height: 100%;\
+.hat-img {
+ height: 100%;
 }
 
-.hat-text {\
- position: relative;\
- top: 150px;\
- margin-right:480px;\
+.hat-text {
+ position: relative;
+ top: 150px;
+ margin-right:480px;
 }
 
-.example-info {\
- position: relative;\
- justify-content:right;\
- display: flex;\
- z-index: 5;\
- width: 100%;\
- height: 50%;\
- background-color: orange;\
- align-items: center;\
+.example-info {
+ position: relative;
+ justify-content:right;
+ display: flex;
+ z-index: 5;
+ width: 100%;
+ height: 50%;
+ background-color: orange;
+ align-items: center;
 }
 
-.chartboxpage {\
- background-color: transparent;\
- width: 30%;\
- margin: 0px;\
- box-sizing: border-box;\
- padding: 20px;\
- border: 1px;\
- border-radius: 10px;\
- position: relative;\
- display: flex;\
- height: 50%;\
+.chartboxpage {
+ background-color: transparent;
+ width: 30%;
+ margin: 0px;
+ box-sizing: border-box;
+ padding: 20px;
+ border: 1px;
+ border-radius: 10px;
+ position: relative;
+ display: flex;
+ height: 50%;
 }
 
-.chartpge {\
- display: flex;\
- position: relative;\
+.chartpge {
+ display: flex;
+ position: relative;
 }
 
-.chart-text {\
- width: 80%;\
+.chart-text {
+ width: 80%;
 }
 
-.web-info-box {\
- background-color: orange;\
- width: 100%;\
- height: 50px;\
+.web-info-box {
+ background-color: orange;
+ width: 100%;
+ height: 50px;
 }
 
  |
@@ -2763,82 +2763,82 @@ App.js code 
 
 |
 
-var MongoClient = require('mongodb').MongoClient;\
+var MongoClient = require('mongodb').MongoClient;
 var url = "mongodb://localhost:27017/"; // "mongodb://localhost:27017/iotstack";
 
-var express = require('express');\
+var express = require('express');
 var app = express();
 
-//Server Variables\
-var host = process.env.IP || 'localhost';\
+//Server Variables
+var host = process.env.IP || 'localhost';
 var port = process.env.PORT || 9000;
 
 var staticSite = __dirname + '/.';
 
 var mqtt = require('mqtt')
 
-var client  = mqtt.connect([{host:'localhost',port:'1883'}]) //var client  = mqtt.connect([{host:'broker.hivemq.com',port:'1883'}]) //\
+var client  = mqtt.connect([{host:'localhost',port:'1883'}]) //var client  = mqtt.connect([{host:'broker.hivemq.com',port:'1883'}]) //
 console.log("Nodejs Server Started!");
 
-// on mqtt conect subscribe on tobic test\
-client.on('connect', function () {\
-  client.subscribe('jaysanmo/codettes/01', function (err) {\
- console.log("sub scribing to test topic");\
- if(err)\
- console.log(err)\
-  })\
+// on mqtt conect subscribe on tobic test
+client.on('connect', function () {
+  client.subscribe('jaysanmo/codettes/01', function (err) {
+ console.log("sub scribing to test topic");
+ if(err)
+ console.log(err)
+  })
 })
 
-//when recive message\
-client.on('message', function (topic, message) {\
-  json_check(message)\
+//when recive message
+client.on('message', function (topic, message) {
+  json_check(message)
 })
 
-//check if data json or not\
-function json_check(data) {\
- try {\
- // JSON.parse(data);\
-msg = JSON.parse(data.toString()); // t is JSON so handle it how u want\
-} catch (e) {\
- console.log("message could not valid json " + data.toString);\
- return  false;\
-    }\
- console.log(msg);\
- var msgobj = { "msg": msg }; // message object\
-    Mongo_insert(msgobj)\
- console.log(msgobj);\
+//check if data json or not
+function json_check(data) {
+ try {
+ // JSON.parse(data);
+msg = JSON.parse(data.toString()); // t is JSON so handle it how u want
+} catch (e) {
+ console.log("message could not valid json " + data.toString);
+ return  false;
+    }
+ console.log(msg);
+ var msgobj = { "msg": msg }; // message object
+    Mongo_insert(msgobj)
+ console.log(msgobj);
 }
 
-//insert data in mongodb\
-function Mongo_insert(msg){\
-MongoClient.connect(url, function(err, db ) {\
- if (err) throw err;\
- var dbo = db.db("cb");\
-    dbo.collection("class").insertOne(msg, function(err, res) {\
- if (err) throw err;\
- console.log("data stored");\
- //db.close();\
-    });\
-  });\
+//insert data in mongodb
+function Mongo_insert(msg){
+MongoClient.connect(url, function(err, db ) {
+ if (err) throw err;
+ var dbo = db.db("cb");
+    dbo.collection("class").insertOne(msg, function(err, res) {
+ if (err) throw err;
+ console.log("data stored");
+ //db.close();
+    });
+  });
 }
 
-// ENABLE CORS for Express (so swagger.io and external sites can use it remotely .. SECURE IT LATER!!)\
-app.use(function(req, res, next) {\
-  res.header("Access-Control-Allow-Origin", "*");\
-  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");\
-  next();\
+// ENABLE CORS for Express (so swagger.io and external sites can use it remotely .. SECURE IT LATER!!)
+app.use(function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
 });
 
-// ROUTES FOR OUR API\
-// =============================================================================\
+// ROUTES FOR OUR API
+// =============================================================================
 var router = express.Router(); // get an instance of the express Router
 
-app.use('/', express.static(staticSite));\
+app.use('/', express.static(staticSite));
 // Use router for all /api requests
 
-if (! process.env.C9_PID) {\
- console.log('Running at http://'+ host +':' + port);\
-}\
+if (! process.env.C9_PID) {
+ console.log('Running at http://'+ host +':' + port);
+}
 app.listen(port, function() { console.log('Listening')});
 
  |
@@ -2861,7 +2861,7 @@ I decided to build hat from scratch and here's how it went
 
 3.  It was process but in the end i managed to put my hat together, but in the end i managed to do it 
 
-4.  Foto of my hat\
+4.  Foto of my hat
     ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdDP6gJ4lVpsAywWe6zanC34U2GmlHxRB2tjfINce92ibTK3jnYH_Tsbfk3RUg16H2sRIV5UC5OqQ38hwb2zhGtFdjLt7ufVH8QxvsPiwx7kDFwI3ozRpNOf2PZ8e58KTtt9DE-9ErrvhIugpunk7qxKXZJ?key=y_viQYfMEKmV8AynRuZczA)
 
 My Final Project
