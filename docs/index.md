@@ -170,51 +170,51 @@ void loop(){
 7. The html code
 
 ```html               
-			<!DOCTYPE html>
-			<html>
-			<head>
-			  <title>ESP32 Web Server</title>
-			  <meta name="viewport" content="width=device-width, initial-scale=1">
-			  <link rel="icon" href="data:,">
-			  <link rel="stylesheet" type="text/css" href="style.css">
-			  <style>
-			html{
-			font-family: Helvetica;
-			display: inline-block;
-			margin: 0px auto;
-			text-align: center;
-			}
-			h1{
-			color: #0F3376;
-			padding: 2vh;
-			}
-			p{
-			font-size: 1.5rem;
-			}
-			.button{
-			display: inline-block;
-			background-color: #008CBA;
-			border: none;
-			border-radius: 4px;
-			color: white;
-			padding: 16px 40px;
-			text-decoration: none;
-			font-size: 30px;
-			margin: 2px
-			cursor pointer;
-			}
-			.button2{
-			background-color: #f44336;
-			}
-			</style>
-			</head>
-			<body>
-			  <h1>ESP32 Web Server</h1>
-			  <p>GPIO state: <strong> %STATE%</strong></p>
-			  <p><a href="/on"><button class="button">ON</button></a></p>
-			  <p><a href="/off"><button class="button button2">OFF</button></a></p>
-			</body>
-			</html>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+	<!DOCTYPE html>
+	<html>
+	<head>
+	  <title>ESP32 Web Server</title>
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link rel="icon" href="data:,">
+	  <link rel="stylesheet" type="text/css" href="style.css">
+	  <style>
+	html{
+	font-family: Helvetica;
+	display: inline-block;
+	margin: 0px auto;
+	text-align: center;
+	}
+	h1{
+	color: #0F3376;
+	padding: 2vh;
+	}
+	p{
+	font-size: 1.5rem;
+	}
+	.button{
+	display: inline-block;
+	background-color: #008CBA;
+	border: none;
+	border-radius: 4px;
+	color: white;
+	padding: 16px 40px;
+	text-decoration: none;
+	font-size: 30px;
+	margin: 2px
+	cursor pointer;
+	}
+	.button2{
+	background-color: #f44336;
+	}
+	</style>
+	</head>
+	<body>
+	  <h1>ESP32 Web Server</h1>
+	  <p>GPIO state: <strong> %STATE%</strong></p>
+	  <p><a href="/on"><button class="button">ON</button></a></p>
+	  <p><a href="/off"><button class="button button2">OFF</button></a></p>
+	</body>
+	</html>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 ```
 ( [link to github code](https://github.com/0SaNJ/codettesbootcamp_2023_code/blob/main/ESP_32_async_webserver_html) )
 
