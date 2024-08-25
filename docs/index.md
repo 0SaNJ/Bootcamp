@@ -280,7 +280,7 @@ Day 3 ( online )
 5.  The C++ code 
 
 |
-```
+```c++
 	/*
 	  Rui Santos
 	  Complete project details at https://RandomNerdTutorials.com/esp32-web-server-websocket-sliders/
@@ -568,8 +568,8 @@ Day 3 ( online )
 
 2.  The CSS Code
 
-|```CSS
-
+|
+```css
 	/* Complete project details: https://randomnerdtutorials.com/esp32-web-server-websocket-sliders/ */
 
 	html {
@@ -923,7 +923,7 @@ void setup(){
 void loop(){
 
 }
-
+```
  |
 
 ( [link to github code](https://github.com/0SaNJ/codettesbootcamp_2023_code/blob/main/ESP_32_DHT_webserver_C%2B%2B) )
@@ -949,7 +949,7 @@ Day 5 ( online )
 4.  The C++ code 
 
 |
-
+```c++
 #include <WiFi.h>
 #include <PubSubClient.h>
 
@@ -1000,7 +1000,7 @@ void  setup() {
 void  loop() {
   client.loop();
 }
-
+```
  |
 
 (  [link to github code](https://github.com/0SaNJ/codettesbootcamp_2023_code/blob/main/ESP_32_DHT_MQTT_link_c%2B%2B) )
@@ -1024,7 +1024,7 @@ Day 6 ( online )
 2.  The C++ code 
 
 |
-
+```c++
 /*********
   Rui Santos
   Complete project details at https://randomnerdtutorials.com
@@ -1211,7 +1211,7 @@ dtostrf(humidity, 1, 2, humString);
     delay(2000);
   }
 }
-
+```
  |
 
 1.  Then we upload the spiffs then the code and we should get a reading like shown ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXfkjHp_fYOVcoUu7otUIRw0GyX0OWOZQO0a4JswoHVu8AcPGdvgTrPJsI-xDMrfW_nDH4Crh-6eCDFedLMD7W3VBofOuVDur_G-1drJIkT8a--59fw_uOwBU-_1AKMU1hsG4XO6sNrR05oqMzqbsD4j3szU?key=y_viQYfMEKmV8AynRuZczA)
@@ -1245,7 +1245,7 @@ Day 7 ( online )
 8.  The .js code
 
 |
-
+```json
 var MongoClient = require('mongodb').MongoClient;
 var url = "mongodb://localhost:27017/";  // "mongodb://localhost:27017/iotstack";
 
@@ -1323,7 +1323,7 @@ if (! process.env.C9_PID) {
     console.log('Running at http://'+ host +':' + port);
 }
 app.listen(port, function() { console.log('Listening')});
-
+```
  |
 
 ( [link to github code](https://github.com/0SaNJ/codettesbootcamp_2023_code/blob/main/ESP_32_DHT_MQTT_MongDb_Node.js_Mosquitto_link_app.js_code) )
@@ -1364,7 +1364,7 @@ app.listen(port, function() { console.log('Listening')});
 17. The index.html code 
 
 |
-
+```html
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html  xmlns="http://www.w3.org/1999/xhtml">
@@ -1538,7 +1538,7 @@ path,
  text-align: center;
     }
 </style>
-
+```
  |
 
 ( [link to github code](https://github.com/0SaNJ/codettesbootcamp_2023_code/blob/main/ESP_32_DHT_MQTT_MongoDB_Node.js_Mosquitto_html_code)  )
